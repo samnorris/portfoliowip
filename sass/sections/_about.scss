@@ -1,0 +1,25 @@
+
+/* ==========================================================================
+  ABOUT
+========================================================================== */
+.desktop section#about {
+  margin-top: 61px;
+}
+
+#slidercontainer {
+  margin-top: 40px;
+}
+
+#parallax-section {
+  background: url('http://placehold.it/1680x900') repeat center center fixed;
+  background-size: cover;
+
+  #parallax-section p,
+  #parallax-section h4 {
+    color: $white;
+  }
+
+  .btn-toolbar {
+    margin-bottom: 25px;
+  }
+}

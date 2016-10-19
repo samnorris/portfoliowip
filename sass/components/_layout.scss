@@ -1,0 +1,136 @@
+
+@import 'base';
+
+// ###Settings
+
+// Set base font size
+$rem-base: 16px !default;
+// Set line height ratio base
+$line-height-base: 26px !default;
+// Vertical rhythm ratio
+$type-rhythm-ratio: 1.14 !default;
+// Desktop Media Query
+$desktop: '(min-width: 1024px)' !default;
+// Tablet Media Query
+$tablet: '(min-width: 768px) and (max-width: 1023px)' !default;
+// Mobile Media Query
+$mobile: '(max-width: 767px)' !default;
+// Set Grid Column Count
+$grid-columns: 12 !default;
+// Set Grid Gutter (as px)
+$grid-gutter: 20px !default;
+// Set Grid Padding (as px)
+$grid-padding: 20px !default;
+// Set Grid Max Width (as px)
+$grid-max-width: 1080px !default;
+
+html,
+body {
+  @include box-sizing(border-box);
+  height: 100%;
+  background: url('') repeat;
+}
+
+body {
+  display: block;
+}
+
+.row {
+  @include col-container;
+  margin: auto;
+}
+
+.page-wrapper {
+  @include breakpoint($mobile) {
+    @include safe-rem(padding, 0 10);
+  }
+
+  @include breakpoint($tablet) {
+    @include safe-rem(padding, 0 10);
+  }
+}
+
+// responsive nav
+
+.main-menu {
+  @include breakpoint($mobile) {
+    ul {
+      display: none;
+    }
+  }
+
+  @include breakpoint($tablet) {
+    ul {
+      display: none;
+    }
+  }
+}
+
+
+// hides mobile menu on desktop
+
+.mobile-menu {
+  @include breakpoint($mobile) {
+    display: block;
+  }
+
+  @include breakpoint($tablet) {
+    display: block;
+  }
+
+  @include breakpoint($desktop) {
+    display: none;
+  }
+}
+
+// responsive logo
+
+.menu {
+  @include breakpoint($mobile) {
+    .logo {
+      display: none;
+    }
+
+    .logo-mobile {
+      display: inline-block;
+    }
+  }
+
+  @include breakpoint($tablet) {
+  }
+
+  @include breakpoint($desktop) {
+  }
+}
+
+
+// footer-layout
+footer {
+
+  @include breakpoint($mobile) {
+
+  }
+
+  @include breakpoint($tablet) {
+
+    }
+
+
+  @include breakpoint($desktop) {
+
+  }
+}
+
+form {
+  @include breakpoint($mobile) {
+  }
+
+  @include breakpoint($tablet) {
+  }
+
+  @include breakpoint($desktop) {
+    @include col(12);
+  }
+}
+
+

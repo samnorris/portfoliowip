@@ -1,0 +1,47 @@
+
+
+/* ==========================================================================
+  JQEasyTootip
+========================================================================== */
+
+.customeasytip, .customeasytiptint {
+  border-bottom: dotted 2px;
+}
+
+.tipthemesquarecustom {
+  border: 1px solid $black;
+  border-radius: 0 !important;
+  background: $black;
+  font-size: .938rem !important;
+}
+
+.tipthemesquarecustom,
+.tipthemesquarecustom *:not(i),
+.tipthemesquarecustomtint,
+.tipthemesquarecustomtint *:not(i) {
+  color: $white !important;
+  font-size: .938rem !important;
+}
+
+.tipthemesquarecustom:after {
+  border-color: $black;
+}
+
+.tipthemesquarecustom h1,
+.tipthemesquarecustom h2,
+.tipthemesquarecustom h3,
+.tipthemesquarecustom h4
+.tipthemesquarecustomtint h1,
+.tipthemesquarecustomtint h2,
+.tipthemesquarecustomtint h3,
+.tipthemesquarecustomtint h4 {
+  font-size: 1.125rem !important;
+}
+
+*[class*="tipicon"] i {
+  color: $white;
+}
+
+.tipopen {
+  box-sizing: content-box !important;
+}

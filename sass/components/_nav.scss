@@ -1,0 +1,326 @@
+@import 'base';
+
+
+/* ==========================================================================
+  PRINCIPAL NAV
+========================================================================== */
+
+/* NAV STYLES */
+nav a, #mainMenu a:focus {
+  @include transition (all .3s);
+  display: inline-block;
+  padding: 30px 9px;
+  font: 'Montserrat' $grey-600;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+
+
+#menu-container {
+  position: absolute;
+  z-index: 9999;
+  display: block;
+  width: 100%;
+  background-color: $black;
+  font-size: .95em;
+  font-family: 'Montserrat';
+
+  nav {
+    text-align: right;
+    text-transform: uppercase;
+
+    a {
+      color: $white;
+      font-size: .938rem;
+
+      &:hover {
+        color: $red;
+      }
+
+      &:last-child:before {
+        margin-right: 16px;
+        margin-left: -3px;
+        border-left: 1px solid $grey-500;
+        content: ' ';
+      }
+
+    }
+
+  }
+}
+
+.menulogo {
+  float: left;
+  margin-top: 19px;
+  margin-bottom: 19px;
+}
+
+.sticky {
+  position: fixed !important;
+  top: 0;
+  z-index: 1000;
+
+  nav a {
+    padding: 28px 9px;
+  }
+}
+
+
+
+/*RESPONSIVE NAV*/
+
+.mobile-menu {
+  @include transition(ease-out, .2s);
+  position: absolute;
+  top: 15px;
+  left: -300px;
+  z-index: 8000;
+  display: block;
+  box-sizing: border-box;
+  width: 300px;
+  height: 100%;
+  padding: 50px 30px;
+  font-size: 12px;
+  font-family: 'Montserrat';
+
+  a {
+    display: block;
+    padding: 10px 0;
+    color: $white;
+    font-size: 15px;
+
+    &:hover {
+      color: $red;
+    }
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px solid $grey-500;
+  }
+
+}
+
+.slide {
+  left: 0;
+}
+
+.close {
+  z-index: 9002;
+  color: $white;
+}
+
+.close-icon {
+  @include transition(ease-out, .2s);
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 25px;
+  height: 25px;
+
+  &:hover {
+    &::before, &::after {
+      background: $red;
+    }
+  }
+
+  &::before, &::after {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    margin-top: -1px;
+    content: '';
+    background: $white;
+  }
+
+  &::before {
+    @include transform(rotate(45deg));
+  }
+
+  &::after {
+    @include transform(rotate(-45deg));
+  }
+
+  &.big {
+    @include transform(scale(3));
+  }
+
+  &.thick {
+    &::before, &::after {
+      height: 4px;
+      margin-top: -2px;
+    }
+  }
+
+  &.rounded {
+    &::before, &::after {
+      border-radius: 5px;
+    }
+  }
+
+}
+
+.open:hover, .close:hover {
+  opacity: 1;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  /*  cursor-events: none;*/
+}
+
+/* Main Menu icon */
+
+.open, .close {
+  @include transition(all, .1);
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  z-index: 9003;
+  color: $tan-200;
+  opacity: .6;
+  font-size: 38px;
+  line-height: 11px;
+}
+
+.open:hover, .close:hover {
+  opacity: 1;
+}
+
+.close {
+  top: 20px;
+}
+
+/* Menu Button */
+
+.triangle-container {
+  position: relative;
+  top: -26px;
+  width: 25px;
+  height: 30px;
+  border-bottom: 1px solid $white;
+}
+
+.triangle {
+  @include transform(rotate(45deg));
+  position: relative;
+  top: 21px;
+  right: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  margin: auto;
+  border-right: 1px solid $white;
+  border-bottom: 1px solid $white;
+}
+
+.line {
+  position: relative;
+  width: 25px;
+  margin-top: 3px;
+  border-bottom: 2px solid $white;
+}
+
+/* Music section */
+
+.music {
+  padding-top: 10px;
+  font-size: 15px;
+
+  a {
+    color: $red;
+    font-size: 18px;
+    text-decoration: none;
+
+    &:hover {
+      @include transition(all, .3);
+      color: $grey-500;
+    }
+  }
+
+  p {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 26px;
+  }
+
+  .fa {
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    font-size: 19px;
+  }
+
+  .artist {
+    font-style: italic;
+  }
+
+}
+
+/*horizontal rule*/
+.music-top {
+  width: 100%;
+  border: 1px dashed rgba(255, 255, 255, .3);
+}
+
+.mobile #responsivemenu, .tablet #responsivemenu {
+  display: block !important;
+}
+
+.mobile #menu-container,
+.tablet #menu-container {
+  @include transition(all, .5);
+  position: fixed;
+  top: 0;
+  left: -100%;
+  z-index: 200000;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .6);
+
+}
+
+.mobile #menu-container .container,
+.tablet #menu-container .container {
+  float: left;
+  width: 70%;
+  height: 100%;
+  padding: 20px;
+  background: $black;
+}
+
+.mobile #menu-container .logo,
+.tablet #menu-container .logo {
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.mobile #menu-container nav,
+.tablet #menu-container nav {
+  width: 100%;
+  text-align: center;
+}
+
+.mobile #menu-container nav a,
+.tablet #menu-container nav a {
+  display: block !important;
+  width: 100%;
+  padding: 10px 0 !important;
+}
+
+.mobile #menu-container nav a:last-child:before,
+.tablet #menu-container nav a:last-child:before {
+  display: none;
+}
+
+.mobile #menu-container.open,
+.tablet #menu-container.open {
+  left: 0;
+}

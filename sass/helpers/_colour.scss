@@ -1,0 +1,57 @@
+/* ==========================================================================
+  TYPOGRAPHY COLORS
+========================================================================== */
+
+// Basics
+$black: #000000;
+$white: #ffffff;
+
+// Primary core
+$yellow: #e6b31b;
+$yellow-200: #ec971f;
+$green: #bbca0c;
+$green-light: #e8f4e8;
+$red: #c35441;
+$blue: #27283a;
+$tan: #e4e4db;
+$tan-200: #a08e61;
+$purple: #524a9c;
+$blue-100: #55d1ff;
+$blue-200: #0a81dc;
+
+
+// Shades
+$white-100: #f9f9f9;
+$grey-100: #eaeaea;
+$grey-200: #e4e4e4;
+$grey-300: #d2d2d2;
+$grey-400: #999999;
+$grey-500: #666666;
+$grey-600: #5f5f5f;
+$grey-800: #3b3b3b;
+
+
+/* ==========================================================================
+  COLORS
+========================================================================== */
+
+/* GENERAL COLORS */
+.darkBackground h1,
+.darkBackground h2,
+.darkBackground h3,
+.darkBackground h4,
+.darkBackground h5,
+.darkBackground h6,
+.darkBackground p {
+  color: $white;
+}
+
+.darkBackground {
+  background-color: $black;
+}
+
+.tint span,
+.kubo span {
+  color: $white;
+}
+

@@ -1,0 +1,274 @@
+/* ==========================================================================
+  BLOG
+========================================================================== */
+
+// scss-lint:disable
+
+#blog {
+  background-color: $grey-800;
+}
+
+#blogfilter a:hover {
+  color: $white;
+}
+
+#blogsearchcontainer {
+  float: left;
+  margin: 0;
+  padding-top: 15px;
+}
+
+#blogsearch {
+  margin: 0;
+  color: $grey-400;
+  background: none;
+  text-align: right;
+}
+
+#blog footer, #articledetail footer {
+  background-color: $black;
+}
+
+#articledetail #articlecontent {
+  padding-top: 130px;
+}
+
+#blog footer p,
+#articledetail footer p,
+#blog footer a:hover,
+#articledetail footer a:hover {
+  color: $white;
+}
+
+#blog h2 {
+  margin: 0;
+  font-size: 0;
+  line-height: 0;
+  text-align: left;
+}
+
+#blog .article {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+#blog .article .title {
+  width: 100%;
+  height: 100%;
+}
+
+#blog .article .title a {
+  display: block;
+  margin-bottom: 20px;
+  color: $black;
+  font-size: 1.463rem;
+  line-height: 1.875rem;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+#blog .imgcontainer {
+  overflow: hidden;
+}
+
+#blog .imgcontainer img {
+  cursor: pointer;
+  width: 100%;
+  transition: all .5s;
+}
+
+#blog .article .info {
+  background: $white;
+}
+
+#blog .article .info .excerpt {
+  margin-bottom: 20px;
+  font-size: .875rem;
+  line-height: 1.438rem;
+}
+
+#blog .article .info .date {
+  font-size: .750rem;
+}
+
+#blog .article:hover img {
+  transform: scale(1.2, 1.2) rotate(2deg);
+}
+
+/* ==========================================================================
+  BLOG DETAIL
+========================================================================== */
+
+#articledetail h1,
+#articledetail h5 {
+  margin: 0;
+  margin-bottom: 30px;
+  color: $black;
+  font-weight: bold;
+  font-size: 3.125rem;
+  line-height: 3.1rem;
+  text-transform: uppercase;
+}
+
+#articledetail h5 {
+  font-size: 1.563rem;
+  line-height: 1.563rem;
+}
+
+#articledetail .info {
+  margin-bottom: 30px;
+  color: $grey-400;
+  font-size: .9rem;
+}
+
+#articledetail .info adress a {
+  color: $black;
+}
+
+#articlecontent {
+  position: relative;
+  margin-top: 25%;
+  padding-top: 50px;
+  background-color: $white;
+}
+
+.author {
+  display: inline;
+}
+
+#articledetail .imgContainer {
+  position: fixed;
+  top: 0;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 70%;
+}
+
+#articledetail .imgContainer img {
+  width: 100%;
+}
+
+.mobile #articledetail .imgContainer,
+.tablet #articledetail .imgContainer {
+  margin-top: 0;
+}
+
+#comments {
+  margin-bottom: 90px;
+}
+
+.comment .avatar {
+  float: left;
+  margin-right: 37px;
+}
+
+.comment .commentinfo {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.comment .commentinfo div {
+  display: inline;
+  font-size: 1.125rem;
+  font-family: 'Montserrat';
+}
+
+.comment .buttons a {
+  font-size: 1rem !important;
+  font-family: 'Montserrat';
+  text-decoration: none !important;
+}
+
+.comment .buttons {
+  float: right;
+}
+
+.comment .replies {
+  padding-left: 60px;
+}
+
+.comment .replies .comment {
+  margin-top: 90px;
+}
+
+.admincomment .avatar {
+  border-width: 4px;
+  border-style: solid;
+}
+
+.admincomment .adminMarker:after {
+  position: absolute;
+  display: inline-block !important;
+  width: 10px;
+  height: 10px;
+  margin: 6px 0 0 8px;
+  content: '';
+  transform: rotateZ(-45deg);
+}
+
+#authordetails {
+  line-height: 27px;
+
+  p {
+    display: inline;
+  }
+
+  h5 {
+    display: block;
+  }
+
+  .social {
+    display: block;
+    margin: 27px 0 20px;
+  }
+
+  .author {
+    display: inline;
+    padding-right: 8px;
+  }
+
+}
+
+#blogcontactform span {
+  position: absolute;
+  right: 25px;
+  z-index: 100;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  padding: 23px;
+  color: $grey-200;
+  text-align: center;
+}
+
+#blogcontactform span[class*='fa-comments'] {
+  right: 25px;
+  margin-left: -60px;
+  color: $white;
+}
+
+#articledetail #sharepost {
+  float: right;
+  padding-top: 60px;
+  text-align: center;
+}
+
+#articledetail #sharepost span {
+  display: block;
+  margin-bottom: 20px;
+  color: $grey-400;
+  font-weight: bold;
+  font-size: 1.250rem;
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+}
+
+#articledetail .autorsocial:after {
+  position: relative;
+  display: block;
+  clear: both;
+  content: '';
+}
+
+// scss-lint:enable

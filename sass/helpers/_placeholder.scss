@@ -1,0 +1,38 @@
+@import 'mixin';
+@import 'colour';
+
+%base-shadow {
+  // scss-lint:disable VendorPrefix
+  -webkit-box-shadow: rgba(0, 0, 0, .117647) 0 0 2px 0, rgba(0, 0, 0, .239216) 0 2px 4px 0;
+  box-shadow: rgba(0, 0, 0, .117647) 0 0 2px 0, rgba(0, 0, 0, .239216) 0 2px 4px 0;
+  // scss-lint:enable VendorPrefix
+}
+
+// Buttons
+// Belongs to: Button mixin
+%button {
+  @include border-radius(5);
+  @include transition(all .2s linear);
+  display: inline-block;
+  border: 1px solid transparent;
+  font-family: 'Gotham-Regular', serif;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+// FontAwesome
+// Belongs to: icon mixin
+%icon {
+  font-family: 'FontAwesome';
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+// box
+%box {
+  @extend %base-shadow;
+  @include border-radius(4);
+  @include safe-rem(padding, 10);
+  @include safe-rem(margin-top, 12);
+  font-family: 'Gotham-Regular', serif;
+}

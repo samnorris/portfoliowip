@@ -1,0 +1,44 @@
+
+p, .iconlist, .squareList {
+  margin-bottom: 30px;
+  line-height: 27px;
+}
+
+/* SPECIAL LISTS */
+.squareList li {
+  position: relative;
+  float: none;
+  margin-left: 20px;
+}
+
+.squareList li:before {
+  position: absolute;
+  margin-top: -1px;
+  margin-left: -20px;
+  content: '■';
+  transform: rotateZ(45deg);
+}
+
+.squareList.white,
+.squareList.white li {
+  color: $white;
+}
+
+.squareList.white,
+.squareList.white a:hover {
+  color: $white;
+}
+
+.iconlist li {
+  color: $grey-500;
+  line-height: 27px;
+}
+
+.iconlist span {
+  padding-right: 15px;
+  font-weight: bold;
+}
+
+.iconlist, .squareList {
+  line-height: 30px;
+}

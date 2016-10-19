@@ -1,0 +1,268 @@
+@import '../components/base';
+
+footer,
+.push {
+  min-height: 200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/*IMG FULL WIDTH*/
+.img100 {
+  width: 100%;
+  height: auto;
+}
+
+/* BUTTONS */
+.button {
+  display: inline-block;
+  padding: 17px 20px;
+  color: $white;
+  font-size: 1.125rem;
+  font-family: 'Montserrat';
+  text-decoration: none !important;
+  text-transform: uppercase;
+  transition: all .3s;
+}
+
+a.button {
+  font-weight: normal !important;
+}
+
+.button:hover {
+  color: $white;
+  background-color: $black;
+}
+
+.btn {
+  @include transition(all .3s);
+  display: inline-block;
+  padding: 8px 12px;
+  border: 2px solid;
+  border-radius: 0 !important;
+  color: $white;
+  font-weight: normal;
+  font-size: 1.125rem;
+  font-family: 'Montserrat';
+  text-decoration: none !important;
+  text-transform: uppercase;
+
+  /* BUTTON SYLES */
+
+  .white {
+    border-color: $white;
+    color: $black;
+    background-color: $white;
+  }
+
+  .dark {
+    border-color: $black;
+    color: $white;
+    background-color: $black;
+  }
+
+  .solidhoverWhite:hover {
+    border-color: $white !important;
+    color: $black !important;
+    background-color: $white !important;
+  }
+
+  .solidhoverDark:hover {
+    border-color: $black !important;
+    color: $white !important;
+    background-color: $black !important;
+  }
+
+  .solidhoverTint:hover {
+    color: $white !important;
+  }
+
+}
+
+.btn:hover,
+.btn:focus {
+  border-color: $black;
+  color: $white;
+  background-color: $black;
+  text-decoration: none;
+}
+
+.btn-lg,
+.btn-group-lg > .btn {
+  padding: 17px 20px;
+  font-size: 1.250rem;
+  line-height: 1.33;
+}
+
+
+.btn-outline {
+  border: 2px solid;
+  background-color: transparent !important;
+
+  .white {
+    color: $white !important;
+  }
+
+  .dark {
+    color: $black !important;
+  }
+
+}
+
+
+.btn.btn-outline:hover,
+.btn.btn-outline:focus {
+  color: $black;
+}
+
+
+/* BACKGROUNDS */
+
+.tintBackground,
+.darkBackground, {
+  position: relative;
+}
+
+.darkbackground:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background-position: center;
+  background-size: cover;
+  opacity: .1;
+  -moz-opacity: .1;
+}
+
+.tintBackground:before,
+.darkBackground:before {
+  opacity: .1;
+}
+
+.custombackgroundoverlay {
+  position: relative;
+  z-index: 1;
+}
+
+
+/*-----------------------------------------------
+LABEL
+-----------------------------------------------*/
+.mobile__label {
+  display: inline-block;
+  overflow: hidden;
+  width: 25px;
+  padding: 12px 9px;
+  border: solid 2px $white;
+  white-space: nowrap;
+
+  &:hover {
+    cursor: pointer;
+    /*ANIMATION POSITION ON HOVER*/
+    .label__line {
+      margin-left: 0;
+    }
+
+    /*ANIMATION DELAY*/
+    :nth-child(2) {
+      .label__line {
+        transition-delay: .1s;
+      }
+    }
+
+    :nth-child(3) {
+      .label__line {
+        transition-delay: .2s;
+      }
+    }
+  }
+}
+
+/*LINES CONTENT*/
+.mobile__label__content {
+  height: 2px;
+  margin-bottom: 5px;
+  font-size: 0;
+  line-height: 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/*WHITE LINES*/
+.label__line {
+  display: inline-block;
+  margin-right: 43px;
+  margin-left: -33px;
+  /*LINES ANIMATION*/
+  transition: margin-left .2s linear;
+}
+
+
+/* ==========================================================================
+  PAGE LOADER
+========================================================================== */
+
+.nonscroll {
+  overflow: hidden;
+}
+
+#windowloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  display: table;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  background: $black;
+
+  > div {
+    position: relative;
+    display: table-cell;
+    color: $white;
+    font-size: 2rem;
+    font-family: 'Montserrat';
+    text-align: center;
+    vertical-align: middle;
+
+    &span {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin: 0 5px;
+      animation: infinite loading 1s;
+      transform: rotateZ(45deg);
+
+    }
+  }
+
+  /*LOAD FINISH*/
+  .loaded {
+    top: -100%;
+  }
+
+}
+
+/*LOADER ANIMATION*/
+@keyframes loading {
+  0% {
+    transform: rotateZ(45deg);
+  }
+
+  100% {
+    transform: rotateZ(135deg);
+  }
+
+}

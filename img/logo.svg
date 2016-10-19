@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 95 95" style="enable-background:new 0 0 95 95;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{font-family:'Lunetta-Out';}
+	.st2{font-size:52.5799px;}
+	.st3{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
+	.st4{opacity:0.17;}
+</style>
+<font horiz-adv-x="1000">
+<!-- Lunetta is a trademark of HypeForType Ltd. -->
+<!-- Copyright: Copyright 2015 Adobe System Incorporated. All rights reserved. -->
+<font-face font-family="Lunetta-Out" units-per-em="1000" underline-position="95" underline-thickness="189"/>
+<missing-glyph horiz-adv-x="233"/>
+<glyph unicode="a" horiz-adv-x="684" d="M459,10l0,479l-161,0C179,489 83,393 83,275C83,155 178,60 298,60l40,0l0,69l-40,0C218,129 153,195 153,275C153,355 218,420 298,420l91,0l0,-170l-51,0l0,119l-40,0C246,369 204,327 204,275C204,222 246,180 298,180l91,0l0,-170l-91,0C150,10 32,127 32,275C32,421 151,540 298,540l211,0l0,-480l70,0l0,480l50,0l0,-530M638,0l0,549l-69,0l0,-480l-50,0l0,480l-221,0C146,549 23,426 23,274C23,123 146,0 298,0l100,0l0,189l-100,0C251,189 213,227 213,274C213,321 252,360 298,360l31,0l0,-120l69,0l0,189l-100,0C212,429 143,360 143,274C143,189 212,120 298,120l31,0l0,-50l-31,0C184,70 93,161 93,274C93,387 185,480 298,480l151,0l0,-480z"/>
+<glyph unicode="n" horiz-adv-x="700" d="M474,10l0,265C473,329 432,370 380,370l-36,0l0,-360l-170,0l0,480l-69,0l0,-480l-51,0l0,530l171,0l0,-480l69,0l0,360l86,0C461,419 524,356 525,275l0,-215l69,0l0,215C595,392 498,490 380,490l-86,0l0,50l86,0C527,539 644,423 646,275l0,-265M655,0l0,274C655,426 531,550 380,549l-96,0l0,-69l96,0C493,480 584,388 585,274l0,-205l-51,0l0,206C534,360 465,429 380,429l-96,0l0,-360l-50,0l0,480l-189,0l0,-549l69,0l0,481l50,0l0,-481l190,0l0,360l26,0C428,359 464,323 465,275l0,-275z"/>
+</font>
+
+	<text id="XMLID_2_" transform="matrix(1 0 0 1 12.9975 62.8027)" class="st0 st1 st2">a</text>
+<text id="XMLID_3_" transform="matrix(1 0 0 1 47.1802 62.8027)" class="st0 st1 st2">n</text>
+<polygon id="XMLID_9_" class="st3" points="85.5,69.5 48,91.5 10.5,69.5 10.5,25.6 48,3.6 85.5,25.6 "/>
+<polygon id="XMLID_10_" class="st4" points="10.5,69.5 85.5,25.6 85.5,69.5 48,91.5 "/>
+</svg>

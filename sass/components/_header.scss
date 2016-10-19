@@ -1,0 +1,189 @@
+
+
+/* ==========================================================================
+  HEADER
+========================================================================== */
+
+#mainheader {
+  position: relative;
+}
+
+.header-caption {
+  z-index: 1;
+  color: $white;
+  font-weight: bold;
+  font-size: 4.375rem;
+  font-family: 'Montserrat';
+  letter-spacing: -2px;
+  line-height: 5.25rem;
+  text-align: center;
+}
+
+.glitch {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  overflow: hidden;
+  width: 100%;
+  opacity: .6;
+}
+
+/* Stars background */
+
+.stars, .twinkling, .clouds {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 10000px 0;
+  }
+}
+
+.stars {
+  z-index: -1;
+  background: $black url('../img/backgrounds/stars.png') repeat top center;
+}
+
+.twinkling {
+  z-index: -1;
+  background: transparent url('../img/backgrounds/twinkling.png') repeat top center;
+  animation: move-twink-back 200s linear infinite;
+}
+
+#mainheader .fa-angle-down {
+  @include transition(all, .3);
+  position: relative;
+  top: -75px;
+  display: inline-block;
+  color: transparent;
+  font-size: 3.288rem;
+  text-decoration: none;
+  text-shadow: 0 -20px transparent, 0 0 $white;
+}
+
+#mainheader .fa-angle-down:hover {
+  color: transparent;
+  text-shadow: 0 0 $white, 0 60px transparent;
+}
+
+/*IE FIX*/
+.IE #mainheader .fa-angle-down {
+  color: $white;
+}
+
+#mainheader .tp-caption {
+  font-family: Montserrat;
+}
+
+#mainheader .roboto {
+  font-family: Roboto Slab;
+  text-align: center;
+}
+
+/*CANVAS ANIMATION*/
+
+#shadercanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+  }
+
+}
+
+header .logo {
+  position: relative;
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 140px;
+}
+
+header h2 {
+  @include safe-rem(padding-top, 425);
+  z-index: 9999;
+  color: $white;
+  font-weight: normal;
+  font-size: .95rem;
+  font-family: 'Montserrat' !important;
+  letter-spacing: 0;
+  line-height: 1.988rem;
+
+  strong {
+    color: $white !important;
+    font-weight: bold;
+  }
+}
+
+header .fa-angle-down {
+  @include safe-rem(padding-top, 75);
+  position: relative;
+  left: 50%;
+  z-index: 9999;
+  display: inline-block;
+  color: transparent;
+  font-size: 4.688rem;
+  text-decoration: none;
+  text-shadow: 0 -20px transparent, 0 0 $white;
+  transition: all .3s;
+}
+
+header .fa-angle-down:hover {
+  color: transparent;
+  text-shadow: 0 0 $white, 0 60px transparent;
+}
+
+/*IE FIX*/
+.IE header .fa-angle-down {
+  color: $white;
+}
+
+#shake:hover {
+  /*animation*/
+  animation: shake .2s infinite;
+}
+
+@keyframes shake {
+  0% {transform: skewX(1deg); }
+  10% {transform: skewX(-8deg); }
+  20% {transform: skewX(23deg); }
+  30% {text-shadow: 17px 8px rgba(0, 0, 0, .65); transform: skewX(-70deg); }
+  40% {transform: skewX(30deg); }
+  50% {transform: skewX(-20deg); }
+  60% {text-shadow: -10px 8px rgba(0, 0, 0, .65); transform: skewX(3deg); }
+  70% {transform: skewX(-2deg); }
+  80% {transform: skewX(1deg); }
+  90% {text-shadow: 30px 18px rgba(0, 0, 0, .65); transform: skewX(0deg); }
+  100% {transform: skewX(0deg);}
+}
+

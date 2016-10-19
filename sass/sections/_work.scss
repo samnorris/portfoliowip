@@ -1,0 +1,352 @@
+/* ==========================================================================
+  WORK
+========================================================================== */
+
+#work.paddingstandard {
+  padding-bottom: 0;
+}
+
+/*imac carrusel*/
+#imac-work {
+  position: relative;
+  margin-top: 80px !important;
+  margin-bottom: 80px !important;
+
+  #containerSlider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    padding: 13px 26px;
+  }
+
+}
+
+#imac-work .item > img,
+#imac-work > img {
+  width: 100%;
+}
+
+#imac-work
+
+/* ---- isotope grid---- */
+   #portfoliogrid {
+
+  img {
+    width: 100%;
+  }
+
+  .item {
+    overflow: hidden;
+    float: left;
+    width: 20%;
+    padding-bottom: 0;
+    cursor: pointer;
+
+    .item.width2 {
+      width: 40%;
+    }
+  }
+}
+
+// scss-lint:disable
+
+/* Item rollover */
+#work .item .rollover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  text-align: center;
+}
+
+#work .item .rollover:before {
+  position: absolute;
+  top: 26%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  margin-top: 40px;
+  content: '';
+  opacity: 0;
+  transform: rotateZ(-45deg);
+  transition: all .3s .5s, opacity .3s .8s, margin-top .3s .8s;
+}
+
+#work .item.width2 .rollover:before {
+  left: 38%;
+  width: 25%;
+}
+
+#work .item .rollover .centerContainer {
+  height: 100%;
+  opacity: 0;
+  transform: rotateZ(-5deg);
+  transition: all .3s .1s;
+}
+
+#work .item .rollover .centerContainer a {
+  display: block;
+  color: $white;
+  font-weight: bold;
+  font-size: 1.250rem;
+  font-family: 'Montserrat';
+  letter-spacing: -2px;
+  text-decoration: none !important;
+  text-transform: uppercase;
+}
+
+#work .item .rollover .centerContainer .title {
+  margin-bottom: 15px;
+  font-size: 2.8rem;
+  line-height: 2.8rem;
+}
+
+#work .item:hover .rollover:before,
+#work .portfolioActive .rollover:before {
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  margin-top: 0;
+  opacity: 1;
+  transform: rotateZ(0deg);
+  transition: all .3s .4s, opacity .2s .1s, margin-top .3s .1s;
+}
+
+#work .item:hover .centerContainer,
+#work .portfolioActive .centerContainer {
+  opacity: 1;
+  transform: rotateZ(0deg);
+  transition: all .3s .6s;
+}
+
+// scss-lint:enable
+
+/* WORK OPEN ANIMATION */
+@keyframes turn {
+  0% {
+    transform: rotate(45deg);
+  }
+
+  15% {
+    transform: rotate(135deg);
+  }
+
+  25% {
+    transform: rotate(135deg);
+  }
+
+  40% {
+    transform: rotate(225deg);
+  }
+
+  50% {
+    transform: rotate(225deg);
+  }
+
+  65% {
+    transform: rotate(315deg);
+  }
+
+  75% {
+    transform: rotate(315deg);
+  }
+
+  90% {
+    transform: rotate(405deg);
+  }
+
+  100% {
+    transform: rotate(405deg);
+  }
+
+}
+
+#workLoader {
+  position: absolute;
+  z-index: 10000;
+  transition: all .8s;
+  transform-style: preserve-3d;
+
+  .iconloader {
+    position: relative;
+    z-index: 20;
+    display: block;
+    width: 30px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+
+    &:after {
+      position: absolute;
+      top: 25%;
+      left: 25%;
+      width: 50%;
+      height: 50%;
+      border: 4px solid $white;
+      content: '';
+      animation: turn 4s cubic-bezier(.86, 0, .07, 1) infinite;
+      transform: rotateZ(45deg);
+    }
+  }
+}
+
+// scss-lint:disable
+
+#workLoader.width2 .iconloader:after {
+  left: 38%;
+  width: 25%;
+}
+
+#workLoader .front, #workLoader .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+
+  backface-visibility: hidden;
+
+}
+
+#workLoader .front {
+  text-align: center;
+}
+
+#workLoader .front img {
+  width: 100%;
+  opacity: .2;
+}
+
+#workLoader .back {
+  background-color: rgba(20, 20, 20, .95);
+  transform: rotateX(180deg);
+}
+
+#workLoader .back #wrkclosebtn {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+}
+
+#workLoader .back .fa-times {
+  color: $grey-500;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#workLoader .back .fa-times:hover {
+  color: $white;
+}
+
+.scale100 {
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  transform: perspective(1000px) rotateX(-180deg);
+}
+
+#workdetailcontainer.darkBackground {
+  padding-top: 40px;
+}
+
+/* FIX IE 9/10/11 */
+.IE #workLoader {
+  transform: none;
+  transition: all .8s !important;
+}
+
+.IE #workLoader .front, .IE #workLoader .back {
+  transition: all .8s !important;
+}
+
+.IE #workLoader .back {
+  transform: perspective(1000px) rotateX(180deg) !important;
+}
+
+.IE #wrkclosebtn {
+  display: none;
+}
+
+.IE .scale100 #wrkclosebtn {
+  display: inline;
+}
+
+.IE .scale100 {
+  transform: rotateX(0deg) !important;
+  transition: none !important;
+}
+
+.IE #workLoader.scale100 .back {
+  z-index: 10;
+  transform: perspective(1000px) rotateX(0deg) !important;
+}
+
+.IE #workLoader.scale100 .front {
+  transform: perspective(1000px) rotateX(-180deg) !important;
+}
+
+.IE9 #workLoader {
+  background-color: $green;
+  opacity: 0;
+}
+
+// scss-lint:enable
+
+
+
+/* ==========================================================================
+  WORK DETAILS
+========================================================================== */
+
+#workdetail {
+  padding: 40px 0;
+
+  h1 {
+    margin-top: 0;
+    margin-bottom: 35px;
+    color: $white;
+    font-size: 4rem;
+    line-height: 4rem;
+    text-align: left;
+  }
+
+  #details {
+    margin-bottom: 35px;
+    font-size: .9rem;
+
+    &li {
+      margin-bottom: 5px;
+      color: $grey-100;
+    }
+
+    &span {
+      font-family: 'Montserrat';
+    }
+  }
+
+  #detailImg img {
+    width: 100%;
+  }
+
+}
+
+#workdetail .workDouble #detailImg {
+  margin-bottom: 35px;
+}
+
+#workdetail p, #workdetail #details span {
+  color: $white;
+}
+
+#workdetail .button.tint:hover {
+  color: $black;
+  background-color: $white;
+}

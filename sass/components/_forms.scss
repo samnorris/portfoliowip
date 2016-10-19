@@ -1,0 +1,93 @@
+@import 'base';
+
+/* FORMS */
+#formMsg {
+  position: relative;
+  display: none;
+
+  p {
+    padding: 9px 0 0 60px;
+    font: 'Montserrat' $black;
+    font-size: 1.2rem;
+
+    span {
+      left: 0;
+      float: left;
+      margin: 0;
+      padding: 0;
+
+      &span:before {
+        color: $green-light;
+        font-size: 3rem;
+      }
+    }
+
+  }
+}
+
+.fa-exclamation-triangle:before {
+  color: $yellow-200 !important;
+}
+
+input:focus, select:focus, textarea:focus, button:focus {
+  outline: none;
+}
+
+#submit:focus {
+  border-color: $black !important;
+  border-radius: 0 !important;
+  background-color: $black !important;
+}
+
+input, textarea {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-bottom: 33px;
+  padding: 17px 20px;
+  border: 2px solid $grey-400;
+  font-size: 1.250rem;
+  font-family: 'Montserrat';
+  transition: all .3s;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input:hover, textarea:hover, input:focus, textarea:focus {
+  border-color: $grey-500;
+}
+
+textarea:required:invalid, input:required:invalid, input:focus:invalid {
+  box-shadow: none;
+}
+
+textarea:required:valid, input:required:valid, input:focus:valid {
+  border-color: $green;
+  background: $green-light;
+  box-shadow: none;
+}
+
+form span[class*="fa-"] {
+  position: absolute;
+  right: 18px;
+  z-index: 100;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 24px 30px;
+  color: $grey-300;
+  text-align: center;
+}
+
+#submit {
+  display: block;
+  border: 0;
+  text-align: left;
+}
+
+.submitIcon {
+  padding-top: 22px !important;
+  color: $white !important;
+}
