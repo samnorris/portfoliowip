@@ -28,11 +28,11 @@ html,
 body {
   @include box-sizing(border-box);
   height: 100%;
-  background: url('') repeat;
 }
 
 body {
   display: block;
+  background: $dark-grey url('../img/backgrounds/broken_noise.png') repeat;
 }
 
 .row {

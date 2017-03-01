@@ -58,7 +58,7 @@
   transform: rotateZ(-45deg);
   -webkit-transition: all 0.3s 0.5s, opacity 0.3s 0.8s, margin-top 0.3s 0.8s;
   -webkit-transform: rotateZ(-45deg);
-  background-color: #c44741;
+  background:rgba(196, 71, 65, 0.85);
 
 }
 
@@ -79,8 +79,6 @@
 }
 
 #work .item .rollover .centerContainer a {
-
-  font-family: "Montserrat";
   font-size: 1.250rem;
   font-weight: bold;
   letter-spacing: -2px;
@@ -344,9 +342,6 @@
   font-size: 0.9rem;
 }
 
-#workdetail #details span {
-  font-family: 'Montserrat';
-}
 
 #workdetail #details li {
   color: #CCC;
@@ -366,13 +361,15 @@
 ========================================================================== */
 
 .isotopeFilter {
-  margin-bottom: 30px;
+  margin-top: 15px;
+  margin-bottom: 35px;
 }
 
 .isotopeFilter a {
+  @include safe-rem(padding, 0 25 0 25);
   font-size: 1.250rem;
 }
 
 .isotopeFilter .is-checked {
-  color: red;
+  color: $red;
 }

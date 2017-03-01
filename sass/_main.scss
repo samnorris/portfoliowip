@@ -41,10 +41,6 @@ html {
   font-size: 99%;
 }
 
-body {
-  font: 'Roboto Slab' $grey-800;
-}
-
 canvas {
   width: 100% !important;
 }
@@ -189,7 +185,8 @@ blockquote {
 }
 
 .quote-one {
-  font: 17px/1em "AvenirNext-Regular", sans-serif;
+  font: 17px/1em "Lato", sans-serif;
+  font-weight: 100;
   letter-spacing: 4px;
   word-spacing: .06em;
   line-height: 1em;
@@ -199,8 +196,8 @@ blockquote {
   @include safe-rem(padding-top, 25);
   width: 90%;
   margin: 0 auto;
-  font: 35px/1em "AvenirNext-Bold", sans-serif;
-  font-weight: 700;
+  font: 35px/1em "Lato", sans-serif;
+  font-weight: 900;
   letter-spacing: 2px;
   line-height: 1.10em;
   word-spacing: .06em;
@@ -216,8 +213,8 @@ blockquote {
 
 .quote-three {
   float: right;
-  font: .85em "AvenirNext-Light", sans-serif;
-  font-weight: 400;
+  font: .85em "Lato", sans-serif;
+  font-weight: 300;
   letter-spacing: 2px;
   line-height: 1.25em;
 }
@@ -579,18 +576,3 @@ p.inview {
   }
 }
 
-
-/* ==========================================================================
-  BOOTSTRAP STYLES
-========================================================================== */
-.text-left {
-  text-align: left !important;
-}
-
-.text-right {
-  text-align: right !important;
-}
-
-.text-center {
-  text-align: center !important;
-}
