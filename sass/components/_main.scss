@@ -40,13 +40,11 @@ canvas {
   opacity: .5;
 }
 
-
 /*IMG FULL WIDTH*/
 .img100 {
   width: 100%;
   height: auto;
 }
-
 
 /*VERTICAL ALIGN*/
 .centerContainer {
@@ -95,7 +93,6 @@ canvas {
 .framedColumn {
   padding: 35px;
 }
-
 
 /* ==========================================================================
   WHAT WE DO
@@ -504,7 +501,6 @@ p.inview {
   }
 }
 
-
 @keyframes pulseglow {
   0% {
     opacity: .5;
@@ -528,8 +524,6 @@ p.inview {
     transform: rotate(360deg);
   }
 }
-
-
 
 /* ==========================================================================
   SERVICES 2 (One by one)
@@ -576,7 +570,6 @@ p.inview {
   }
 }
 
-
 /* ==========================================================================
   BOOTSTRAP STYLES
 ========================================================================== */
@@ -592,6 +585,170 @@ p.inview {
   text-align: center !important;
 }
 
+/* ==========================================================================
+
+  OWL SLIDER
+
+========================================================================== */
+
+.owl-carousel .owl-item img {
+  transform-style: flat;
+  -webkit-transform-style: flat;
+}
+
+.owl-theme .owl-controls {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* Styling Next and Prev buttons */
+
+.owl-theme .owl-controls .owl-buttons div {
+
+  display: inline-block;
+
+  zoom: 1;
+
+  display: inline;
+
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 17px;
+  height: 17px;
+  display: block;
+  cursor: pointer;
+  margin-right: 15px;
+  border: 3px solid #41a1c4;
+  border-radius: 0;
+  background: none;
+  transition: all 0.3s;
+  transform: rotateZ(45deg);
+  -webkit-transition: all 0.3s;
+  -webkit-transform: rotateZ(45deg);
+  -ms-transform: rotate(45deg);
+}
+
+.owl-theme .owl-dots .owl-dot span:hover {
+  transform: rotateZ(135deg);
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+
+}
 
 
+/* ==========================================================================
+
+  LOADER
+
+========================================================================== */
+
+.nonscroll {
+  overflow: hidden;
+}
+
+#windowloader {
+  overflow: auto;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 999999;
+  display: table;
+  background: #141414;
+}
+
+#windowloader > div {
+  font-family: 'Montserrat';
+  font-size: 2rem;
+  color: #fff;
+  position: relative;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#windowloader > div span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  animation: infinite loading 1s;
+  -ms-animation: infinite loading 1s;
+  -webkit-animation: infinite loading 1s;
+  -moz-animation: infinite loading 1s;
+  transform: rotateZ(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+
+/*LOADER ANIMATION*/
+
+@keyframes loading {
+
+  0% {
+    transform: rotateZ(45deg);
+  }
+
+  100% {
+    transform: rotateZ(135deg);
+  }
+
+}
+
+@-ms-keyframes loading {
+
+  0% {
+    -ms-transform: rotate(45deg);
+  }
+
+  100% {
+    -ms-transform: rotate(135deg);
+  }
+
+}
+
+@-webkit-keyframes loading {
+
+  0% {
+    -webkit-transform: rotate(45deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(135deg);
+  }
+
+}
+
+@-o-keyframes loading {
+
+  0% {
+    -o-transform: rotate(45deg);
+  }
+
+  100% {
+    -o-transform: rotate(135deg);
+  }
+
+}
+
+@-moz-keyframes loading {
+
+  0% {
+    -moz-transform: rotate(45deg);
+  }
+
+  100% {
+    -moz-transform: rotate(135deg);
+  }
+
+}
+
+/*LOAD FINISH*/
+
+#windowloader.loaded {
+  top: -100%;
+}
 

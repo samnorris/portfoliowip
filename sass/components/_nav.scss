@@ -31,6 +31,8 @@ nav a, #mainMenu a:focus {
     text-transform: uppercase;
 
     a {
+      @include safe-rem(padding-left, 9);
+      @include safe-rem(padding-right, 9);
       color: $white;
       font-size: .938rem;
 

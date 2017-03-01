@@ -11,9 +11,8 @@ var mouseX = 0, mouseY = 0;
 
 var SCREEN_WIDTH = window.innerWidth;
 var SCREEN_HEIGHT = window.innerHeight;
-
-var windowHalfX = window.innerWidth / 2;
-var windowHalfY = window.innerHeight / 2;
+/*var windowHalfX = window.innerWidth / 2;
+var windowHalfY = window.innerHeight / 2;*/
 
 function init(){
 
@@ -70,7 +69,9 @@ function init(){
      group4 = new THREE.Mesh( ring, ringMaterial );
      scene.add( group4 );*/
 
-    renderer = new THREE.WebGLRenderer( { antialias: true, alpha: false } );
+    var renderer = new THREE.WebGLRenderer();
+    renderer.setSize( window.innerWidth, window.innerHeight );
+    document.body.appendChild( renderer.domElement );
     renderer.setClearColor( 0x000000, 0);
     var r = 1;
     var g = 0;
@@ -142,8 +143,9 @@ function render() {
     /*  renderer.render( scene, camera );*/
 }
 
+window.addEventListener( 'resize', onWindowResize, false );
 
-function onWindowResize() {
+function onWindowResize(){
 
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
