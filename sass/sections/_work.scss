@@ -81,8 +81,8 @@
 }
 
 #work .item .rollover .centerContainer a {
-  font-size: 1.250rem;
-  font-weight: bold;
+  font-size: 1rem;
+  font-weight: 900;
   letter-spacing: 1px;
   color: $white;
   display: block;
@@ -91,14 +91,12 @@
 
   &.details {
     font-size: 0.95rem;
-    letter-spacing: 0;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+    color: $grey-800;
   }
 
 }
-
-/*#work .item .rollover .centerContainer a.details {
-  font-size: 0.95rem;
-}*/
 
 #work .item .rollover .centerContainer .title {
   font-size: 2.8rem;
@@ -113,7 +111,7 @@
   top: 0 !important;
   left: 0 !important;
   opacity: 1;
-  margin-top: 0px;
+  margin-top: 0;
   transition: all 0.3s 0.4s, opacity 0.2s 0.1s, margin-top 0.3s 0.1s;
   transform: rotateZ(0deg);
   -webkit-transition: all 0.3s 0.4s, opacity 0.2s 0.1s, margin-top 0.3s 0.1s;
@@ -130,6 +128,8 @@
   -webkit-transform: rotateZ(0deg);
 
 }
+
+
 
 /* WORK OPEN ANIMATION */
 

@@ -16,7 +16,6 @@ header h1 {
 
 h2 {
   margin-bottom: 80px;
-  font-size: 4.118rem;
   line-height: 4.118rem;
   text-align: center;
 }
@@ -41,6 +40,10 @@ h5 {
 p {
   font-size: 1.175rem;
   letter-spacing: .02rem;
+
+  span.bold{
+    font-weight: bold;
+  }
 }
 
 .light-text {
@@ -62,6 +65,16 @@ h1, h2 {
       margin-bottom: 35px;
     }
   }
+
+
+h3 {
+  margin-top: 15px;
+  font-weight: 900;
+  font-size: 1.875rem;
+  text-transform: uppercase;
+  line-height: 1.875rem;
+}
+
 
 .one-page h1, .one-page h2, .one-page h3, .one-page h4, .one-page h5, .one-page h6 {
   text-align: center;
