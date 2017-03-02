@@ -39,11 +39,26 @@ h5 {
 
 p {
   font-size: 1.175rem;
+  font-weight: 100;
   letter-spacing: .02rem;
 
   span.bold{
     font-weight: bold;
   }
+
+  span.italic {
+    font-style: italic;
+  }
+
+  a {
+    font-weight: 600;
+    color: $grey-600;
+  }
+
+  a:hover {
+    color: $red-100;
+  }
+
 }
 
 .light-text {

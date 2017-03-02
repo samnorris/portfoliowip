@@ -70,7 +70,6 @@ $(document).ready(function() {
         if ( window.location.hash ) {
             $(window.location.hash).click();
         }
-        $('.social').tooltip();
     });
 
     if(screen && screen.width > 580) {
@@ -236,19 +235,6 @@ $(document).ready(function() {
 			}, 2000);
 			return false;
 		}
-	});
-
-	///////////////////////////////////////////////////////////////////////////
-	// JqEasyTooltip
-	///////////////////////////////////////////////////////////////////////////
-
-
-	$('.customeasytip').jqeasytooltip({
-		theme:"tipthemesquarecustom"
-	});
-
-	$('.customeasytiptint').jqeasytooltip({
-		theme:"tipthemesquarecustomtint"
 	});
 
 

@@ -30,13 +30,16 @@ nav a, #mainMenu a:focus {
     text-transform: uppercase;
 
     a {
-      @include safe-rem(padding-left, 9);
-      @include safe-rem(padding-right, 9);
+      @include safe-rem(padding-left, 11);
+      @include safe-rem(padding-right, 11);
       color: $white;
-      font-size: .938rem;
+      font-size: .900rem;
+      font-weight: 600;
+      letter-spacing: 0.05rem;
 
       &:hover {
         color: $red-100;
+        font-weight: 600;
       }
 
       &:last-child:before {
