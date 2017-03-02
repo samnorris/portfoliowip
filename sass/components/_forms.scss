@@ -1,6 +1,7 @@
+/*
 @import 'base';
 
-/* FORMS */
+/!* FORMS *!/
 #formMsg {
   position: relative;
   display: none;
@@ -64,8 +65,8 @@ textarea:required:invalid, input:required:invalid, input:focus:invalid {
 }
 
 textarea:required:valid, input:required:valid, input:focus:valid {
-  border-color: $green;
-  background: $green-light;
+/!*  border-color: $green;
+  background: $green-light;*!/
   box-shadow: none;
 }
 
@@ -91,3 +92,4 @@ form span[class*="fa-"] {
   padding-top: 22px !important;
   color: $white !important;
 }
+*/

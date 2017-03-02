@@ -107,13 +107,6 @@ $(document).ready(function() {
     });
 
 
-
-
-
-
-
-
-
 	///////////////////////////////////////////////////////////////////////////
 	// Loader
 	///////////////////////////////////////////////////////////////////////////
@@ -129,8 +122,11 @@ $(document).ready(function() {
         $(".isotopeBlog").isotope('layout');
     });
 
+///////////////////////////////////////////////////////////////////////////
+// Contact Form
+///////////////////////////////////////////////////////////////////////////
 
-    // CONTACT FORM
+    // FORM SEND
     $("#contactForm").submit(function (e) {
         $.post('sendEmail.php', $("#contactForm").serialize(), function (data) {
             if (data.status == 200) {
@@ -155,6 +151,28 @@ $(document).ready(function() {
     });
 
 
+	// FORM BUDGET SLIDER
+
+	$("#slider-range-min").slider({
+		range: "min",
+		step: 100,
+		value: 1200,
+		min: 0,
+		max: 10000,
+		slide: function(event, ui) {
+			$("#amount").val("$" + ui.value);
+		},
+		change: function(event, ui) {
+			if (ui.value === 0) {
+				$("#amount").val("To be determined");
+			} else if (ui.value === 10000) {
+				$("#amount").val("$" + "10000 or more");
+			} else {
+				$("#amount").val("$" + $("#slider-range-min").slider("value"));
+			}
+		}
+	});
+	$("#amount").val("$" + $("#slider-range-min").slider("value"));
 
 
 
@@ -237,27 +255,6 @@ $(document).ready(function() {
 		}
 	});
 
-
-	///////////////////////////////////////////////////////////////////////////
-	// Testimonials slider
-	///////////////////////////////////////////////////////////////////////////
-
-
-	var $testimonialslider = $("#testimonialslider");
-
-	if($testimonialslider.length){
-		$testimonialslider.owlCarousel({
-			loop : true,
-			animateIn: 'fadeUpIn',
-			animateOut: 'fadeUpOut',
-			autoplay: true,
-			autoplayTimeout: 4000,
-			margin : 70,
-			navigation : false,
-			items : 1,
-			transitionStyle : "fadeUp"
-		});
-	};
 
 	///////////////////////////////////////////////////////////////////////////
 	// Who we are slider
@@ -565,34 +562,6 @@ $(document).ready(function() {
 
 
 
-
-	///////////////////////////////////////////////////////////////////////////
-	// Team Isotope
-	///////////////////////////////////////////////////////////////////////////
-
-
-	$( function() {
-		// init Isotope
-		var $container = $('#isotopeMembers').isotope({
-			itemSelector: '.member',
-			layoutMode: 'fitRows'
-		});
-		// bind filter button click
-		$('#memberfilter a').on( 'click', function() {
-			var filterValue = $( this ).attr('data-filter-value');
-			$container.isotope({ filter: filterValue });
-			return false;
-		});
-		//change is-checked class on buttons
-		$('#memberfilter a').each( function( i, buttonGroup ){
-			$('#memberfilter a').on( 'click', function() {
-				$('#memberfilter').find('.is-checked').removeClass('is-checked');
-				$(this).addClass('is-checked');
-			});
-		});
-	});
-
-
 	///////////////////////////////////////////////////////////////////////////
 	// PARALLAX
 	///////////////////////////////////////////////////////////////////////////
@@ -752,7 +721,7 @@ function calculatepositionmenu(){
 };
 
 ///////////////////////////////////////////////////////////////////////////
-// Elemet is on screen
+// Element is on screen function
 ///////////////////////////////////////////////////////////////////////////
 
 $.fn.isOnScreen = function(){
@@ -845,4 +814,13 @@ $.fn.transitioncss = function (transitionEnd, cssname, options) {
 
 
 })(jQuery);
+
+
+$(document).ready(function() {
+
+	// -- autosize init --
+
+	autosize($('textarea'));
+
+});
 
