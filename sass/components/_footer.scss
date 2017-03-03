@@ -8,9 +8,7 @@ footer {
 
   p {
     padding-top: 33px;
-
   }
-
 }
 
 .footer {
@@ -53,7 +51,7 @@ footer {
 .footer h2.title {
   margin: 1em 0 2em;
   color: $grey-700;
-  font: 2.575rem "Lato", sans-serif !important;
+  font: 2.275rem "Lato", sans-serif !important;
   font-weight: 900 !important;
   letter-spacing: .08em !important;
   text-align: center;
@@ -83,7 +81,7 @@ footer {
   textarea,
   select {
     width: 100%;
-    margin: 0;
+    margin-bottom: 1.5em;
     padding-bottom: 1.5em;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -134,7 +132,7 @@ footer {
   #slider-range-min {
     outline: 0;
     background: $grey-900;
-    height: 3.6em;
+    height: 3em;
     border: 0;
     border-radius: 0;
     .ui-slider-range {
@@ -143,16 +141,14 @@ footer {
     }
     .ui-slider-handle {
       outline: 0;
-      top: 1.1em;
-      margin-left: -.6em;
-      width: 20px;
-      height: 20px;
-      font-family: FontAwesome !important;
-      content: "\f054" !important;
-      color: $dark-grey;
+      top: 0;
+      margin-left: -.4em;
+      width: 7px;
+      height: 100%;
+      background: none #1a1a1a;
+      border-radius: 0;
       border: 0;
       cursor: pointer;
-      background: none;
     }
   }
   #amount {
