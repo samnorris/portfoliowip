@@ -1,0 +1,74 @@
+<!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    Map section
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<!--<section id="map">
+    <div id="gmap"></div>
+</section>-->
+
+<!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    Footer
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<section id="contact">
+    <footer id="footer-section" class="footer">
+        <h2 class="title appear" data-animation="translatefrombottom">Send me a direct transmission</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <form method="post" action="submit.php">
+                        <ul class="contact-form">
+                            <li>
+                                <div class="col-md-6">
+                                    <input name="name" placeholder="Your Name" required="required" size="8" type="text">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <input name="email" placeholder="Email" required="required" size="8" type="email">
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="col-md-6">
+                                    <input name="telefoon" placeholder="Phone Number" required="required" size="8" type="text">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <input name="bedrijf" placeholder="Company / Agency" required="required" size="8" type="text">
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="col-md-5">
+                                    <label>Budget Estimate </label>
+                                    <div id="slider-range-min"></div>
+                                </div>
+                                <div class="col-md-3">
+                                    <input type="text" id="amount" readonly>
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" id="amount" readonly>
+                                </div>
+                            </li>
+
+                            <li>
+
+                                <div class="col-md-12">
+                                    <textarea class="span12" name="details" placeholder="Message / Project Details" required="required"></textarea>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="col-12">
+                                    <button type="submit">Launch</button>
+                                </div>
+                            </li>
+
+
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>

@@ -2,11 +2,11 @@
   BLOG
 ========================================================================== */
 
-// scss-lint:disable
-
 #blog {
-  background-color: $grey-800;
+  background: $dark-grey url('../img/backgrounds/txture.png') repeat !important;
 }
+
+// scss-lint:disable
 
 #blogfilter a:hover {
   color: $white;
@@ -41,10 +41,10 @@
 }
 
 #blog h2 {
-  margin: 0;
+  margin: 0 auto;
   font-size: 0;
   line-height: 0;
-  text-align: left;
+  text-align: center;
 }
 
 #blog .article {
