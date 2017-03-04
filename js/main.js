@@ -112,6 +112,20 @@ $(document).ready(function() {
 	///////////////////////////////////////////////////////////////////////////
 
 
+	setInterval(function(){
+		$('.glitch-text').toggleClass('glitch-text--v1');
+		setTimeout(function(){
+			$('.glitch-text').toggleClass('glitch-text--v2');
+		},100);
+	},5000);
+
+
+
+	///////////////////////////////////////////////////////////////////////////
+	// Loader
+	///////////////////////////////////////////////////////////////////////////
+
+
     $("#windowloader").transitioncss("transitionEndOpen","loaded",{duration:2000, easing:"cubic-bezier(0.86, 0, 0.07, 1)",delay:1000});
 
     $("#windowloader").off("transitionEndOpen").on( "transitionEndOpen", function(){
