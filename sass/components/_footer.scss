@@ -47,9 +47,10 @@ footer {
 }
 
 .footer h2.title {
-  margin: 1em 0 2em;
+  margin: 0.5em 0 2.5em;
   color: $grey-700;
-  font: 2.275rem "Lato", sans-serif !important;
+  font-size: 3.275rem !important;
+  font-family: "Lato", sans-serif !important;
   font-weight: 900 !important;
   letter-spacing: .08em !important;
   text-align: center;
@@ -106,6 +107,7 @@ footer {
     background: none !important;
   }
   ::-webkit-input-placeholder {
+    font-family: "Lato", sans-serif;
     font-size: 14px;
     color: $grey-600;
     text-transform: uppercase;
@@ -114,10 +116,12 @@ footer {
   }
   label {
     @include safe-rem(padding-bottom, 15);
+    font-family: "Lato", sans-serif;
     font-size: 14px;
     color: $grey-600;
     text-transform: uppercase;
     font-weight: 400;
+    letter-spacing: 0.05rem;
   }
   input:focus,
   select:focus,
