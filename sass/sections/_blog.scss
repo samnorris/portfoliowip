@@ -5,7 +5,7 @@
 ========================================================================== */
 
 #blog {
-  background: $dark-grey url('../img/backgrounds/txture.png') repeat !important;
+  background: $dark-grey url('../img/backgrounds/blackorchid.png') repeat !important;
 }
 
 #blogfilter a:hover {
@@ -52,7 +52,8 @@
 
 #blog h3 {
   @include safe-rem(padding-bottom, 15);
-  font-size: 1.475rem;
+  font-size: 1.175rem;
+  letter-spacing: 0.045rem;
   text-align: left;
   border: none;
   border-bottom: 2px solid $grey-900;
@@ -88,6 +89,7 @@ p.articletext {
 
 .article-bottom {
   div {
+    font-size: 1rem;
     display: inline-block;
     float: left;
   }
@@ -105,12 +107,6 @@ p.articletext {
     color: $grey-700;
   }
 
-}
-
-
-.latest-from-blog-readmore {
-  display: inline-block;
-  float: left;
 }
 
 

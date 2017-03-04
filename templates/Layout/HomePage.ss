@@ -46,15 +46,15 @@
         <!-- Isotope Filter -->
         <nav id="portfolionav" class="isotopeFilter aligncenter appear">
             <a href="#" data-filter-value="*" class="is-checked">ALL</a>
-            <a href="#" data-filter-value=".slider">UI / UX</a>
+            <a href="#" data-filter-value=".ui">UI / UX</a>
             <a href="#" data-filter-value=".graphic">GRAPHIC / ILLUSTRATION</a>
-            <a href="#" data-filter-value=".video">WEB</a>
+            <a href="#" data-filter-value=".other">OTHER</a>
         </nav>
     </div>
 
     <div id="portfoliogrid">
         <!-- Begin item -->
-        <div class="item width2 graphic">
+        <div class="item width2 ui">
             <div class="rollover">
                 <div class="centerContainer hidden-xs">
                     <div>
@@ -67,7 +67,7 @@
             <img src="$ThemeDir/img/work/work-startupbros-1.jpg" alt="Portfolio" />
         </div>
         <!-- End item -->
-        <div class="item manager">
+        <div class="item ui">
             <div class="rollover">
                 <div class="centerContainer hidden-xs">
                     <div>
@@ -78,7 +78,7 @@
             </div>
             <img src="$ThemeDir/img/work/work-lastgrab-1.jpg" alt="Portfolio" />
         </div>
-        <div class="item graphic"  data-url="article.html">
+        <div class="item ui"  data-url="article.html">
             <div class="rollover">
                 <div class="centerContainer hidden-xs">
                     <div>
@@ -89,7 +89,7 @@
             </div>
             <img src="$ThemeDir/img/work/work-melonport-1.jpg" alt="Portfolio" />
         </div>
-        <div class="item developer">
+        <div class="item ui">
             <div class="rollover">
                 <div class="centerContainer hidden-xs">
                     <div>
@@ -100,7 +100,7 @@
             </div>
             <img src="$ThemeDir/img/work/work-gift4u-1.jpg" alt="Portfolio" />
         </div>
-        <div class="item graphic">
+        <div class="item ui">
             <div class="rollover">
                 <div class="centerContainer hidden-xs">
                     <div>
@@ -111,7 +111,7 @@
             </div>
             <img src="$ThemeDir/img/work/work-quokka-1.jpg" alt="Portfolio" />
         </div>
-        <div class="item manager">
+        <div class="item ui">
             <div class="rollover">
                 <div class="centerContainer hidden-xs">
                     <div>
@@ -122,7 +122,7 @@
             </div>
             <img src="$ThemeDir/img/work/work-kandypens-1.jpg" alt="Portfolio" />
         </div>
-        <div class="item graphic">
+        <div class="item ui">
             <div class="rollover">
                 <div class="centerContainer hidden-xs">
                     <div>
@@ -133,7 +133,7 @@
             </div>
             <img src="$ThemeDir/img/work/work-stunning-1.jpg" alt="Portfolio" />
         </div>
-        <div class="item width2 slider">
+        <div class="item width2 graphic">
             <div class="rollover">
                 <div class="centerContainer hidden-xs">
                     <div>
@@ -144,7 +144,7 @@
             </div>
             <img src="$ThemeDir/img/work/work-tron-1.jpg" alt="Portfolio" />
         </div>
-        <div class="item developer" >
+        <div class="item other">
             <div class="rollover">
                 <div class="centerContainer hidden-xs">
                     <div>
@@ -155,7 +155,7 @@
             </div>
             <img src="$ThemeDir/img/work/work-intranet-1.jpg" alt="Portfolio" />
         </div>
-        <div class="item developer" >
+        <div class="item ui" >
             <div class="rollover">
                 <div class="centerContainer hidden-xs">
                     <div>
@@ -166,7 +166,7 @@
             </div>
             <img src="$ThemeDir/img/work/work-positionit-1.jpg" alt="Portfolio" />
         </div>
-        <div class="item width2 video">
+        <div class="item width2 ui">
             <div class="rollover">
                 <div class="centerContainer hidden-xs">
                     <div>
@@ -177,7 +177,7 @@
             </div>
             <img src="$ThemeDir/img/work/work-dapper-1.jpg" alt="Portfolio" />
         </div>
-        <div class="item developer" >
+        <div class="item ui">
             <div class="rollover">
                 <div class="centerContainer hidden-xs">
                     <div>

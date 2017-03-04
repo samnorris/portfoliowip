@@ -11,7 +11,7 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
 <section id="contact">
-    <footer id="footer-section" class="footer">
+    <footer id="footer-section" class="footer paddingstandard">
         <h2 class="title appear" data-animation="translatefrombottom">Send me a direct transmission</h2>
         <div class="container">
             <div class="row">
@@ -73,7 +73,7 @@
             <div class="row powered-by">
                 <div class="col-md-12">
                     <span>Proudly supporting NZ business,<br>
-                    this site is built on and powered by</span>
+                    this website is built on and powered by</span>
                 </div>
                 <div class="col-md-12">
                     <a href="http://www.silverstripe.org"><img src="$ThemeDir/img/silverstripe-logo.png" alt="Silverstripe Open Source CMS" /></a>
