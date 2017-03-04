@@ -238,12 +238,15 @@
 <section id="blog" class="paddingstandard">
     <div class="container">
         <!-- Section Title -->
-        <h2 class="title appear" data-animation="translatefrombottom">Captain's Log</h2>
+        <h2 class="title appear" data-animation="translatefrombottom">From the Log</h2>
         <!-- Latest from Blog -->
         <div class="latest-from-blog">
         <% loop $LatestFromBlog %>
             <% include ArticleTeaser %>
         <% end_loop %>
+        </div>
+        <div class="col-12 blog-link">
+            <button type="submit">Captain's Log</button>
         </div>
     </div>
 </section>
