@@ -16,7 +16,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <form method="post" action="submit.php">
+                    <form method="post" action="$ThemeDir/sendEmail.php" onsubmit="return validate_signup(this)">
                         <ul class="contact-form">
                             <li>
                                 <div class="col-md-6">
@@ -60,7 +60,7 @@
 
                             <li>
                                 <div class="col-md-12">
-                                    <button type="submit">Launch It</button>
+                                    <button type="submit" class="submit">Launch It</button>
                                 </div>
                             </li>
 
@@ -81,7 +81,7 @@
                 </div>
             <div class="row crafted-with">
                 <div class="col-md-12">
-                    <span>...and crafted with a whole lotta</span>
+                    <span>...and hand-crafted with a whole lotta</span>
                 </div>
                 <div class="col-md-12">
                     <div class="heart"></div>

@@ -141,24 +141,25 @@ $(document).ready(function() {
 ///////////////////////////////////////////////////////////////////////////
 
     // FORM SEND
-    $("#contactForm").submit(function (e) {
-        $.post('sendEmail.php', $("#contactForm").serialize(), function (data) {
+    $(".contact-form").submit(function (e) {
+        $.post('sendEmail.php', $(".contact-form").serialize(), function (data) {
+			e.preventDefault();
             if (data.status == 200) {
                 console.log("OK FORM");
-                $( "<div id='formMsg'><span class='fa fa-check-circle'></span><p>Message sent successfuly</p></div>").insertBefore($( "#contactForm" ));
+                $( "<div id='formMsg'><span class='fa fa-check-circle'></span><p>Message sent successfully</p></div>").insertBefore($( ".contact-form" ));
                 $( "#formMsg" ).slideDown( "fast" );
-                $( "#contactForm" ).fadeTo( "fast", 0.2 );
+                $( ".contact-form" ).fadeTo( "fast", 0.2 );
                 var timer = setInterval(function () {
-                    console.log("REINICIA FORM")
+                    console.log("OKAY")
                     clearInterval(timer);
                     $("#formMsg" ).slideUp( "fast" );
-                    $( "#contactForm" ).fadeTo( "fast", 1 );
+                    $( ".contact-form" ).fadeTo( "fast", 1 );
                 }, 7000);
             } else {
-                console.log("KO FORM")
-                $( "<div id='formMsg'><span class='fa fa-exclamation-triangle'></span><p>There was an error. Please try again later.</p></div>").insertBefore($( "#contactForm" ));
+                console.log("OKAY")
+                $( "<div id='formMsg'><span class='fa fa-exclamation-triangle'></span><p>There was an error. Please try again later.</p></div>").insertBefore($( ".contact-form" ));
                 $( "#formMsg" ).slideDown( "fast" );
-                $( "#contactForm" ).fadeTo( "fast", 0.2 );
+                $( ".contact-form" ).fadeTo( "fast", 0.2 );
             }
         }, 'json');
         return false;

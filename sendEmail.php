@@ -1,5 +1,5 @@
 <?php
-$recipient = "info@j3dlab.com";
+$recipient = "theperfectpixels@gmail.com";
 
 
 $messages = Array();
