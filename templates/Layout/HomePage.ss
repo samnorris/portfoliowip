@@ -238,7 +238,7 @@
 <section id="blog" class="paddingstandard">
     <div class="container">
         <!-- Section Title -->
-        <h2 class="title appear" data-animation="translatefrombottom">From the Log</h2>
+        <h2 class="title appear" data-animation="translatefrombottom">From the <span>(B)</span>log</h2>
         <!-- Latest from Blog -->
         <div class="latest-from-blog">
         <% loop $LatestFromBlog %>

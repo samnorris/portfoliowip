@@ -59,14 +59,37 @@
                             </li>
 
                             <li>
-                                <div class="col-12">
-                                    <button type="submit">Launch</button>
+                                <div class="col-md-12">
+                                    <button type="submit">Launch It</button>
                                 </div>
                             </li>
 
 
                         </ul>
                     </form>
+                </div>
+            </div>
+
+            <div class="row powered-by">
+                <div class="col-md-12">
+                    <span>Proudly supporting NZ business,<br>
+                    this site is built on and powered by</span>
+                </div>
+                <div class="col-md-12">
+                    <a href="http://www.silverstripe.org"><img src="$ThemeDir/img/silverstripe-logo.png" alt="Silverstripe Open Source CMS" /></a>
+                    </div>
+                </div>
+            <div class="row crafted-with">
+                <div class="col-md-12">
+                    <span>...and crafted with a whole lotta</span>
+                </div>
+                <div class="col-md-12">
+                    <div class="heart"></div>
+                </div>
+            </div>
+            <div class="row copyright">
+                <div class="col-md-12">
+                    <span>Copyright &copy; 2017 At Night</span>
                 </div>
             </div>
         </div>
