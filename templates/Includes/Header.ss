@@ -29,7 +29,7 @@ Header
     <a href="#contact">Contact</a>
     <hr class="music-top"/>
     <div class="music textcenter">
-        <span><i class="fa fa-headphones"></i><br>Jamming to</span><a href="#">"Positivity"</a>by <span class="artist">Wun Two</span>
+        <span><i class="fa fa-headphones"></i><br>Jamming to</span><a href="$Url">$ListeningTo</a>by <span class="artist">$Artist</span>
         </ul>
     </div>
 </div>
@@ -52,7 +52,7 @@ Header
                 <div class="hidden-xs col-md-12">
                    <div class="header-caption-1">
                     <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                         width="100%" height="110px" viewBox="0 0 375 110">
+                         width="100%" height="110px" viewBox="0 0 380 110">
 
                         <defs>
 
