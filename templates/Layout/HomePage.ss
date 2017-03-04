@@ -239,9 +239,11 @@
     <div class="container">
         <!-- Section Title -->
         <h2 class="title appear" data-animation="translatefrombottom">Captain's Log</h2>
-        <!-- Section Text one -->
+        <!-- Latest from Blog -->
+        <div class="latest-from-blog">
         <% loop $LatestFromBlog %>
             <% include ArticleTeaser %>
         <% end_loop %>
+        </div>
     </div>
 </section>

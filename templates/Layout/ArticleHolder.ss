@@ -1,5 +1,5 @@
 <div>
-    <article>
+    <article class="article-post">
         <h1>$Title</h1>
         $Content
         <div class="content">$Content</div>
