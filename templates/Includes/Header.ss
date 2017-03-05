@@ -51,8 +51,8 @@ Header
 
                 <div class="hidden-xs col-md-12">
                    <div class="header-caption-1">
-                    <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                         width="100%" height="110px" viewBox="0 0 300 110">
+                    <svg version="1.1" id="caption-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                         width="100%" height="110px" viewBox="0 0 255 110">
 
                         <defs>
 

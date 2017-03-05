@@ -16,7 +16,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <form method="post" action="$ThemeDir/sendEmail.php" onsubmit="return validate_signup(this)">
+                    <form method="post" onsubmit="return validate_signup(this)">
                         <ul class="contact-form">
                             <li>
                                 <div class="col-md-6">

@@ -141,30 +141,32 @@ $(document).ready(function() {
 ///////////////////////////////////////////////////////////////////////////
 
     // FORM SEND
-    $(".contact-form").submit(function (e) {
-        $.post('sendEmail.php', $(".contact-form").serialize(), function (data) {
-			e.preventDefault();
-            if (data.status == 200) {
-                console.log("OK FORM");
-                $( "<div id='formMsg'><span class='fa fa-check-circle'></span><p>Message sent successfully</p></div>").insertBefore($( ".contact-form" ));
-                $( "#formMsg" ).slideDown( "fast" );
-                $( ".contact-form" ).fadeTo( "fast", 0.2 );
-                var timer = setInterval(function () {
-                    console.log("OKAY")
-                    clearInterval(timer);
-                    $("#formMsg" ).slideUp( "fast" );
-                    $( ".contact-form" ).fadeTo( "fast", 1 );
-                }, 7000);
-            } else {
-                console.log("OKAY")
-                $( "<div id='formMsg'><span class='fa fa-exclamation-triangle'></span><p>There was an error. Please try again later.</p></div>").insertBefore($( ".contact-form" ));
-                $( "#formMsg" ).slideDown( "fast" );
-                $( ".contact-form" ).fadeTo( "fast", 0.2 );
-            }
-        }, 'json');
-        return false;
-    });
+	function validate_signup(frm) {
+		$(".contact-form").submit(function (e) {
+			$.post('../sendEmail.php', $(".contact-form").serialize(), function (data) {
+				e.preventDefault();
+				if (data.status == 200) {
+					console.log("OK FORM");
+					$("<div id='formMsg'><span class='fa fa-check-circle'></span><p>Message sent successfully</p></div>").insertBefore($(".contact-form"));
+					$("#formMsg").slideDown("fast");
+					$(".contact-form").fadeTo("fast", 0.2);
+					var timer = setInterval(function () {
+						console.log("OKAY")
+						clearInterval(timer);
+						$("#formMsg").slideUp("fast");
+						$(".contact-form").fadeTo("fast", 1);
+					}, 7000);
+				} else {
+					console.log("OKAY")
+					$("<div id='formMsg'><span class='fa fa-exclamation-triangle'></span><p>There was an error. Please try again later.</p></div>").insertBefore($(".contact-form"));
+					$("#formMsg").slideDown("fast");
+					$(".contact-form").fadeTo("fast", 0.2);
+				}
 
+			}, 'json');
+			return false;
+		});
+	}
 
 	// FORM BUDGET SLIDER
 

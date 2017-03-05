@@ -135,7 +135,7 @@ header .fa-angle-down:hover {
 /* Caption 1 */
 
 .header-caption-1 {
-  @include safe-rem(padding-top, 325);
+  @include safe-rem(padding-top, 430);
   color: $white;
   text-align: center;
   display: flex;
@@ -156,13 +156,12 @@ text.svg {
   filter: url(#filter);
   fill: white;
   font-family: 'Lato', sans-serif;
-  font-size: 55px;
+  font-size: 3.625rem;
   font-weight: 800;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  letter-spacing: 0.45rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -170,12 +169,11 @@ text.svg {
 /* Caption 2 */
 
 .glitch {
-  @include safe-rem(margin-top, 15);
   position: relative;
   color: $white;
   mix-blend-mode: lighten;
   font-family: 'Lato', sans-serif;
-  font-size: 45px;
+  font-size: 3.4rem;
   font-weight: 100;
   text-align: center;
   display: block;
@@ -213,7 +211,7 @@ text.svg {
   }
   &:after,
   &:before{
-    font-size: 45px;
+    font-size: 3.3125rem;
     content: attr(data-text);
     position: absolute;
     top: 0;

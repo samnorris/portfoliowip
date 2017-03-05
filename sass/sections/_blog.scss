@@ -103,6 +103,7 @@ p.articletext {
   }
 
   span.date {
+    @include safe-rem(margin, 0 6 0 6);
     font-weight: bold;
     color: $grey-700;
   }
