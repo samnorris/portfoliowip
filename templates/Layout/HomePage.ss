@@ -246,7 +246,7 @@
         <% end_loop %>
         </div>
         <div class="col-12 blog-link">
-            <button type="submit">Captain's Log</button>
+            <button class="large">Captain's Log</button>
         </div>
     </div>
 </section>

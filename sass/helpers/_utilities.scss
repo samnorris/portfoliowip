@@ -18,18 +18,30 @@ footer,
 }
 
 /* BUTTONS */
-.button {
-  display: inline-block;
-  padding: 17px 20px;
-  color: $white;
-  font-size: 1.125rem;
-  text-decoration: none !important;
+button.large {
+  display: block;
+  margin: 0 auto;
+  color: lightgrey;
+  background: rgba(34, 34, 34, 0.0);
+  border: 2px solid #db4d57;
+  height: 74px;
+  width: 200px;
+  font-weight: 600 !important;
+  font-size: 16px;
   text-transform: uppercase;
-  transition: all .3s;
+  letter-spacing: 1px;
+  transition: ease-in-out 0.25s;
+  span {
+    transition: ease-in-out 0.25s;
+  }
 }
-
-a.button {
-  font-weight: normal !important;
+button:hover {
+  background: #db4d57;
+  color: lightgrey;
+  span {
+    padding-left: 10px;
+    color: white;
+  }
 }
 
 .button:hover {
