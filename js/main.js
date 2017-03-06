@@ -692,7 +692,7 @@ function calculatepositionmenu(){
 			$('#menu-container').removeClass('sticky');
 		}
 	}
-};
+}
 
 ///////////////////////////////////////////////////////////////////////////
 // Element is on screen function

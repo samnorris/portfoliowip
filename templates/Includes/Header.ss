@@ -29,7 +29,8 @@ Header
     <a href="#" data-scrollto="#contact">Contact</a>
     <hr class="music-top"/>
     <div class="music textcenter">
-        <span><i class="fa fa-headphones"></i><br>Jamming to</span><a href="$Url">$ListeningTo</a>by <span class="artist">$Artist</span>
+        <span><i class="fa fa-headphones"></i><br>Jamming to</span>
+        <a href="$Url" class="sc-player"></a>by <span class="artist">$Artist</span>
         </ul>
     </div>
 </div>

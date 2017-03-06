@@ -56,7 +56,7 @@
 <!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 Script Includes
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-<script src='$ThemeDir/js/libs/jquery-2.1.3.min.js' type="text/javascript"></script>
+<script src='$ThemeDir/js/libs/jquery-1.11.0.min.js' type="text/javascript"></script>
 <script src='$ThemeDir/js/libs/jquery-ui.min.js' type="text/javascript"></script>
 <script src="$ThemeDir/js/main.js" type="text/javascript"></script>
 <script src='$ThemeDir/js/libs/jquery.fittext.js' type="text/javascript"></script>
@@ -68,6 +68,8 @@ Script Includes
 <script src="$ThemeDir/js/libs/jquery.appear.js" type="text/javascript"></script>
 <script src="$ThemeDir/js/libs/jquery.parallax-1.1.3.js" type="text/javascript"></script>
 <script src="$ThemeDir/js/libs/isotope.pkgd.min.js" type="text/javascript"></script>
+<script src="$ThemeDir/js/sc-player.js" type="text/javascript"></script>
+<script src="$ThemeDir/js/soundcloud.player.api.js" type="text/javascript"></script>
 
 <script type="text/javascript">
     function downloadJSAtOnload() {
