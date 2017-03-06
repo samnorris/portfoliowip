@@ -123,44 +123,9 @@ button:hover {
 
 }
 
-
 .btn.btn-outline:hover,
 .btn.btn-outline:focus {
   color: $black;
-}
-
-
-/* BACKGROUNDS */
-
-.tintBackground,
-.darkBackground, {
-  position: relative;
-}
-
-.darkbackground:before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  content: '';
-  background-position: center;
-  background-size: cover;
-  opacity: .1;
-  -moz-opacity: .1;
-}
-
-.tintBackground:before,
-.darkBackground:before {
-  opacity: .1;
-}
-
-.custombackgroundoverlay {
-  position: relative;
-  z-index: 1;
 }
 
 

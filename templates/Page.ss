@@ -7,7 +7,7 @@
 <!--[if IE 8 ]><html lang="$ContentLocale" class="ie ie8"><![endif]-->
 <head>
 	<% base_tag %>
-	<title><% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> &raquo; $SiteConfig.Title</title>
+	<title>$SiteConfig.Title</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -45,7 +45,7 @@
     <script src="$ThemeDir/js/libs/modernizr.custom.02583.js" type="text/javascript"></script>
 	<link rel="shortcut icon" href="$ThemeDir/img/favicon.ico" />
 </head>
-<body class="$ClassName<% if not $Menu(2) %> no-sidebar<% end_if %>" <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>
+<body class="onePage $ClassName<% if not $Menu(2) %> no-sidebar<% end_if %>" <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>
 <% include Header %>
 <% include Navigation %>
 	<div>

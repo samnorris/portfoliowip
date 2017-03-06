@@ -35,11 +35,15 @@ nav a, #mainMenu a:focus {
       color: $white;
       font-size: .900rem;
       font-weight: 400;
-      letter-spacing: 0.05rem;
+      letter-spacing: 0.05rem !important ;
 
       &:hover {
         color: $red-100;
-        letter-spacing: 0.05rem;
+        letter-spacing: 0.05rem !important ;
+      }
+
+      &:visited, :active, :focus {
+        letter-spacing: 0.05rem !important ;
       }
 
       &:last-child:before {
