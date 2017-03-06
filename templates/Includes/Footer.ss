@@ -60,7 +60,7 @@
 
                             <li>
                                 <div class="col-md-12">
-                                    <button type="submit" class=" large submit">Launch It</button>
+                                    <!--<button type="submit" class=" large submit">Launch It</button>-->
                                 </div>
                             </li>
 
@@ -76,7 +76,7 @@
                     this website is built on and powered by</span>
                 </div>
                 <div class="col-md-12">
-                    <a href="http://www.silverstripe.org"><img src="$ThemeDir/img/silverstripe-logo.png" alt="Silverstripe Open Source CMS" /></a>
+                    <a href="http://www.silverstripe.org"><img src="themes/portfolio/img/silverstripe-logo.png" alt="Silverstripe Open Source CMS" /></a>
                     </div>
                 </div>
             <div class="row crafted-with">

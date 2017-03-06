@@ -71,8 +71,8 @@
             <div class="rollover">
                 <div class="centerContainer hidden-xs">
                     <div>
-                        <a class="title" href="work-detail-2.html">LASTGRAB UI DESIGN</a>
-                        <a class="details" href="work-detail-2.html">VIEW DETAILS</a>
+                        <a class="title" href="$ThemeDir/work-detail-2.html">LASTGRAB UI DESIGN</a>
+                        <a class="details" href="$ThemeDir/work-detail-2.html">VIEW DETAILS</a>
                     </div>
                 </div>
             </div>
@@ -82,8 +82,8 @@
             <div class="rollover">
                 <div class="centerContainer hidden-xs">
                     <div>
-                        <a class="title" href="work-detail-3.html">MELONPORT BLOCKCHAIN SOFTWARE</a>
-                        <a class="details" href="work-detail-3.html">VIEW DETAILS</a>
+                        <a class="title" href="$ThemeDir/work-detail-3.html">MELONPORT BLOCKCHAIN SOFTWARE</a>
+                        <a class="details" href="$ThemeDir/work-detail-3.html">VIEW DETAILS</a>
                     </div>
                 </div>
             </div>
@@ -93,8 +93,8 @@
             <div class="rollover">
                 <div class="centerContainer hidden-xs">
                     <div>
-                        <a class="title" href="work-detail-4.html">A GIFT 4 U</a>
-                        <a class="details" href="work-detail-4.html">VIEW DETAILS</a>
+                        <a class="title" href="$ThemeDir/work-detail-4.html">A GIFT 4 U</a>
+                        <a class="details" href="$ThemeDir/work-detail-4.html">VIEW DETAILS</a>
                     </div>
                 </div>
             </div>
@@ -104,8 +104,8 @@
             <div class="rollover">
                 <div class="centerContainer hidden-xs">
                     <div>
-                        <a class="title" href="work-detail-5.html">QUOKKA COFFEE</a>
-                        <a class="details" href="work-detail-5.html">VIEW DETAILS</a>
+                        <a class="title" href="$ThemeDir/work-detail-5.html">QUOKKA COFFEE</a>
+                        <a class="details" href="$ThemeDir/work-detail-5.html">VIEW DETAILS</a>
                     </div>
                 </div>
             </div>
@@ -115,8 +115,8 @@
             <div class="rollover">
                 <div class="centerContainer hidden-xs">
                     <div>
-                        <a class="title" href="work-detail-6.html">KANDY PENS UI DESIGN</a>
-                        <a class="details" href="work-detail-6.html">VIEW DETAILS</a>
+                        <a class="title" href="$ThemeDir/work-detail-6.html">KANDY PENS UI DESIGN</a>
+                        <a class="details" href="$ThemeDir/work-detail-6.html">VIEW DETAILS</a>
                     </div>
                 </div>
             </div>
@@ -126,8 +126,8 @@
             <div class="rollover">
                 <div class="centerContainer hidden-xs">
                     <div>
-                        <a class="title" href="work-detail-7.html">STUNNING CELEBRATIONS UI DESIGN</a>
-                        <a class="details" href="work-detail-7.html">VIEW DETAILS</a>
+                        <a class="title" href="$ThemeDir/work-detail-7.html">STUNNING CELEBRATIONS UI DESIGN</a>
+                        <a class="details" href="$ThemeDir/work-detail-7.html">VIEW DETAILS</a>
                     </div>
                 </div>
             </div>
@@ -137,8 +137,8 @@
             <div class="rollover">
                 <div class="centerContainer hidden-xs">
                     <div>
-                        <a class="title" href="work-detail-8.html">INSIDE THE TRONSPHERE</a>
-                        <a class="details" href="work-detail-8.html">VIEW DETAILS</a>
+                        <a class="title" href="$ThemeDir/work-detail-8.html">INSIDE THE TRONSPHERE</a>
+                        <a class="details" href="$ThemeDir/work-detail-8.html">VIEW DETAILS</a>
                     </div>
                 </div>
             </div>
@@ -148,8 +148,8 @@
             <div class="rollover">
                 <div class="centerContainer hidden-xs">
                     <div>
-                        <a class="title" href="work-detail-9.html">MoE INTRANET UI / UX CONCEPTS</a>
-                        <a class="details" href="work-detail-9.html">VIEW DETAILS</a>
+                        <a class="title" href="$ThemeDir/work-detail-9.html">MoE INTRANET UI / UX CONCEPTS</a>
+                        <a class="details" href="$ThemeDir/work-detail-9.html">VIEW DETAILS</a>
                     </div>
                 </div>
             </div>
@@ -159,8 +159,8 @@
             <div class="rollover">
                 <div class="centerContainer hidden-xs">
                     <div>
-                        <a class="title" href="work-detail-10.html">POSITIONIT UI DESIGN</a>
-                        <a class="details" href="work-detail-10.html">VIEW DETAILS</a>
+                        <a class="title" href="$ThemeDir/work-detail-10.html">POSITIONIT UI DESIGN</a>
+                        <a class="details" href="$ThemeDir/work-detail-10.html">VIEW DETAILS</a>
                     </div>
                 </div>
             </div>
@@ -170,8 +170,8 @@
             <div class="rollover">
                 <div class="centerContainer hidden-xs">
                     <div>
-                        <a class="title" href="work-detail-11.html">DAPPER DOG BOX UI DESIGN</a>
-                        <a class="details" href="work-detail-11.html">VIEW DETAILS</a>
+                        <a class="title" href="$ThemeDir/work-detail-11.html">DAPPER DOG BOX UI DESIGN</a>
+                        <a class="details" href="$ThemeDir/work-detail-11.html">VIEW DETAILS</a>
                     </div>
                 </div>
             </div>
@@ -181,8 +181,8 @@
             <div class="rollover">
                 <div class="centerContainer hidden-xs">
                     <div>
-                        <a class="title" href="work-detail-12.html">GARY EDWIN GOLF UI DESIGN</a>
-                        <a class="details" href="work-detail-12.html">VIEW DETAILS</a>
+                        <a class="title" href="$ThemeDir/work-detail-12.html">GARY EDWIN GOLF UI DESIGN</a>
+                        <a class="details" href="$ThemeDir/work-detail-12.html">VIEW DETAILS</a>
                     </div>
                 </div>
             </div>

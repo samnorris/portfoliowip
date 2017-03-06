@@ -398,12 +398,14 @@ $(document).ready(function() {
 					$loader.transitioncss("transitionEndOpen","scale100",{duration:800, easing:"cubic-bezier(0.86, 0, 0.07, 1)"});
 				}
 
+				$("#workLoader .front img").css({"display": "none	"});
 
 				$loader.css({"top": getscrollTop()})
 				$("#workLoader .iconloader").css({"display":"none"});
 
 			};
 		};
+
 
 		///////////////////////////////////////////////////////////////////////////
 		// Close Portfolio
@@ -692,7 +694,7 @@ function calculatepositionmenu(){
 			$('#menu-container').removeClass('sticky');
 		}
 	}
-}
+};
 
 ///////////////////////////////////////////////////////////////////////////
 // Element is on screen function

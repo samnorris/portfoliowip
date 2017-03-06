@@ -230,11 +230,13 @@
   text-align: center;
 }
 
+
 #workLoader .front img {
   width: 100%;
   opacity: 0.2;
-
+  // this messes up the popups for some reason?
 }
+
 
 #workLoader .back {
   background-color: rgba(20, 20, 20, .95);
