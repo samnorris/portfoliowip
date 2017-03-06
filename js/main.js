@@ -227,9 +227,6 @@ $(document).ready(function() {
 	// Scroll Functions
 	///////////////////////////////////////////////////////////////////////////
 
-	var video=false;
-	var animationactive=false;
-
 	if($(window).scrollTop()!=0){
 		calculatepositionmenu();
 	};
@@ -238,15 +235,6 @@ $(document).ready(function() {
 
 		//Top menu
 		calculatepositionmenu();
-
-		//Procces animation
-		if($("#startContainer").length){
-			if(($("#startContainer").isOnScreen()) && (animationactive==false)){
-				animationactive = true;
-				animationprocess();
-
-			};
-		};
 
 		//select menu section
 		$("body section").each(function (index) {
@@ -267,7 +255,7 @@ $(document).ready(function() {
 		if($(this).data("scrollto")){
 			$('html, body').animate({
 				scrollTop: $($(this).data("scrollto")).offset().top
-			}, 2000);
+			}, 1200);
 			return false;
 		}
 	});

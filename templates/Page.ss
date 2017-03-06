@@ -17,13 +17,14 @@
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" rel="stylesheet" type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" type='text/css'>
 
     <!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
         CSS Files
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
+    <link rel='stylesheet prefetch' href='http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css'>
     <link href="$ThemeDir/css/bootstrap.min.css" rel="stylesheet">
     <link href="$ThemeDir/css/font-awesome.min.css" type="text/css" rel="stylesheet"/>
     <link href="$ThemeDir/css/owl.carousel.css" rel="stylesheet"/>
@@ -31,7 +32,6 @@
     <link href="$ThemeDir/css/animate.css" rel="stylesheet"/>
     <link href="$ThemeDir/css/owl.custom.transitions.css" rel="stylesheet"/>
     <link href="$ThemeDir/css/jquery.appear.css" rel="stylesheet"/>
-    <link rel='stylesheet prefetch' href='http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css'>
     <link href="$ThemeDir/css/normalize.css" rel="stylesheet">
     <link href="$ThemeDir/css/style.css" rel="stylesheet">
 
@@ -54,34 +54,19 @@
 <% include Footer %>
 
 <!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-Scripts Includes
+Script Includes
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- Header animation scripts -->
-<!--<script src='$ThemeDir/js/libs/three.min.js'></script>-->
-<!--<script src="$ThemeDir/js/fss.js"></script>-->
-<!--<script src="$ThemeDir/js/shader.js" type="text/javascript"></script>-->
-<!--<script src='$ThemeDir/js/webgl/CopyShader.js'></script>-->
-<!--<script src='$ThemeDir/js/webgl/DotScreenShader.js'></script>-->
-<!--<script src='$ThemeDir/js/webgl/RGBShiftShader.js'></script>-->
-<!--<script src='$ThemeDir/js/webgl/DigitalGlitch.js'></script>-->
-<!--<script src='$ThemeDir/js/webgl/EffectComposer.js'></script>-->
-<!--<script src='$ThemeDir/js/webgl/RenderPass.js'></script>-->
-<!--<script src='$ThemeDir/js/webgl/MaskPass.js'></script>-->
-<!--<script src='$ThemeDir/js/webgl/ShaderPass.js'></script>-->
-<!--<script src='$ThemeDir/js/webgl/GlitchPass.js'></script>-->
-<!-- End Header animation scripts -->
-<script src='$ThemeDir/js/libs/jquery-2.1.3.min.js'></script>
-<script src='$ThemeDir/js/libs/jquery.fittext.js'></script>
-<script src='$ThemeDir/js/libs/picturefill.min.js'></script>
-<script src='$ThemeDir/js/libs/jquery-ui.min.js'></script>
-<script src='$ThemeDir/js/libs/autosize.min.js'></script>
+<script src='$ThemeDir/js/libs/jquery-2.1.3.min.js' type="text/javascript"></script>
+<script src='$ThemeDir/js/libs/jquery-ui.min.js' type="text/javascript"></script>
+<script src="$ThemeDir/js/main.js" type="text/javascript"></script>
+<script src='$ThemeDir/js/libs/jquery.fittext.js' type="text/javascript"></script>
+<script src='$ThemeDir/js/libs/picturefill.min.js type="text/javascript"'></script>
+<script src='$ThemeDir/js/libs/autosize.min.js' type="text/javascript"></script>
 <script src="$ThemeDir/js/libs/modernizr.custom.02583.js" type="text/javascript"></script>
 <script src="$ThemeDir/js/libs/owl.carousel.js" type="text/javascript"></script>
 <script src="$ThemeDir/js/device.min.js" type="text/javascript"></script>
 <script src="$ThemeDir/js/libs/jquery.appear.js" type="text/javascript"></script>
 <script src="$ThemeDir/js/libs/jquery.parallax-1.1.3.js" type="text/javascript"></script>
-<script src="$ThemeDir/js/main.js" type="text/javascript"></script>
-<script src="$ThemeDir/js/glitch.js" type="text/javascript"></script>
 <script src="$ThemeDir/js/libs/isotope.pkgd.min.js" type="text/javascript"></script>
 
 <script type="text/javascript">

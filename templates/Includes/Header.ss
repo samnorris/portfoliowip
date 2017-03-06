@@ -21,12 +21,12 @@ Header
 <a href="#cl" class="close hidden"><div class="close-icon"></div></a>
 
 <div class="mobile-menu">
-    <a href="#about" data-scrollto="#about">The Man</a>
-    <a href="#services" data-scrollto="#services">The Plan</a>
-    <a href="#work">My Work</a>
-    <a href="#process">My Process</a>
-    <a href="#blog">Blog</a>
-    <a href="#contact">Contact</a>
+    <a href="#" data-scrollto="#about">The Man</a>
+    <a href="#" data-scrollto="#services">The Plan</a>
+    <a href="#" data-scrollto="#work">My Work</a>
+    <a href="#" data-scrollto="#process">My Process</a>
+    <a href="#" data-scrollto="#blog">Blog</a>
+    <a href="#" data-scrollto="#contact">Contact</a>
     <hr class="music-top"/>
     <div class="music textcenter">
         <span><i class="fa fa-headphones"></i><br>Jamming to</span><a href="$Url">$ListeningTo</a>by <span class="artist">$Artist</span>
@@ -39,14 +39,9 @@ Header
         <!-- Begin Header animation -->
         <div class="stars"></div>
         <div class="twinkling"></div>
-        <!--<div class="glitch"></div>-->
         <!-- End Header animation -->
         <div class="container">
-            <!-- Logo-->
-            <!--             <div class="logo"><img alt="" src="img/logo.png"></div>-->
-            <!-- Intro text-->
-            <!--            <h1>At night we dream of chaos</h1>-->
-            <!-- Intro-->
+
             <div class="row">
 
                 <div class="hidden-xs col-md-12">
@@ -55,7 +50,6 @@ Header
                          width="100%" height="110px" viewBox="0 0 255 110">
 
                         <defs>
-
                             <filter id="filter">
                                 <feFlood flood-color="black" result="black" />
                                 <feFlood flood-color="red" result="flood1" />
@@ -155,9 +149,5 @@ Header
            </div>
         </div>
     </div>
-    <!--                  <h2 id="shake">CRAFT experiences that <strong>defy</strong> expectations<br/>
-                                     CREATE from the the twin <strong>virtues</strong> of inspiration and innovation<br/>
-                                     BEAUTY in simplicity and complexity <strong>combined</strong> to create harmonious synthesis in all things digital
-                      </h2>-->
 
 </header>
