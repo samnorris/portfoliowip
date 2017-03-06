@@ -60,7 +60,7 @@ Script Includes
 <script src='$ThemeDir/js/libs/jquery-ui.min.js' type="text/javascript"></script>
 <script src="$ThemeDir/js/main.js" type="text/javascript"></script>
 <script src='$ThemeDir/js/libs/jquery.fittext.js' type="text/javascript"></script>
-<script src='$ThemeDir/js/libs/picturefill.min.js type="text/javascript"'></script>
+<script src='$ThemeDir/js/libs/picturefill.min.js' type="text/javascript"></script>
 <script src='$ThemeDir/js/libs/autosize.min.js' type="text/javascript"></script>
 <script src="$ThemeDir/js/libs/modernizr.custom.02583.js" type="text/javascript"></script>
 <script src="$ThemeDir/js/libs/owl.carousel.js" type="text/javascript"></script>

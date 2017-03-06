@@ -223,62 +223,6 @@ $(document).ready(function() {
 
 
 
-	///////////////////////////////////////////////////////////////////////////
-	// Scroll Functions
-	///////////////////////////////////////////////////////////////////////////
-
-	if($(window).scrollTop()!=0){
-		calculatepositionmenu();
-	};
-
-	$(window).on('scroll',function(){
-
-		//Top menu
-		calculatepositionmenu();
-
-		//select menu section
-		$("body section").each(function (index) {
-			if($(this).isOnScreen()){
-				$('#mainMenu a').removeClass('select');
-				$('#mainMenu a[href="#'+$(this).attr('id')+'"]').addClass('select');
-			}
-		});
-	});
-
-
-	///////////////////////////////////////////////////////////////////////////
-	// Main menu scroll to
-	///////////////////////////////////////////////////////////////////////////
-
-	$("#mainMenu a,#mainheader a").on('click', function() {
-		$("#menu-container").removeClass('open');
-		if($(this).data("scrollto")){
-			$('html, body').animate({
-				scrollTop: $($(this).data("scrollto")).offset().top
-			}, 1200);
-			return false;
-		}
-	});
-
-
-	///////////////////////////////////////////////////////////////////////////
-	// Who we are slider
-	///////////////////////////////////////////////////////////////////////////
-
-	var $sliderwe = $("#sliderwe");
-
-	if($sliderwe.length){
-		$sliderwe .owlCarousel({
-			loop : true,
-    		animateIn: 'backSlideIn',
-			animateOut: 'backSlideOut',
-			autoplay: true,
-			autoplayTimeout: 4000,
-			margin : 20,
-			nav: false,
-			items : 1
-		});
-	};
 
 	///////////////////////////////////////////////////////////////////////////
 	// Services slider
@@ -692,22 +636,47 @@ $(document).ready(function() {
 });
 
 
+
 ///////////////////////////////////////////////////////////////////////////
-// Google analytics
+// Scroll Functions
 ///////////////////////////////////////////////////////////////////////////
 
-var MyGoogleAnalyticsID = 'UA-00000000-0';
-var MyWebURL = 'kubo.j3dlab.com';
+	if($(window).scrollTop()!=0){
+		calculatepositionmenu();
+	};
+
+	$(window).on('scroll',function(){
+
+		//Top menu
+		calculatepositionmenu();
+
+		//select menu section
+		$("body section").each(function (index) {
+			if($(this).isOnScreen()){
+				$('#mainMenu a').removeClass('select');
+				$('#mainMenu a[href="#'+$(this).attr('id')+'"]').addClass('select');
+			}
+		});
+	});
 
 
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+///////////////////////////////////////////////////////////////////////////
+// Main menu scroll to
+///////////////////////////////////////////////////////////////////////////
 
-ga('create', MyGoogleAnalyticsID, MyWebURL);
-ga('send', 'pageview');
-
+	$("#mainMenu a,#mainheader a").click(function() {
+		$("#menu-container").removeClass('open');
+		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+			if (target.length) {
+				$('html, body').animate({
+					scrollTop: target.offset().top
+				}, 1000);
+				return false;
+			}
+		}
+	});
 
 
 ///////////////////////////////////////////////////////////////////////////
