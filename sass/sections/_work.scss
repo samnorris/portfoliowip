@@ -24,7 +24,6 @@
 
 #portfoliogrid .item.width2 {
   width: 40%;
-
 }
 
 #portfoliogrid img {
@@ -179,35 +178,35 @@
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
 
-}
+  .iconloader {
+    position: relative;
+    z-index: 20;
+    display: block;
+    margin: 0 auto;
+    width: 30px;
+    height: 100%;
+    width: 100%;
 
-#workLoader .iconloader {
-  position: relative;
-  z-index: 20;
-  display: block;
-  margin: 0 auto;
-  width: 30px;
-  height: 100%;
-  width: 100%;
-
-}
-
-#workLoader .iconloader:after {
-  content: "";
-  width: 50%;
-  height: 50%;
-  position: absolute;
-  top: 25%;
-  left: 25%;
-  background-color: rgba(196, 71, 65, 0.75);
-  border: 2px solid rgba(255, 255, 255, 0.55);
-  transform: rotateZ(45deg);
-  animation: turn 4s cubic-bezier(0.86, 0, 0.07, 1) infinite;
-  -webkit-transform: rotateZ(45deg);
-  -webkit-animation: turn 4s cubic-bezier(0.86, 0, 0.07, 1) infinite;
-  -ms-transform: rotate(45deg);
+    &:after {
+      content: "";
+      width: 50%;
+      height: 50%;
+      position: absolute;
+      top: 25%;
+      left: 25%;
+      background-color: rgba(196, 71, 65, 0.75);
+      border: 1px solid rgba(255, 255, 255, 0.55);
+      transform: rotateZ(45deg);
+      animation: turn 4s cubic-bezier(0.86, 0, 0.07, 1) infinite;
+      -webkit-transform: rotateZ(45deg);
+      -webkit-animation: turn 4s cubic-bezier(0.86, 0, 0.07, 1) infinite;
+      -ms-transform: rotate(45deg);
+    }
+  }
 
 }
+
+
 
 #workLoader.width2 .iconloader:after {
   width: 25%;
@@ -327,49 +326,52 @@
 
 #workdetail {
   padding: 40px 0;
+
+  h1 {
+    color: #FFFFFF;
+    line-height: 4rem;
+    margin-bottom: 35px;
+    margin-top: 0px;
+    font-size: 4rem;
+    text-align: left;
+  }
+
+  p {
+    margin-bottom: 25px;
+    color: $white;
+  }
+
 }
 
-#workdetail h1 {
-  color: #FFFFFF;
-  line-height: 4rem;
+
+#workdetail #details {
   margin-bottom: 35px;
-  margin-top: 0px;
-  font-size: 4rem;
-  text-align: left;
+  font-size: 0.9rem;
+
+  img {
+    width: 100%;
+  }
+
+  span {
+    @include safe-rem(padding-right, 12);
+    color: $red-200;
+  }
+
+  li {
+    color: #CCC;
+    margin-bottom: 5px;
+  }
+
 }
 
-#workdetail #detailImg img {
-  width: 100%;
-}
 
 #workdetail .workDouble #detailImg {
   margin-bottom: 35px;
 }
 
-#workdetail p {
-  margin-bottom: 25px;
-  color: $white;
-}
-
-#workdetail #details span {
-  @include safe-rem(padding-right, 12);
-  color: $red-200;
-}
-
-#workdetail #details {
-  margin-bottom: 35px;
-  font-size: 0.9rem;
-}
-
-
-#workdetail #details li {
-  color: #CCC;
-  margin-bottom: 5px;
-}
-
 #workdetail .button.tint:hover {
-  color: #141414;
-  background-color: #FFFFFF;
+  color: $dark-grey;
+  background-color: $white;
 }
 
 
