@@ -29,7 +29,8 @@ Header
     <a href="#" data-scrollto="#contact">Contact</a>
     <hr class="music-top"/>
     <div class="music textcenter">
-        <span><i class="fa fa-headphones"></i><br>Jamming to</span><a href="$Url">$ListeningTo</a>by <span class="artist">$Artist</span>
+        <span><i class="fa fa-headphones"></i><br>Jamming to</span>
+        <a href="$Url" class="sc-player"></a>by <span class="artist">$Artist</span>
         </ul>
     </div>
 </div>
@@ -141,7 +142,7 @@ Header
 
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 arrow-down">
-                    <a class="fa fa-angle-down" href="#" data-scrollto="#about"></a>
+                    <a class="fa fa-angle-down" href="#about" data-scrollto="#about"></a>
                 </div>
             </div>
 

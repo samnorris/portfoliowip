@@ -4,32 +4,33 @@
 //
 //	Responsive Menu
 //	Jquery appear
-//	Responsive Menu
-//	Scroll Functions
-//	Main menu scroll to
-//	HTML5 video
-//	JqEasyTooltip
-//	Testimonials slider
-//	Who we are slider
-//	Services slider
-//	Work slider
+//	Header / Glitch Animations
+//  Window Loader
+//  Contact Form
+//  Services Slider
+//  Work Slider
 //	Work Isotope
 //	Open Portfolio
 //	Close Portfolio
-//	Process animations
-//	Team Isotope
 //	Google Maps
 //	IE Fix
 //	Blog Isotope + Masonry
-//	Google analytics
+//	Scroll Functions
+//	Main menu scroll to
 //	Calculate position Menu
-//	Elemet is on screen
+//	Element is on screen
 //	Transition check functions
+//	Google analytics
 
 (function($) { "use strict";
 
 
 $(document).ready(function() {
+
+
+	///////////////////////////////////////////////////////////////////////////
+	// Responsive Menu
+	///////////////////////////////////////////////////////////////////////////
 
 
 	$('.open').on('click',function(e){
@@ -108,7 +109,35 @@ $(document).ready(function() {
 
 
 	///////////////////////////////////////////////////////////////////////////
-	// Loader
+	// Jquery appear
+	///////////////////////////////////////////////////////////////////////////
+
+	$('.appear').appear();
+
+	$(document.body).on('appear', '.appear', function(e, $affected) {
+		// this code is executed for each appeared element
+		var animation = $(this).data('animation');
+		if(animation!=undefined){
+			$(this).addClass($(this).data('animation'));
+		}else{
+			$(this).addClass('fadein');
+		}
+
+	});
+
+	$(document.body).on('disappear', '.appear', function(e, $affected) {
+		// this code is executed for each disappeared element
+		var animation = $(this).data('animation');
+		if(animation!=undefined){
+			//$(this).removeClass($(this).data('animation'));
+		}else{
+			//$(this).removeClass('fadein');
+		}
+	});
+
+
+	///////////////////////////////////////////////////////////////////////////
+	// Header / Glitch Animations
 	///////////////////////////////////////////////////////////////////////////
 
 
@@ -122,7 +151,7 @@ $(document).ready(function() {
 
 
 	///////////////////////////////////////////////////////////////////////////
-	// Loader
+	// Window Loader
 	///////////////////////////////////////////////////////////////////////////
 
 
@@ -136,9 +165,10 @@ $(document).ready(function() {
         $(".isotopeBlog").isotope('layout');
     });
 
-///////////////////////////////////////////////////////////////////////////
-// Contact Form
-///////////////////////////////////////////////////////////////////////////
+
+	///////////////////////////////////////////////////////////////////////////
+	// Contact Form
+	///////////////////////////////////////////////////////////////////////////
 
     // FORM SEND
 	function validate_signup(frm) {
@@ -194,96 +224,10 @@ $(document).ready(function() {
 
 
 	///////////////////////////////////////////////////////////////////////////
-	// Jquery appear
-	///////////////////////////////////////////////////////////////////////////
-
-	$('.appear').appear();
-
-	$(document.body).on('appear', '.appear', function(e, $affected) {
-		// this code is executed for each appeared element
-		var animation = $(this).data('animation');
-		if(animation!=undefined){
-			$(this).addClass($(this).data('animation'));
-		}else{
-			$(this).addClass('fadein');
-		}
-
-	});
-
-	$(document.body).on('disappear', '.appear', function(e, $affected) {
-		// this code is executed for each disappeared element
-		var animation = $(this).data('animation');
-		if(animation!=undefined){
-			//$(this).removeClass($(this).data('animation'));
-		}else{
-			//$(this).removeClass('fadein');
-		}
-	});
-
-
-
-
-	///////////////////////////////////////////////////////////////////////////
-	// Scroll Functions
-	///////////////////////////////////////////////////////////////////////////
-
-	if($(window).scrollTop()!=0){
-		calculatepositionmenu();
-	};
-
-	$(window).on('scroll',function(){
-
-		//Top menu
-		calculatepositionmenu();
-
-		//select menu section
-		$("body section").each(function (index) {
-			if($(this).isOnScreen()){
-				$('#mainMenu a').removeClass('select');
-				$('#mainMenu a[href="#'+$(this).attr('id')+'"]').addClass('select');
-			}
-		});
-	});
-
-
-	///////////////////////////////////////////////////////////////////////////
-	// Main menu scroll to
-	///////////////////////////////////////////////////////////////////////////
-
-	$("#mainMenu a,#mainheader a").on('click', function() {
-		$("#menu-container").removeClass('open');
-		if($(this).data("scrollto")){
-			$('html, body').animate({
-				scrollTop: $($(this).data("scrollto")).offset().top
-			}, 1200);
-			return false;
-		}
-	});
-
-
-	///////////////////////////////////////////////////////////////////////////
-	// Who we are slider
-	///////////////////////////////////////////////////////////////////////////
-
-	var $sliderwe = $("#sliderwe");
-
-	if($sliderwe.length){
-		$sliderwe .owlCarousel({
-			loop : true,
-    		animateIn: 'backSlideIn',
-			animateOut: 'backSlideOut',
-			autoplay: true,
-			autoplayTimeout: 4000,
-			margin : 20,
-			nav: false,
-			items : 1
-		});
-	};
-
-	///////////////////////////////////////////////////////////////////////////
 	// Services slider
 	///////////////////////////////////////////////////////////////////////////
 
+/*
 	var $serviceSlider = $("#serviceSlider");
 
 	if($serviceSlider.length){
@@ -311,6 +255,7 @@ $(document).ready(function() {
 		    }
 		});
 	};
+*/
 
 
 	///////////////////////////////////////////////////////////////////////////
@@ -504,82 +449,11 @@ $(document).ready(function() {
 
 
 
-	///////////////////////////////////////////////////////////////////////////
-	// Process animations
-	///////////////////////////////////////////////////////////////////////////
-
-	$("#startContainer #slogan1").html($("#process .first h5").not("#slogan1").html());
-	$("#startContainer #numbers span").html($("#process .first .number span").not("#numbers span").html());
-	$("#startContainer .start").css({"opacity":"1"});
-
-	function animationprocess(){
-
-
-			var vtime = 1;
-			var time = 1000;
-			var delay = 200;
-			var speed = 0.3;
-
-			setTimeout(function(){
-				$("#startContainer").addClass("second");
-				$("#startContainer #slogan1").html($("#process .second h5").not("#slogan1").html());
-				$("#startContainer #numbers span").html($("#process .second .number span").not("#numbers span").html());
-			},time + delay);
-
-			setTimeout(function(){
-				$("#startContainer").addClass("third");
-				$("#startContainer #slogan1").html($("#process .third h5").not("#slogan1").html());
-				$("#startContainer #numbers span").html($("#process .third .number span").not("#numbers span").html());
-
-			},time*2 + delay);
-
-			setTimeout(function(){
-				$("#startContainer").addClass("fourth");
-				$("#startContainer #slogan1").html($("#process .fourth h5").not("#slogan1").html());
-				$("#startContainer #numbers span").html($("#process .fourth .number span").not("#numbers span").html());
-
-
-			},(time*3)+delay);
-
-			setTimeout(function(){
-				$("#startContainer").css({
-					"opacity":"0"
-				})
-			},(time*4)+delay);
-
-			setTimeout(function(){
-				$(".first").addClass('rotatenone');
-			},(time*4)+delay+400);
-
-			setTimeout(function(){
-				$(".second").addClass('rotatenone');
-			},(time*4)+delay+500);
-
-			setTimeout(function(){
-				$(".third").addClass('rotatenone');
-			},(time*4)+delay+600);
-
-			setTimeout(function(){
-				$(".fourth").addClass('rotatenone');
-			},(time*4)+delay+700);
-
-	};
-
-
-
-	///////////////////////////////////////////////////////////////////////////
-	// PARALLAX
-	///////////////////////////////////////////////////////////////////////////
-
-	if($('#parallax-section').length){
-		$('#parallax-section').parallax("50%", 0.5);
-	}
-
    	///////////////////////////////////////////////////////////////////////////
 	// Google Maps
 	///////////////////////////////////////////////////////////////////////////
 
-	var MyLat = -41.280630;
+/*	var MyLat = -41.280630;
 	var MyLong = 174.766991;
 	var MyMarkerImage = 'img/map-marker.png';
 
@@ -640,7 +514,7 @@ $(document).ready(function() {
 			map: map,
 			icon: MyMarkerImage
 		});
-	}
+	}*/
 
 
 
@@ -692,61 +566,87 @@ $(document).ready(function() {
 });
 
 
-///////////////////////////////////////////////////////////////////////////
-// Google analytics
-///////////////////////////////////////////////////////////////////////////
 
-var MyGoogleAnalyticsID = 'UA-00000000-0';
-var MyWebURL = 'kubo.j3dlab.com';
+    ///////////////////////////////////////////////////////////////////////////
+    // Scroll Functions
+    ///////////////////////////////////////////////////////////////////////////
 
 
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', MyGoogleAnalyticsID, MyWebURL);
-ga('send', 'pageview');
-
-
-
-///////////////////////////////////////////////////////////////////////////
-// Calculate position Menu
-///////////////////////////////////////////////////////////////////////////
-
-function calculatepositionmenu(){
-	if($('body.desktop')){
-		var positionmenu = $('#menu-container').position();
-		if($(window).scrollTop() >= $('#menuWrapper').position().top && $(window).scrollTop()>0){
-			$('#menu-container').addClass('sticky');
-		}else{
-			$('#menu-container').removeClass('sticky');
-		}
-	}
-};
-
-///////////////////////////////////////////////////////////////////////////
-// Element is on screen function
-///////////////////////////////////////////////////////////////////////////
-
-$.fn.isOnScreen = function(){
-
-	var win = $(window);
-
-	var viewport = {
-		top : win.scrollTop(),
-		left : win.scrollLeft()
+	if($(window).scrollTop()!=0){
+		calculatepositionmenu();
 	};
-	viewport.right = viewport.left + win.width();
-	viewport.bottom = viewport.top + win.height();
 
-	var bounds = this.offset();
-	bounds.right = bounds.left + this.outerWidth();
-	bounds.bottom = bounds.top + this.outerHeight();
+	$(window).on('scroll',function(){
 
-	return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+		//Top menu
+		calculatepositionmenu();
 
-};
+		//select menu section
+		$("body section").each(function (index) {
+			if($(this).isOnScreen()){
+				$('#mainMenu a').removeClass('select');
+				$('#mainMenu a[href="#'+$(this).attr('id')+'"]').addClass('select');
+			}
+		});
+	});
+
+
+    ///////////////////////////////////////////////////////////////////////////
+    // Main menu scroll to
+    ///////////////////////////////////////////////////////////////////////////
+
+	$("#mainMenu a,#mainheader a").click(function() {
+		$("#menu-container").removeClass('open');
+		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+			if (target.length) {
+				$('html, body').animate({
+					scrollTop: target.offset().top
+				}, 1000);
+				return false;
+			}
+		}
+	});
+
+
+    ///////////////////////////////////////////////////////////////////////////
+    // Calculate position Menu
+    ///////////////////////////////////////////////////////////////////////////
+
+    function calculatepositionmenu(){
+        if($('body.desktop')){
+            var positionmenu = $('#menu-container').position();
+            if($(window).scrollTop() >= $('#menuWrapper').position().top && $(window).scrollTop()>0){
+                $('#menu-container').addClass('sticky');
+            }else{
+                $('#menu-container').removeClass('sticky');
+            }
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////
+    // Element is on screen function
+    ///////////////////////////////////////////////////////////////////////////
+
+    $.fn.isOnScreen = function(){
+
+        var win = $(window);
+
+        var viewport = {
+            top : win.scrollTop(),
+            left : win.scrollLeft()
+        };
+        viewport.right = viewport.left + win.width();
+        viewport.bottom = viewport.top + win.height();
+
+        var bounds = this.offset();
+        bounds.right = bounds.left + this.outerWidth();
+        bounds.bottom = bounds.top + this.outerHeight();
+
+        return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+
+    };
 
 
     $('.open').on('click',function(e){
@@ -771,61 +671,62 @@ $.fn.isOnScreen = function(){
     });
 
 
-///////////////////////////////////////////////////////////////////////////
-// Transition check functions
-///////////////////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////
+    // Transition check functions
+    ///////////////////////////////////////////////////////////////////////////
 
 
-$.fn.emulateTransitionEnd = function(transitionEnd,duration,delay) {
+    $.fn.emulateTransitionEnd = function(transitionEnd,duration,delay) {
 
-  var called = false, $el = this;
-  $(this).one(transitionEnd, function() {called = true; });
-  var callback = function() {
-	if (!called) $($el).trigger(transitionEnd)
-  };
+      var called = false, $el = this;
+      $(this).one(transitionEnd, function() {called = true; });
+      var callback = function() {
+        if (!called) $($el).trigger(transitionEnd)
+      };
 
-   setTimeout(callback, duration+delay);
-};
+       setTimeout(callback, duration+delay);
+    };
 
-//add css propertys and emulate transitionend
-$.fn.transition = function (transitionEnd, properties, options) {
-  var defaults = {delay:0 , easing :''};
-  options = $.extend({}, defaults, options);
-  properties['transition'] = 'all ' + options.duration + 'ms ' + options.easing + ' ' + options.delay + 'ms ' ;
-  properties['-webkit-transition'] = 'all ' + options.duration + 'ms ' + options.easing + ' ' + options.delay + 'ms ' ;
-  properties['-ms-transition'] = 'all ' + options.duration + 'ms ' + options.easing + ' ' + options.delay + 'ms ' ;
+    //add css propertys and emulate transitionend
+    $.fn.transition = function (transitionEnd, properties, options) {
+      var defaults = {delay:0 , easing :''};
+      options = $.extend({}, defaults, options);
+      properties['transition'] = 'all ' + options.duration + 'ms ' + options.easing + ' ' + options.delay + 'ms ' ;
+      properties['-webkit-transition'] = 'all ' + options.duration + 'ms ' + options.easing + ' ' + options.delay + 'ms ' ;
+      properties['-ms-transition'] = 'all ' + options.duration + 'ms ' + options.easing + ' ' + options.delay + 'ms ' ;
 
-  $(this).emulateTransitionEnd(transitionEnd, options.duration, options.delay );
-  $(this).css(properties);
-};
+      $(this).emulateTransitionEnd(transitionEnd, options.duration, options.delay );
+      $(this).css(properties);
+    };
 
-//add class and emulate transitionend
-$.fn.transitioncss = function (transitionEnd, cssname, options) {
-  var defaults = {delay:0 , easing :''};
-  options = $.extend({}, defaults, options);
+    //add class and emulate transitionend
+    $.fn.transitioncss = function (transitionEnd, cssname, options) {
+      var defaults = {delay:0 , easing :''};
+      options = $.extend({}, defaults, options);
 
-  $(this).css('transition','all ' + options.duration + 'ms ' + options.easing + ' ' + options.delay + 'ms ')
-  $(this).css('-webkit-transition','all ' + options.duration + 'ms ' + options.easing + ' ' + options.delay + 'ms ')
-  $(this).css('-ms-transition','all ' + options.duration + 'ms ' + options.easing + ' ' + options.delay + 'ms ')
+      $(this).css('transition','all ' + options.duration + 'ms ' + options.easing + ' ' + options.delay + 'ms ')
+      $(this).css('-webkit-transition','all ' + options.duration + 'ms ' + options.easing + ' ' + options.delay + 'ms ')
+      $(this).css('-ms-transition','all ' + options.duration + 'ms ' + options.easing + ' ' + options.delay + 'ms ')
 
-  $(this).emulateTransitionEnd(transitionEnd, options.duration, options.delay );
+      $(this).emulateTransitionEnd(transitionEnd, options.duration, options.delay );
 
-  if($(this).hasClass(cssname)){
-	$(this).removeClass(cssname);
-  }else{
-	$(this).addClass(cssname);
-  }
-};
-
-
-})(jQuery);
+      if($(this).hasClass(cssname)){
+        $(this).removeClass(cssname);
+      }else{
+        $(this).addClass(cssname);
+      }
+    };
 
 
-$(document).ready(function() {
+    })(jQuery);
 
-	// -- autosize init --
 
-	autosize($('textarea'));
 
-});
+    $(document).ready(function() {
+
+        // -- autosize init --
+
+        autosize($('textarea'));
+
+    });
 

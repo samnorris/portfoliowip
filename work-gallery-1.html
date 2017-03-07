@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<body class="onePage nonscroll">
+
+
+
+	<!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+		Portfolio details
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+	<section id="workdetailcontainer" class="darkBackground">
+
+		<div id="workdetail">
+
+			<section class="container">
+
+				<div class="workDouble">
+
+					<div id="detailImg">
+
+						<div id="sliderwork1" class="owl-carousel">
+
+							<div class="item"><img src="themes/portfolio/img/work/startupbros-large-1.jpg" alt="Startup Bros" /></div>
+
+							<div class="item"><img src="themes/portfolio/img/work/startupbros-large-2.jpg" alt="Startup Bros" /></div>
+
+							<div class="item"><img src="themes/portfolio/img/work/startupbros-large-3.jpg" alt="Startup Bros" /></div>
+
+							<div class="item"><img src="themes/portfolio/img/work/startupbros-large-4.jpg" alt="Startup Bros" /></div>
+
+						</div>
+
+					</div>
+
+					<article>
+
+						<h1>STARTUP BROS</h1>
+
+						<p>Pellentesque erat velit, pretium vitae dui tempor, scelerisque posuere mi. Etiam fringilla scelerisque nulla volutpat vehicula. Donec tempus ut diam ac pharetra. Quisque quis odio convallis, imperdiet purus dignissim, tempor urna. Curabitur ut nisl nec orci scelerisque vehicula vitae eu nunc. Mauris et felis ligula. Maecenas tincidunt, augue a pulvinar laoreet, arcu nunc semper felis, lobortis gravida elit tellus non nisl.</p>
+
+						<ul id="details">
+
+							<li><span>CLIENT:</span>Company Name</li>
+
+							<li><span>RELEASE DATE:</span>20 February 2014</li>
+
+							<li><span>TAGS:</span>Photography, Corporate, Flat</li>
+
+						</ul>
+
+						<a href="https://www.behance.net/gallery/47278647/StartupBros-UI-concepts-WIP" target="_blank>"><button class="large" href="#">LAUNCH PROJECT</button></a>
+
+					</article>
+
+				</div>
+
+			</section>
+
+		</div>
+
+		<!-- End content of project details -->
+
+	</section>
+
+
+	<script data-scriptdetail="">
+
+		$(document).ready(function() {
+
+			var $sliderwork = $("#sliderwork1");
+
+			if($sliderwork.length){
+
+				$sliderwork .owlCarousel({
+
+					loop : true,
+
+					animateIn: 'backSlideIn',
+
+					animateOut: 'backSlideOut',
+
+					autoplay: true,
+
+					autoplayTimeout: 3000,
+
+					margin : 20,
+
+					nav: false,
+
+					dots: false,
+
+					items : 1
+
+				});
+			}
+		});
+
+	</script>
+
+
+</body>
+</html>

@@ -31,23 +31,30 @@ button.large {
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: ease-in-out 0.25s;
+
   span {
     transition: ease-in-out 0.25s;
   }
+
 }
+
 button:hover {
   background: #db4d57;
   color: lightgrey;
+
   span {
     padding-left: 10px;
     color: white;
   }
+
 }
 
-.button:hover {
-  color: $white;
-  background-color: $black;
+button {
+  &:focus, &:visited, &:active {
+    outline: 0;
+  }
 }
+
 
 .btn {
   @include transition(all .3s);
