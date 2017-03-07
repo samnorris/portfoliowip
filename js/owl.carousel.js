@@ -1502,7 +1502,7 @@
 		position = event.data ? event.data : position;
 
 		if (this.state.revert) {
-/*			this.pos.current = this.dom.$items.eq(position).data('owl-item').index;*/
+			this.pos.current = this.dom.$items.eq(position).data('owl-item').index;
 			this.pos.currentAbs = position;
 		} else {
 			this.pos.current = this.dom.$oItems.eq(position).data('owl-item').index;
