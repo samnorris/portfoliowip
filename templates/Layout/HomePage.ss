@@ -40,8 +40,8 @@
         <h2 class="title appear" data-animation="translatefrombottom">Selected Works</h2>
 
         <!-- Description -->
-        <p class="aligncenter appear light-text">Browse some of the bits and pieces I have recently worked on in the gallery below, as well as a brief synopsis/overview of the project.
-            If that ain't enough for ya, feel free to check out my <a href="#">Behance</a> page, <a href="#">Deviantart</a> account or my <a href="#">blog</a> to see what else I might be getting up to.</p>
+        <p class="aligncenter appear light-text">Browse some of the bits and pieces I have recently worked on in the gallery below, as well as a brief synopsis/overview of the project.<br />
+            If that ain't enough for ya, feel free to check out my <a href="https://www.behance.net/theperfectpixels">Behance</a> page or my <a href="#">blog</a> to see what else I might be getting up to.</p>
 
         <!-- Isotope Filter -->
         <nav id="portfolionav" class="isotopeFilter aligncenter appear">
@@ -82,8 +82,8 @@
             <div class="rollover">
                 <div class="centerContainer hidden-xs">
                     <div>
-                        <a class="title" href="$ThemeDir/work-detail-3.html">MELONPORT BLOCKCHAIN SOFTWARE</a>
-                        <a class="details" href="$ThemeDir/work-detail-3.html">VIEW DETAILS</a>
+                        <a class="title" href="$ThemeDir/work-gallery-3.html">MELONPORT BLOCKCHAIN SOFTWARE</a>
+                        <a class="details" href="$ThemeDir/work-gallery-3.html">VIEW DETAILS</a>
                     </div>
                 </div>
             </div>

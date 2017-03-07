@@ -6,6 +6,39 @@ html {
   font-family: "Lato", sans-serif;
 }
 
+/*TITLES*/
+
+h1, h2 {
+  font-weight: 900;
+  font-size: 4rem !important;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 4.118rem;
+
+  &.title {
+    @include safe-rem(margin-bottom, 35);
+    color: $red-100;
+    text-transform: uppercase;
+  }
+}
+
+
+h3 {
+  margin-top: 15px;
+  font-weight: 900;
+  font-size: 1.875rem;
+  text-transform: uppercase;
+  line-height: 1.875rem;
+}
+
+
+.one-page h1, .one-page h2, .one-page h3, .one-page h4, .one-page h5, .one-page h6 {
+  text-align: center;
+}
+
+.one-page h2 {
+  margin-top: 0;
+}
 
 header h1 {
   margin-bottom: 51px;
@@ -14,11 +47,6 @@ header h1 {
   text-transform: uppercase;
 }
 
-h2 {
-  margin-bottom: 80px;
-  line-height: 4.118rem;
-  text-align: center;
-}
 
 h4 {
   margin-bottom: 30px;
@@ -67,37 +95,7 @@ p {
   color: $grey-500;
 }
 
-/*TITLES*/
 
-h1, h2 {
-  font-weight: 900;
-  font-size: 3.475rem !important;
-  letter-spacing: 2px;
-
-    &.title {
-      color: $red-100;
-      text-transform: uppercase;
-      margin-bottom: 35px;
-    }
-  }
-
-
-h3 {
-  margin-top: 15px;
-  font-weight: 900;
-  font-size: 1.875rem;
-  text-transform: uppercase;
-  line-height: 1.875rem;
-}
-
-
-.one-page h1, .one-page h2, .one-page h3, .one-page h4, .one-page h5, .one-page h6 {
-  text-align: center;
-}
-
-.one-page h2 {
-  margin-top: 0;
-}
 
 /*LINKS*/
 a {

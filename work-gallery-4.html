@@ -38,27 +38,35 @@ Loader
 
 				<div id="detailImg">
 
-					<img src="themes/portfolio/img/work/startupbros-large-1.jpg" alt="Startup Bros" />
+					<div id="sliderwork4" class="owl-carousel">
+
+						<div class="item"><img src="themes/portfolio/img/work/giftforu-large-1.jpg" alt="Gift For U" /></div>
+
+						<div class="item"><img src="themes/portfolio/img/work/giftforu-large-2.jpg" alt="Gift For U" /></div>
+
+						<div class="item"><img src="themes/portfolio/img/work/giftforu-large-3.jpg" alt="Gift For U" /></div>
+
+
+					</div>
 
 				</div>
 
 				<article>
 
-					<h1>STARTUP BROS</h1>
+					<h1>A GIFT FOR U</h1>
 
-					<p>Pellentesque erat velit, pretium vitae dui tempor, scelerisque posuere mi. Etiam fringilla scelerisque nulla volutpat vehicula. Donec tempus ut diam ac pharetra. Quisque quis odio convallis, imperdiet purus dignissim, tempor urna. Curabitur ut nisl nec orci scelerisque vehicula vitae eu nunc. Mauris et felis ligula. Maecenas tincidunt, augue a pulvinar laoreet, arcu nunc semper felis, lobortis gravida elit tellus non nisl.</p>
+					<p>Project description coming soon.</p>
 
 					<ul id="details">
 
-						<li><span>CLIENT:</span>Company Name</li>
+						<li><span>CLIENT:</span>A Gift For You</li>
 
-						<li><span>RELEASE DATE:</span>20 February 2014</li>
+						<li><span>RELEASE DATE:</span>18 August 2013</li>
 
-						<li><span>TAGS:</span>Photography, Corporate, Flat</li>
 
 					</ul>
 
-					<a href="https://www.behance.net/gallery/47278647/StartupBros-UI-concepts-WIP" target="_blank>"><button class="large" href="#">LAUNCH PROJECT</button></a>
+					<a href="themes/portfolio/img/work/giftforu-full.jpg" target="_blank>"><button class="large" href="#">LAUNCH PROJECT</button></a>
 
 				</article>
 
@@ -71,6 +79,41 @@ Loader
 	<!-- End content of project details -->
 
 </section>
+
+
+<script data-scriptdetail="">
+
+	$(document).ready(function() {
+
+		var $sliderwork = $("#sliderwork4");
+
+		if($sliderwork.length){
+
+			$sliderwork .owlCarousel({
+
+				loop : true,
+
+				animateIn: 'backSlideIn',
+
+				animateOut: 'backSlideOut',
+
+				autoplay: true,
+
+				autoplayTimeout: 3000,
+
+				margin : 20,
+
+				nav: false,
+
+				dots: false,
+
+				items : 1
+
+			});
+		}
+	});
+
+</script>
 
 
 </body>

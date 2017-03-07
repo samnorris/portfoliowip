@@ -1,0 +1,49 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+
+
+/* FIX IE 9/10/11 */
+
+.IE #workLoader {
+  transition: all .8s !important;
+  transform: none;
+}
+
+.IE #workLoader .front, .IE #workLoader .back {
+  transition: all .8s !important;
+}
+
+.IE #workLoader .back {
+  transform: perspective(1000px) rotateX(180deg) !important;
+}
+
+.IE #wrkclosebtn {
+  display: none;
+}
+
+.IE .scale100 #wrkclosebtn {
+  display: inline;
+}
+
+.IE .scale100 {
+  transition: none !important;
+  transform: rotateX(0deg) !important;
+}
+
+.IE #workLoader.scale100 .back {
+  transform: perspective(1000px) rotateX(0deg) !important;
+  z-index: 10;
+
+}
+
+.IE #workLoader.scale100 .front {
+  transform: perspective(1000px) rotateX(-180deg) !important;
+}
+
+.IE9 #workLoader {
+  background-color: green;
+  opacity: 0;
+}
