@@ -46,7 +46,18 @@
     <script src="$ThemeDir/js/libs/modernizr.custom.02583.js" type="text/javascript"></script>
 	<link rel="shortcut icon" href="$ThemeDir/img/favicon.ico" />
 </head>
-<body class="onePage $ClassName<% if not $Menu(2) %> no-sidebar<% end_if %>" <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>
+<body class="onePage nonscroll $ClassName<% if not $Menu(2) %> no-sidebar<% end_if %>" <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>
+
+
+<div id="windowloader">
+    <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
 <% include Header %>
 <% include Navigation %>
 	<div>

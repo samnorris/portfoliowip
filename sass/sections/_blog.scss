@@ -83,7 +83,7 @@
 }
 
 
-p.articletext {
+p.articletext, .articletext-full {
   @include safe-rem(margin, 15 0 15 0);
   @include safe-rem(padding, 20 0 40 0);
   font-family: 'Source Sans Pro', sans-serif;
@@ -104,6 +104,10 @@ p.articletext {
 
   .latest-from-blog-details {
     @include safe-rem(margin-left, 25);
+  }
+
+  .article-full-details {
+    @include safe-rem(margin-left, 0);
   }
 
   .social-likes {

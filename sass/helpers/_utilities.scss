@@ -195,55 +195,102 @@ LABEL
   PAGE LOADER
 ========================================================================== */
 
+
+@keyframes loader {
+  0%, 10%, 100% {
+    width: 80px;
+    height: 80px;
+  }
+  65% {
+    width: 150px;
+    height: 150px;
+  }
+}
+@keyframes loaderBlock {
+  0%, 30% {
+    transform: rotate(0);
+  }
+  55% {
+    background-color: #F37272;
+  }
+  100% {
+    transform: rotate(90deg);
+
+  }
+}
+@keyframes loaderBlockInverse {
+  0%, 20% {
+    transform: rotate(0);
+  }
+  55% {
+    background-color: #F37272;
+  }
+  100% {
+    transform: rotate(-90deg);
+  }
+}
+
 .nonscroll {
   overflow: hidden;
 }
 
+
 #windowloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999999;
-  display: table;
   overflow: auto;
+  top:0;
+  left: 0;
   width: 100%;
   height: 100%;
+  position: fixed;
+  z-index: 999998;
+  display: table;
   background: $black;
+}
 
-  > div {
-    position: relative;
-    display: table-cell;
-    color: $white;
-    font-size: 2rem;
-    text-align: center;
-    vertical-align: middle;
+.loader {
 
-    &span {
-      display: inline-block;
-      width: 20px;
-      height: 20px;
-      margin: 0 5px;
-      animation: infinite loading 1s;
-      transform: rotateZ(45deg);
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 999999;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  transform: translate(-50%, -50%) rotate(45deg) translate3d(0, 0, 0);
+  animation: loader 1.2s infinite ease-in-out;
 
+  span {
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #EE4040;
+    animation: loaderBlock 1.2s infinite ease-in-out both;
+
+    &:nth-child(1) {
+      top: 0;
+      left: 0;
+    }
+    &:nth-child(2) {
+      top: 0;
+      right: 0;
+      animation: loaderBlockInverse 1.2s infinite ease-in-out both;
+    }
+    &:nth-child(3) {
+      bottom: 0;
+      left: 0;
+      animation: loaderBlockInverse 1.2s infinite ease-in-out both;
+    }
+    &:nth-child(4) {
+      bottom: 0;
+      right: 0;
     }
   }
 
   /*LOAD FINISH*/
   .loaded {
     top: -100%;
-  }
-
-}
-
-/*LOADER ANIMATION*/
-@keyframes loading {
-  0% {
-    transform: rotateZ(45deg);
-  }
-
-  100% {
-    transform: rotateZ(135deg);
   }
 
 }

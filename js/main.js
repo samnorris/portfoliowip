@@ -155,7 +155,7 @@ $(document).ready(function() {
 	///////////////////////////////////////////////////////////////////////////
 
 
-    $("#windowloader").transitioncss("transitionEndOpen","loaded",{duration:2000, easing:"cubic-bezier(0.86, 0, 0.07, 1)",delay:1000});
+    $("#windowloader").transitioncss("transitionEndOpen","loaded",{duration:2000,delay:1000});
 
     $("#windowloader").off("transitionEndOpen").on( "transitionEndOpen", function(){
         $("body").removeClass('nonscroll');
