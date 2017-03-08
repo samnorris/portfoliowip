@@ -1,12 +1,15 @@
 <section id="blog"  class="paddingstandard">
 <div class="container">
-    <article class="article-post">
-        <h2 class="title appear" data-animation="translatefrombottom">$Title</h2>
+    <h2 class="title appear" data-animation="translatefrombottom">Captain's Log</h2>
+<%--    <article class="article-post">
         $Content
         <div class="content">$Content</div>
-    </article>
+    </article>--%>
     <% loop $Children %>
         <% include ArticleTeaser %>
     <% end_loop %>
+    <div class="col-12 blog-link">
+        <a href="{$AbsoluteBaseURL}"><button class="large">Back</button></a>
+    </div>
 </div>
 </section>

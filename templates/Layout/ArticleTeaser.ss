@@ -1,5 +1,5 @@
 <article class="article-post">
-    <h3><a href="$Link" title="Read more on &quot;{$Title}&quot;">$Title</a></h3>
+    <h3>$Title</h3>
     <p class="articletext">$Content.Summary(100)</p>
     <div class="article-bottom">
     <div class="latest-from-blog-readmore"><a href="$Link" title="Read more on &quot;{$Title}&quot;">Read more</a></div>
