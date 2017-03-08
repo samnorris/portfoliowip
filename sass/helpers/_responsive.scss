@@ -68,7 +68,6 @@
   #menu-container.sticky .menulogo {
     height: auto !important;
     margin-top: 11px !important;
-    transform: scale(1, 1) !important;
   }
 
   #responsivemenu {
@@ -83,7 +82,6 @@
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, .6);
-    transition: all .5s;
   }
 
   #menu-container .container {
@@ -116,9 +114,6 @@
     display: none;
   }
 
-  #menu-container.open {
-    left: 0;
-  }
 
   #articledetail h1 {
     margin-bottom: 30px;

@@ -115,8 +115,8 @@
             <div class="rollover">
                 <div class="centerContainer hidden-xs">
                     <div>
-                        <a class="title" href="$ThemeDir/work-detail-6.html">KANDY PENS UI DESIGN</a>
-                        <a class="details" href="$ThemeDir/work-detail-6.html">VIEW DETAILS</a>
+                        <a class="title" href="$ThemeDir/work-gallery-6.html">KANDY PENS UI DESIGN</a>
+                        <a class="details" href="$ThemeDir/work-gallery-6.html">VIEW DETAILS</a>
                     </div>
                 </div>
             </div>
@@ -246,7 +246,7 @@
         <% end_loop %>
         </div>
         <div class="col-12 blog-link">
-            <button class="large">Captain's Log</button>
+            <a href="{$AbsoluteBaseURL}blog#blog"><button class="large">Captain's Log</button></a>
         </div>
     </div>
 </section>

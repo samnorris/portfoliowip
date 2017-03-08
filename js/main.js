@@ -595,7 +595,7 @@ $(document).ready(function() {
     // Main menu scroll to
     ///////////////////////////////////////////////////////////////////////////
 
-	$("#mainMenu a,#mainheader a").click(function() {
+	$("#mainMenu a,#mainheader a, .mobile-menu a").click(function() {
 		$("#menu-container").removeClass('open');
 		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
 			var target = $(this.hash);

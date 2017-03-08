@@ -1,7 +1,7 @@
 <?php
 class HomePage extends Page {
 
-    public function LatestFromBlog($num = 2)
+    public function LatestFromBlog($num = 1)
     {
         $holder = ArticleHolder::get()->First();
         return ($holder) ? ArticlePage::get()->filter('ParentID', $holder->ID)->sort('Date DESC')->limit($num) : false;

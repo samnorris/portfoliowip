@@ -1,6 +1,7 @@
-<div>
+<section id="blog"  class="paddingstandard">
+<div class="container">
     <article class="article-post">
-        <h1>$Title</h1>
+        <h2 class="title appear" data-animation="translatefrombottom">$Title</h2>
         $Content
         <div class="content">$Content</div>
     </article>
@@ -8,3 +9,4 @@
         <% include ArticleTeaser %>
     <% end_loop %>
 </div>
+</section>

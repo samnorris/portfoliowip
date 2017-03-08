@@ -8,6 +8,10 @@
   background: $dark-grey url('../img/backgrounds/blackorchid.png') repeat !important;
 }
 
+.latest-from-blog {
+  @include safe-rem(padding-top, 8);
+}
+
 #blogfilter a:hover {
   color: $white;
 }
@@ -65,13 +69,14 @@
 }
 
 .article-post {
-  padding-bottom: 45px;
+  @include safe-rem(padding, 40 0 40 0);
 }
 
 
 #blog.article.article-post:hover {
   > #blog h3 {
     border-bottom: 2px solid $red-100;
+    color: $red-100;
   }
 }
 

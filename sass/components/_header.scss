@@ -4,12 +4,6 @@
   HEADER
 ========================================================================== */
 
-header .logo {
-  position: relative;
-  display: block;
-  margin-top: 40px;
-  margin-bottom: 140px;
-}
 
 header h2 {
   @include safe-rem(padding-top, 425);

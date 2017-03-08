@@ -30,7 +30,7 @@
         // if Prototype.js is available, fire the custom event
         $(playerNode).fire(customEventType, data);
       }else{
-        // TODO add more JS libraries that support custom DOM events
+
       }
       // if there are any listeners registered to this event, trigger them all
       for(var i = 0, l = lsnrs.length; i < l; i += 1) {

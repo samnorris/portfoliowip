@@ -21,12 +21,12 @@ Header
 <a href="#cl" class="close hidden"><div class="close-icon"></div></a>
 
 <div class="mobile-menu">
-    <a href="#" data-scrollto="#about">The Man</a>
-    <a href="#" data-scrollto="#services">The Plan</a>
-    <a href="#" data-scrollto="#work">My Work</a>
-    <a href="#" data-scrollto="#process">My Process</a>
-    <a href="#" data-scrollto="#blog">Blog</a>
-    <a href="#" data-scrollto="#contact">Contact</a>
+    <a href="{$AbsoluteBaseURL}#about" data-scrollto="#about">The Man</a>
+    <a href="{$AbsoluteBaseURL}#services" data-scrollto="#services">The Plan</a>
+    <a href="{$AbsoluteBaseURL}#work" data-scrollto="#work">My Work</a>
+    <a href="{$AbsoluteBaseURL}#process" data-scrollto="#process">My Process</a>
+    <a href="{$AbsoluteBaseURL}#blog" data-scrollto="#blog">Blog</a>
+    <a href="{$AbsoluteBaseURL}#contact" data-scrollto="#contact">Contact</a>
     <hr class="music-top"/>
     <div class="music textcenter">
         <span><i class="fa fa-headphones"></i><br>Jamming to</span>

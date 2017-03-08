@@ -68,7 +68,6 @@
         }
       };
 
-  // TODO Expose the audio engine, so it can be unit-tested
   var audioEngine = function() {
     var html5AudioAvailable = function() {
         var state = false;
