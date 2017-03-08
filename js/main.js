@@ -155,14 +155,15 @@ $(document).ready(function() {
 	///////////////////////////////////////////////////////////////////////////
 
 
-    $("#windowloader").transitioncss("transitionEndOpen","loaded",{duration:2000,delay:1000});
+    $("#windowloader").transitioncss("transitionEndOpen","loaded",{duration:2000, easing:"loader 1.2s infinite ease-in-out)",delay:1000});
 
     $("#windowloader").off("transitionEndOpen").on( "transitionEndOpen", function(){
         $("body").removeClass('nonscroll');
-        $("#windowloader").remove();
+        $("#windowloader").fadeOut({duration:2000});
         $("#portfoliogrid").isotope('layout');
         $("#isotopeMembers").isotope('layout');
         $(".isotopeBlog").isotope('layout');
+		$("#windowloader").destroy();
     });
 
 
@@ -802,55 +803,12 @@ $(document).ready(function() {
 					return /[.?:\-–—]\s*$/.test(this.options.title) || (this.options.title += ":"), !0
 				}
 			},
-			mailru: {
-				counterUrl: n + "//connect.mail.ru/share_count?url_list={url}&callback=1&func=?",
-				convertNumber: function (a) {
-					for (var b in a)if (a.hasOwnProperty(b))return a[b].shares
-				},
-				popupUrl: "https://connect.mail.ru/share?share_url={url}&title={title}",
-				popupWidth: 492,
-				popupHeight: 500
-			},
-			vkontakte: {
-				counterUrl: "https://vk.com/share.php?act=count&url={url}&index={index}", counter: function (b, c) {
-					var d = o.vkontakte;
-					d._ || (d._ = [], window.VK || (window.VK = {}), window.VK.Share = {
-						count: function (a, b) {
-							d._[a].resolve(b)
-						}
-					});
-					var e = d._.length;
-					d._.push(c), a.getScript(f(b, {index: e})).fail(c.reject)
-				}, popupUrl: "https://vk.com/share.php?url={url}&title={title}", popupWidth: 655, popupHeight: 450
-			},
-			odnoklassniki: {
-				counterUrl: n + "//connect.ok.ru/dk?st.cmd=extLike&ref={url}&uid={index}",
-				counter: function (b, c) {
-					var d = o.odnoklassniki;
-					d._ || (d._ = [], window.ODKL || (window.ODKL = {}), window.ODKL.updateCount = function (a, b) {
-						d._[a].resolve(b)
-					});
-					var e = d._.length;
-					d._.push(c), a.getScript(f(b, {index: e})).fail(c.reject)
-				},
-				popupUrl: "https://connect.ok.ru/dk?st.cmd=WidgetSharePreview&service=odnoklassniki&st.shareUrl={url}",
-				popupWidth: 580,
-				popupHeight: 336
-			},
 			plusone: {
 				counterUrl: n + "//share.yandex.ru/gpp.xml?url={url}&callback=?", convertNumber: function (a) {
 					return parseInt(a.replace(/\D/g, ""), 10)
 				}, popupUrl: "https://plus.google.com/share?url={url}", popupWidth: 500, popupHeight: 550
 			},
-			pinterest: {
-				counterUrl: n + "//api.pinterest.com/v1/urls/count.json?url={url}&callback=?",
-				convertNumber: function (a) {
-					return a.count
-				},
-				popupUrl: "https://pinterest.com/pin/create/button/?url={url}&description={title}",
-				popupWidth: 740,
-				popupHeight: 550
-			}
+
 		}, p = {
 			promises: {}, fetch: function (b, c, d) {
 				p.promises[b] || (p.promises[b] = {});
