@@ -32,6 +32,7 @@
     <link href="$ThemeDir/css/animate.css" rel="stylesheet"/>
     <link href="$ThemeDir/css/owl.custom.transitions.css" rel="stylesheet"/>
     <link href="$ThemeDir/css/jquery.appear.css" rel="stylesheet"/>
+    <link href="$ThemeDir/css/social-share.css" rel="stylesheet"/>
     <link href="$ThemeDir/css/normalize.css" rel="stylesheet">
     <link href="$ThemeDir/css/style.css" rel="stylesheet">
 

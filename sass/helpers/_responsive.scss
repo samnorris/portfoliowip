@@ -15,36 +15,6 @@
   }
 }
 
-/* SERVICESLIDER SPECIAL QUERIES */
-@media only screen and (min-width: 1400px) and (max-width: 1510px) {
-  #serviceSlider .owl-controls .owl-prev {
-    left: -120px;
-  }
-
-  #serviceSlider .owl-controls .owl-next {
-    right: -120px;
-  }
-}
-
-@media only screen and (min-width: 1343px) and (max-width: 1400px) {
-  #serviceSlider .owl-controls .owl-prev {
-    left: -90px;
-  }
-
-  #serviceSlider .owl-controls .owl-next {
-    right: -90px;
-  }
-}
-
-@media only screen and (max-width: 1343px) {
-  #serviceSlider .owl-dots {
-    display: inline;
-  }
-
-  #serviceSlider .owl-nav {
-    display: none;
-  }
-}
 
 /* Landscape phones and down */
 
@@ -219,7 +189,11 @@
   }
 }
 
+
+
 /* PORTFOLIO */
+
+
 @media (min-width: 768px) and (max-width: 940px) {
   #portfoliogrid .item {
     width: 50%;
@@ -266,15 +240,37 @@
   }
 }
 
-/*  TEAM */
-@media (min-width: 992px) and (max-width: 1199px) {
-  #team .member {
-    width: 33%;
+
+
+/*
+/!* SERVICESLIDER SPECIAL QUERIES *!/
+@media only screen and (min-width: 1400px) and (max-width: 1510px) {
+  #serviceSlider .owl-controls .owl-prev {
+    left: -120px;
+  }
+
+  #serviceSlider .owl-controls .owl-next {
+    right: -120px;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  #menu-container .container {
-    width: 100%;
+@media only screen and (min-width: 1343px) and (max-width: 1400px) {
+  #serviceSlider .owl-controls .owl-prev {
+    left: -90px;
+  }
+
+  #serviceSlider .owl-controls .owl-next {
+    right: -90px;
   }
 }
+
+@media only screen and (max-width: 1343px) {
+  #serviceSlider .owl-dots {
+    display: inline;
+  }
+
+  #serviceSlider .owl-nav {
+    display: none;
+  }
+}
+*/

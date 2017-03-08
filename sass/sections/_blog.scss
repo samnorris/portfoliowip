@@ -96,6 +96,7 @@ p.articletext {
 
 .article-bottom {
   div {
+    @include safe-rem(margin-top, 10);
     font-size: 1rem;
     display: inline-block;
     float: left;
@@ -105,8 +106,8 @@ p.articletext {
     @include safe-rem(margin-left, 25);
   }
 
-  .share-links {
-    @include safe-rem(margin-left, 25);
+  .social-likes {
+    @include safe-rem(margin, 0 0 0 25);
   }
 
   span.date {
@@ -134,7 +135,7 @@ p.articletext {
 }
 
 #blog .blog-link {
-  @include safe-rem(padding-top, 50);
+  @include safe-rem(padding-top, 75);
 }
 
 
