@@ -29,9 +29,8 @@ Header
     <a href="{$AbsoluteBaseURL}#contact" data-scrollto="#contact">Contact</a>
     <hr class="music-top"/>
     <div class="music textcenter">
-        <span><i class="fa fa-headphones"></i><br>Jamming to</span>
+        <span><i class="fa fa-headphones"></i></span><span>Jamming to</span>
         <a href="$Url" class="sc-player"></a>by <span class="artist">$Artist</span>
-        </ul>
     </div>
 </div>
 
