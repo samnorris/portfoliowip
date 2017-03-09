@@ -22,22 +22,21 @@
     text-transform: uppercase;
 
     a {
-      @include safe-rem(margin, 0 6 0 6);
+      @include safe-rem(margin, 0 8 0 8);
       color: $white;
       font-size: .900rem;
       font-weight: 400;
       display: inline-block;
       padding: 30px 9px;
       text-decoration: none;
-      letter-spacing: 0.05rem !important ;
+      letter-spacing: 0.05rem;
+      word-spacing: 0.25rem;
 
       &:hover {
         color: $red-100;
-        letter-spacing: 0.05rem !important ;
       }
 
       &:visited, :active, :focus {
-        letter-spacing: 0.05rem !important ;
       }
 
       &:last-child:before {
