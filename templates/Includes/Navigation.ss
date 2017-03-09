@@ -7,8 +7,8 @@ Nav Principal
         <div class="container">
             <div id="mainMenu">
                 <!-- Site logo-->
-                <a class="menulogo logo" href="{$AbsoluteBaseURL}#mainheader" data-scrollto="#mainheader">
-                    <img alt="Sam Norris - Online Portfolio" src="$ThemeDir/img/menu-logo.png"></a>
+                <a class="menu-logo logo" href="{$AbsoluteBaseURL}#mainheader" data-scrollto="#mainheader">
+                    <img alt="Sam Norris - Online Portfolio" src="$ThemeDir/img/logo.png" srcset="$ThemeDir/img/logo@2x.png 2x"></a>
                 <nav>
                     <!-- Principal menu -->
                     <a href="{$AbsoluteBaseURL}#about" data-scrollto="#about">The Man</a>

@@ -163,7 +163,6 @@ $(document).ready(function() {
         $("#portfoliogrid").isotope('layout');
         $("#isotopeMembers").isotope('layout');
         $(".isotopeBlog").isotope('layout');
-		$("#windowloader").destroy();
     });
 
 

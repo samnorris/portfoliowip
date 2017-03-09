@@ -52,10 +52,9 @@
   }
 }
 
-.menulogo {
+.menu-logo {
+  @include safe-rem(margin, 28 0 0 0);
   float: left;
-  margin-top: 19px;
-  margin-bottom: 19px;
 }
 
 .sticky {
