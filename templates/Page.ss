@@ -44,10 +44,18 @@
     <![endif]-->
 
     <script src="$ThemeDir/js/libs/modernizr.custom.02583.js" type="text/javascript"></script>
-	<link rel="shortcut icon" href="$ThemeDir/img/favicon.ico" />
+
+    <link rel="apple-touch-icon" sizes="144x144" href="$ThemeDir/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="$ThemeDir/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="$ThemeDir/img/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="$ThemeDir/img/manifest.json">
+    <link rel="mask-icon" href="$ThemeDir/img/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="$ThemeDir/img/favicon.ico">
+    <meta name="msapplication-config" content="$ThemeDir/img/browserconfig.xml">
+
 </head>
 <body class="onePage nonscroll $ClassName<% if not $Menu(2) %> no-sidebar<% end_if %>" <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>
-
+$Form
 
 <div id="windowloader">
     <div class="loader">
