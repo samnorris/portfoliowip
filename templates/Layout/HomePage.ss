@@ -2,7 +2,7 @@
     About section
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-<section id="about" class="paddingstandard">
+<section id="about" class="paddingSection">
     <div class="container">
         <!-- Section Title -->
         <h2 class="title appear" data-animation="translatefrombottom">The Man</h2>
@@ -20,7 +20,7 @@
     The Plan section
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-<section id="services" class="paddingstandard">
+<section id="services" class="paddingSection">
     <div class="container">
         <!-- Section Title -->
         <h2 class="title appear" data-animation="translatefrombottom">The Plan</h2>
@@ -36,7 +36,7 @@
     Work section
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-<section id="work" class="paddingstandard">
+<section id="work" class="paddingstandardTop">
     <div class="container">
         <h2 class="title appear" data-animation="translatefrombottom">Selected Works</h2>
 

@@ -104,6 +104,14 @@ li {
   padding-bottom: 165px;
 }
 
+.paddingSection {
+  &:first-child {
+    padding-top: 165px;
+    padding-bottom: 75px;
+  }
+  padding: 75px 0;
+}
+
 .aligncenter {
   text-align: center;
 }
@@ -134,10 +142,10 @@ blockquote {
    ========================================================================== */
 
 .avatar-portrait {
-  width: 550px;
-  height: 550px;
+  width: 450px;
+  height: 450px;
   display: block;
-  margin: 25px auto 25px auto;
+  margin: 45px auto 35px auto;
   background: url('../img/avatar-portrait.png') no-repeat;
 }
 
