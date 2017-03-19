@@ -45,7 +45,6 @@
 
     <script src="$ThemeDir/js/libs/modernizr.custom.02583.js" type="text/javascript"></script>
 
-
     <link rel="apple-touch-icon" sizes="144x144" href="$ThemeDir/img/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="$ThemeDir/img/favicons/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="$ThemeDir/img/favicons/favicon-16x16.png" sizes="16x16">
@@ -55,7 +54,7 @@
     <meta name="msapplication-config" content="$ThemeDir/img/favicons/browserconfig.xml">
 
 </head>
-<body class="onePage nonscroll $ClassName<% if not $Menu(2) %> no-sidebar<% end_if %>" <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>
+<body onload="init();" class="onePage nonscroll $ClassName<% if not $Menu(2) %> no-sidebar<% end_if %>" <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>
 $Form
 
 <div id="windowloader">
@@ -89,8 +88,11 @@ Script Includes
 <script src="$ThemeDir/js/libs/jquery.appear.js" type="text/javascript"></script>
 <script src="$ThemeDir/js/libs/jquery.parallax-1.1.3.js" type="text/javascript"></script>
 <script src="$ThemeDir/js/libs/isotope.pkgd.min.js" type="text/javascript"></script>
+<script src="$ThemeDir/js/libs//createjs-2015.11.26.min.js"></script>
+<script src="$ThemeDir/js/animated-avatar.js" type="text/javascript"></script>
 <script src="$ThemeDir/js/sc-player.js" type="text/javascript"></script>
 <script src="$ThemeDir/js/soundcloud.player.api.js" type="text/javascript"></script>
+
 
 <script type="text/javascript">
     function downloadJSAtOnload() {
@@ -103,6 +105,37 @@ Script Includes
     else if (window.attachEvent)
         window.attachEvent("onload", downloadJSAtOnload);
     else window.onload = downloadJSAtOnload;
+
+
+    // --- Initiate SVG Avatar animation ---
+
+    var canvas, stage, exportRoot;
+    function init() {
+
+        canvas = document.getElementById("avatar-anim");
+        images = images||{};
+
+        var loader = new createjs.LoadQueue(false);
+        loader.addEventListener("fileload", handleFileLoad);
+        loader.addEventListener("complete", handleComplete);
+        loader.loadManifest(lib.properties.manifest);
+    }
+
+    function handleFileLoad(evt) {
+        if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+    }
+
+    function handleComplete(evt) {
+        exportRoot = new lib.AnimatedAvatar5();
+
+        stage = new createjs.Stage(canvas);
+        stage.addChild(exportRoot);
+        stage.update();
+
+        createjs.Ticker.setFPS(lib.properties.fps);
+        createjs.Ticker.addEventListener("tick", stage);
+    }
+
 </script>
 
 </body>
