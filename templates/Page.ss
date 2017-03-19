@@ -88,7 +88,7 @@ Script Includes
 <script src="$ThemeDir/js/libs/jquery.appear.js" type="text/javascript"></script>
 <script src="$ThemeDir/js/libs/jquery.parallax-1.1.3.js" type="text/javascript"></script>
 <script src="$ThemeDir/js/libs/isotope.pkgd.min.js" type="text/javascript"></script>
-<script src="$ThemeDir/js/libs//createjs-2015.11.26.min.js"></script>
+<script src="$ThemeDir/js/libs/createjs-2015.11.26.min.js"></script>
 <script src="$ThemeDir/js/animated-avatar.js" type="text/javascript"></script>
 <script src="$ThemeDir/js/sc-player.js" type="text/javascript"></script>
 <script src="$ThemeDir/js/soundcloud.player.api.js" type="text/javascript"></script>
@@ -126,7 +126,7 @@ Script Includes
     }
 
     function handleComplete(evt) {
-        exportRoot = new lib.AnimatedAvatar5();
+        exportRoot = new lib.AnimatedAvatar();
 
         stage = new createjs.Stage(canvas);
         stage.addChild(exportRoot);

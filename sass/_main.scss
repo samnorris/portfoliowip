@@ -141,12 +141,18 @@ blockquote {
    Avatar Portrait
    ========================================================================== */
 
-.avatar-portrait {
-  width: 450px;
-  height: 500px;
+#avatar-anim {
+  width: 400px;
+  height: 435px;
   display: block;
-  margin: 55px auto 55px auto;
-/*  background: url('../img/avatar-portrait.png') no-repeat;*/
+  background: url('../img/avatar-static.png)') no-repeat;
+}
+
+.avatar-portrait {
+  width: 400px;
+  height: 435px;
+  display: block;
+  margin: 55px auto 35px auto;
 }
 
 

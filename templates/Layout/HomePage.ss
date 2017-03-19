@@ -6,7 +6,7 @@
     <div class="container">
         <!-- Section Title -->
         <h2 class="title appear" data-animation="translatefrombottom">The Man</h2>
-        <div class="avatar-portrait"><canvas id="avatar-anim" width="450" height="486" style="background-color:rgba(0,0,0,0);"></canvas></div>
+        <div class="avatar-portrait"><canvas id="avatar-anim" width="400" height="432" style="background-color:rgba(0,0,0,0);"></canvas></div>
         <!-- Section Text one -->
         <p class="aligncenter appear light-text"><span class="bold">At Night We Dream of Chaos</span> is the online portfolio, personal blog and creative space of designer and web developer Sam Norris* (*that's me).</p>
         <p class="aligncenter light-text">I am a crafter, artisan and manifester of compelling and engaging digital experiences, visual wonders and pixel-perfect solutions; specializing primarily in UI/UX design and front-end development -
