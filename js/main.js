@@ -1,7 +1,7 @@
 //==========================================================================
 //
 //JS CONTENTS
-//
+//  Image Pre-Load
 //	Responsive Menu
 //	Jquery appear
 //	Header / Glitch Animations
@@ -27,6 +27,17 @@
 
 $(document).ready(function() {
 
+	///////////////////////////////////////////////////////////////////////////
+	// Image Pre-Load
+	///////////////////////////////////////////////////////////////////////////
+
+	$.preloadImages = function() {
+		for (var i = 0; i < arguments.length; i++) {
+			$("<img />").attr("src", arguments[i]);
+		}
+	};
+
+	$.preloadImages("themes/portfolio/img/silverstripe-logo.png","themes/portfolio/img/silverstripe-logo.png");
 
 	///////////////////////////////////////////////////////////////////////////
 	// Responsive Menu

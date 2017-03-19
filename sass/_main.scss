@@ -130,7 +130,20 @@ blockquote {
 
 
 /* ==========================================================================
-   x05. Spacesuit Background
+   Avatar Portrait
+   ========================================================================== */
+
+.avatar-portrait {
+  width: 550px;
+  height: 550px;
+  display: block;
+  margin: 25px auto 25px auto;
+  background: url('../img/avatar-portrait.png') no-repeat;
+}
+
+
+/* ==========================================================================
+   Spacesuit Background
    ========================================================================== */
 
 
