@@ -76,7 +76,7 @@
                     this website is built on and powered by</span>
                 </div>
                 <div class="col-md-12">
-                    <a href="http://www.silverstripe.org"><div class="silverstripe-logo"></div></a>
+                    <a href="http://www.silverstripe.org" target="_blank"><div class="silverstripe-logo"></div></a>
                     </div>
                 </div>
             <div class="row crafted-with">
