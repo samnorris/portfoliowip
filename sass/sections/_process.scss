@@ -1,0 +1,10 @@
+@import '../components/base';
+
+/* ==========================================================================
+  PROCESS SLIDER
+========================================================================== */
+
+.process-container {
+  @include safe-rem(margin, 80 auto 80 auto);
+  display: block;
+}

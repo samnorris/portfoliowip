@@ -14,7 +14,6 @@
   display: block;
   width: 100%;
   background-color: $black;
-  font-size: .95em;
   
 
   nav {
@@ -24,26 +23,26 @@
     a {
       @include safe-rem(margin, 0 8 0 8);
       color: $white;
-      font-size: .900rem;
-      font-weight: 400;
+      font-size: 0.813rem;
+      font-weight: 600;
       display: inline-block;
       padding: 30px 9px;
       text-decoration: none;
-      letter-spacing: 0.05rem;
+      letter-spacing: 0.09rem;
       word-spacing: 0.25rem;
 
       &:hover {
         color: $red-100;
       }
 
-      /*
-      &:visited, :active, :focus {
-      }
-      */
+/*      &:visited, :active, :focus {
+        color: $red-100;
+      }*/
+
 
       &:last-child:before {
         margin-right: 16px;
-        margin-left: -3px;
+        margin-left: -4px;
         border-left: 1px solid $grey-500;
         content: ' ';
       }
@@ -54,7 +53,7 @@
 }
 
 .menu-logo {
-  @include safe-rem(margin, 28 0 0 0);
+  @include safe-rem(margin, 26 0 0 0);
   float: left;
 }
 

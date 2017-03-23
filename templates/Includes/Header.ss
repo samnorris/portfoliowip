@@ -24,7 +24,7 @@ Header
     <a href="{$AbsoluteBaseURL}#about" data-scrollto="#about">The Man</a>
     <a href="{$AbsoluteBaseURL}#services" data-scrollto="#services">The Plan</a>
     <a href="{$AbsoluteBaseURL}#work" data-scrollto="#work">My Work</a>
-    <a href="{$AbsoluteBaseURL}#blog" data-scrollto="#blog">Blog</a>
+    <a href="{$AbsoluteBaseURL}#blog" data-scrollto="#blog">Log</a>
     <a href="{$AbsoluteBaseURL}#contact" data-scrollto="#contact">Contact</a>
     <hr class="music-top"/>
     <div class="music textcenter">

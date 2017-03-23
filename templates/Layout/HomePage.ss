@@ -7,8 +7,8 @@
         <!-- Section Title -->
         <h2 class="title appear" data-animation="translatefrombottom">The Man</h2>
         <div class="avatar-portrait">
-            <canvas id="avatar-anim" width="400" height="432" style="background-color:rgba(0,0,0,0);">
-                <img src="$ThemeDir/img/avatar-static.png" width="400" height="432" alt="Dat's me yo" />
+            <canvas id="avatar-anim" width="390" height="449" style="background-color:rgba(0,0,0,0);">
+                <img src="$ThemeDir/img/avatar-static.png" width="390" height="443" alt="Dat's me yo" />
             </canvas>
         </div>
         <!-- Section Text one -->
@@ -30,6 +30,11 @@
         <h2 class="title appear" data-animation="translatefrombottom">The Plan</h2>
         <!-- Section Text one -->
         <p class="aligncenter appear light-text">They say there is a method behind every madness - even behind mine (<span class="italic">most</span> of the time), believe it or not.</p>
+
+        <div class="process-container">
+
+
+        </div>
 
         <!--<h3>Some of the tools I work with</h3>-->
     </div>
