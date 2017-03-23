@@ -7,7 +7,7 @@
         <!-- Section Title -->
         <h2 class="title appear" data-animation="translatefrombottom">The Man</h2>
         <div class="avatar-portrait">
-            <canvas id="avatar-anim" width="390" height="449" style="background-color:rgba(0,0,0,0);">
+            <canvas id="avatar-anim" width="420" height="472" style="background-color:rgba(0,0,0,0);">
                 <img src="$ThemeDir/img/avatar-static.png" width="390" height="443" alt="Dat's me yo" />
             </canvas>
         </div>
