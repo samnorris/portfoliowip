@@ -31,9 +31,36 @@
         <!-- Section Text one -->
         <p class="aligncenter appear light-text">They say there is a method behind every madness - even behind mine (<span class="italic">most</span> of the time), believe it or not.</p>
 
-        <div class="process-container">
-
-
+        <div class="process-nav">
+            <ul>
+              <a class="diamond-btn col-4">
+                <li class="diamond-hover">
+                    <span class="diamond-shape">
+                        <span class="border"></span>
+                        <span class="back"></span>
+                    </span>
+                    <span class="nav-title">PLAN</span>
+                </li>
+              </a>
+                <a class="diamond-btn col-4">
+                    <li class="diamond-hover">
+                    <span class="diamond-shape">
+                        <span class="border"></span>
+                        <span class="back"></span>
+                    </span>
+                        <span class="nav-title">DESIGN AND DEVELOP</span>
+                    </li>
+                </a>
+                <a class="diamond-btn col-4">
+                    <li class="diamond-hover">
+                    <span class="diamond-shape">
+                        <span class="border"></span>
+                        <span class="back"></span>
+                    </span>
+                        <span class="nav-title">BUILD AND DEPLOY</span>
+                    </li>
+                </a>
+            </ul>
         </div>
 
         <!--<h3>Some of the tools I work with</h3>-->
@@ -50,7 +77,7 @@
         <h2 class="title appear" data-animation="translatefrombottom">Selected Works</h2>
 
         <!-- Description -->
-        <p class="aligncenter appear light-text">Browse some of the bits and pieces I have recently worked on in the gallery below, as well as a brief synopsis/overview of the project.<br />
+        <p class="aligncenter appear light-text desc">Browse some of the bits and pieces I have recently worked on in the gallery below, as well as a brief synopsis/overview of the project.<br />
             If that ain't enough for ya, feel free to check out my <a href="https://www.behance.net/theperfectpixels">Behance</a> page or my <a href="#">blog</a> to see what else I might be getting up to.</p>
 
         <!-- Isotope Filter -->

@@ -40,10 +40,7 @@ Header
         <div class="twinkling"></div>
         <!-- End Header animation -->
         <div class="container">
-
-
                     <div class="logo-main"></div>
-
 
             <div class="row">
 

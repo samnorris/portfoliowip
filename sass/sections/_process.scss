@@ -1,10 +1,93 @@
 @import '../components/base';
 
 /* ==========================================================================
-  PROCESS SLIDER
+  PROCESS SECTION
 ========================================================================== */
 
-.process-container {
+.process-nav {
   @include safe-rem(margin, 80 auto 80 auto);
   display: block;
+  height: 60px;
+
+  a {
+    cursor: pointer;
+  }
+
+  ul {
+    width: 100%;
+
+    li {
+      @include safe-rem(margin, 10 0 10 0);
+      display: block;
+    }
+
+    .nav-title {
+      @include transition(all 0.3s ease-in-out);
+      @include safe-rem(padding-top, 25);
+      font-family: 'Lato', sans-serif;
+      color: $grey-700;
+      font-size: 1.275rem;
+      font-weight: 600;
+      letter-spacing: 0.065em;
+      text-transform: uppercase;
+      text-align: center;
+      display: block;
+    }
+
+  }
+
+}
+
+.diamond-shape {
+  position: relative;
+  height: 28px;
+  width: 28px;
+  margin: 0 auto;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  display: block;
+}
+.diamond-shape .border {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%) scale(0);
+  width: 80%;
+  height: 80%;
+  border: 1px solid $grey-700;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+.diamond-shape .back {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+  width: 100%;
+  height: 100%;
+  background-color: $red-100;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.process-nav ul li:hover .nav-title {
+  color: $red-100;
+}
+
+.process-nav a:hover .diamond-shape .back {
+  -webkit-transform: translate(-50%, -50%) scale(1.3);
+  transform: translate(-50%, -50%) scale(1.3);
+  opacity: 0;
+}
+.process-nav a:hover .diamond-shape .border {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
 }
