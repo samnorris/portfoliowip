@@ -17,7 +17,7 @@
 
     </div>
     <div class="col-12 blog-link">
-        <a href="{$AbsoluteBaseURL}blog#blog"><button class="large">Back</button></a>
+        <a href="{$AbsoluteBaseURL}blog#blog"><button class="large shake">Back</button></a>
     </div>
 </div>
 </section>

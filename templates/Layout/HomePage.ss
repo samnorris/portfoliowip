@@ -29,7 +29,7 @@
         <!-- Section Title -->
         <h2 class="title appear" data-animation="translatefrombottom">The Plan</h2>
         <!-- Section Text one -->
-        <p class="aligncenter appear light-text">They say there is a method behind every madness - even behind mine (<span class="italic">most</span> of the time), believe it or not.</p>
+        <p class="aligncenter appear light-text">They say there is a method behind every madness - even mine (<span class="italic">most</span> of the time), believe it or not.</p>
 
 
             <ul class="process-nav">
