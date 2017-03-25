@@ -19,6 +19,7 @@ h1, h2 {
     @include safe-rem(margin-bottom, 35);
     color: $red-100;
     text-transform: uppercase;
+    line-height: 1.1em;
   }
 }
 

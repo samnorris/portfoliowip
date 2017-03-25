@@ -13,7 +13,7 @@ Nav Principal
                     <!-- Principal menu -->
                     <a href="{$AbsoluteBaseURL}#about" data-scrollto="#about">The Man</a>
                     <a href="{$AbsoluteBaseURL}#services" data-scrollto="#services">The Plan</a>
-                    <a href="{$AbsoluteBaseURL}#work" data-scrollto="#work">My Work</a>
+                    <a href="{$AbsoluteBaseURL}#work" data-scrollto="#work">The Work</a>
                     <a href="{$AbsoluteBaseURL}#contact" data-scrollto="#contact">Contact</a>
                     <a href="{$AbsoluteBaseURL}#blog" data-scrollto="#blog">Log</a>
                 </nav>
