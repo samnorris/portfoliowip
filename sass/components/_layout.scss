@@ -114,8 +114,7 @@ li {
   border-bottom: 1px solid $grey-100;
 }
 
-
-
+// responsive layout
 
 .page-wrapper {
   @include breakpoint($mobile) {
