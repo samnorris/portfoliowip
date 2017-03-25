@@ -290,7 +290,7 @@
         <% end_loop %>
         </div>
         <div class="col-12 blog-link">
-            <a href="{$AbsoluteBaseURL}blog#blog"><button class="large">Captain's Log</button></a>
+            <a href="{$AbsoluteBaseURL}blog#blog"><button class="large shake">Captain's Log</button></a>
         </div>
     </div>
 </section>

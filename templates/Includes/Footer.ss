@@ -60,7 +60,7 @@
 
                             <li>
                                 <div class="col-md-12">
-                                    <button type="submit" class=" large submit">Launch It</button>
+                                    <button type="submit" class="large shake submit">Launch It</button>
                                 </div>
                             </li>
 
