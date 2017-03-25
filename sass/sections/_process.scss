@@ -1,7 +1,7 @@
 @import '../components/base';
 
 /* ==========================================================================
-  PROCESS SECTION
+  PROCESS NAVIGATION
 ========================================================================== */
 
 .process-nav {
@@ -13,27 +13,22 @@
     cursor: pointer;
   }
 
-  ul {
-    width: 100%;
+  li {
+    @include safe-rem(margin, 10 0 10 0);
+    display: block;
+  }
 
-    li {
-      @include safe-rem(margin, 10 0 10 0);
-      display: block;
-    }
-
-    .nav-title {
-      @include transition(all 0.3s ease-in-out);
-      @include safe-rem(padding-top, 25);
-      font-family: 'Lato', sans-serif;
-      color: $grey-700;
-      font-size: 1.275rem;
-      font-weight: 600;
-      letter-spacing: 0.065em;
-      text-transform: uppercase;
-      text-align: center;
-      display: block;
-    }
-
+  .nav-title {
+    @include transition(all 0.3s ease-in-out);
+    @include safe-rem(padding-top, 25);
+    font-family: 'Lato', sans-serif;
+    color: $grey-700;
+    font-size: 1.275rem;
+    font-weight: 600;
+    letter-spacing: 0.065em;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
   }
 
 }
@@ -90,4 +85,15 @@
   opacity: 1;
   -webkit-transform: translate(-50%, -50%) scale(1);
   transform: translate(-50%, -50%) scale(1);
+}
+
+
+/* ==========================================================================
+  PROCESS BOX
+========================================================================== */
+
+.process-box {
+  @include safe-rem(margin, 15 auto 15 auto);
+  display: block;
+  height: 350px;
 }

@@ -31,9 +31,9 @@
         <!-- Section Text one -->
         <p class="aligncenter appear light-text">They say there is a method behind every madness - even behind mine (<span class="italic">most</span> of the time), believe it or not.</p>
 
-        <div class="process-nav">
-            <ul>
-              <a class="diamond-btn col-4">
+
+            <ul class="process-nav">
+              <a href="#process-one" class="diamond-btn col-4" data-scrollto="#process-one">
                 <li class="diamond-hover">
                     <span class="diamond-shape">
                         <span class="border"></span>
@@ -42,7 +42,7 @@
                     <span class="nav-title">PLAN</span>
                 </li>
               </a>
-                <a class="diamond-btn col-4">
+                <a href="#process-two" class="diamond-btn col-4" data-scrollto="#process-two">
                     <li class="diamond-hover">
                     <span class="diamond-shape">
                         <span class="border"></span>
@@ -51,7 +51,7 @@
                         <span class="nav-title">DESIGN AND DEVELOP</span>
                     </li>
                 </a>
-                <a class="diamond-btn col-4">
+                <a href="#process-three" class="diamond-btn col-4" data-scrollto="#process-three">
                     <li class="diamond-hover">
                     <span class="diamond-shape">
                         <span class="border"></span>
@@ -61,7 +61,14 @@
                     </li>
                 </a>
             </ul>
-        </div>
+
+
+
+        <div id="process-one" class="process-box col-12"></div>
+
+        <div id="process-two"  class="process-box col-12"></div>
+
+        <div id="process-three"  class="process-box col-12"></div>
 
         <!--<h3>Some of the tools I work with</h3>-->
     </div>
