@@ -122,7 +122,7 @@
             </div>
             <img src="$ThemeDir/img/work/work-lastgrab-1.jpg" alt="Portfolio" />
         </div>
-        <div class="item ui"  data-url="article.html">
+        <div class="item ui">
             <div class="rollover">
                 <div class="centerContainer hidden-xs">
                     <div>

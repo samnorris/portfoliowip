@@ -49,7 +49,7 @@ button {
 }
 
 @keyframes shake {
-  $shake: 2px;
+  $shake: 1px;
   0% {
     box-shadow: 0 0 0 $red-200;
   }

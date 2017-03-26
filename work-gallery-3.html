@@ -38,13 +38,21 @@ Loader
 
 				<div id="detailImg">
 
+					<div id="sliderwork3" class="owl-carousel">
+
 						<div class="item"><img src="themes/portfolio/img/work/melonport-large-1.jpg" alt="Melonport" /></div>
+
+						<div class="item"><img src="themes/portfolio/img/work/melonport-large-2.jpg" alt="Melonport" /></div>
+
+
+
+					</div>
 
 				</div>
 
 				<article>
 
-					<h1>MELONPORT UI CONCEPT</h1>
+					<h1>MELONPORT UI / UX</h1>
 
 					<p>Project description coming soon.</p>
 
@@ -52,15 +60,16 @@ Loader
 
 						<li><span>CLIENT:</span>Melonport</li>
 
-						<li><span>RELEASE DATE:</span>December 8, 2016</li>
+						<li><span>RELEASE DATE:</span>December 11, 2016</li>
 
 						<li><span>TOOLS USED:</span>Sketch</li>
 
-						<li><span>TAGS:</span>UI, Flat, Blue</li>
+						<li><span>TAGS:</span>UI, Prototyping, Flat</li>
+
 
 					</ul>
 
-					<a href="https://www.behance.net/gallery/46392193/Last-Grab-UI-UX-concept-work" target="_blank>"><button class="large" href="#">LAUNCH PROJECT</button></a>
+					<a href="https://www.behance.net/gallery/46392155/Melonport-Blockchain-software-UI-UX-concept-work" target="_blank>"><button class="large shake" href="#">LAUNCH PROJECT</button></a>
 
 				</article>
 
@@ -74,6 +83,40 @@ Loader
 
 </section>
 
+
+<script data-scriptdetail="">
+
+	$(document).ready(function() {
+
+		var $sliderwork = $("#sliderwork3");
+
+		if($sliderwork.length){
+
+			$sliderwork .owlCarousel({
+
+				loop : true,
+
+				animateIn: 'backSlideIn',
+
+				animateOut: 'backSlideOut',
+
+				autoplay: true,
+
+				autoplayTimeout: 3000,
+
+				margin : 20,
+
+				nav: false,
+
+				dots: false,
+
+				items : 1
+
+			});
+		}
+	});
+
+</script>
 
 
 </body>

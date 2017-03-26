@@ -9,7 +9,7 @@
         <% include ArticleTeaser %>
     <% end_loop %>
     <div class="col-12 blog-link">
-        <a href="{$AbsoluteBaseURL}"><button class="large">Back</button></a>
+        <a href="{$AbsoluteBaseURL}"><button class="large shake">Back</button></a>
     </div>
 </div>
 </section>

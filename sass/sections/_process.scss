@@ -20,7 +20,7 @@
 
   .nav-title {
     @include transition(all 0.3s ease-in-out);
-    @include safe-rem(padding-top, 25);
+    @include safe-rem(padding-top, 30);
     font-family: 'Lato', sans-serif;
     color: $grey-700;
     font-size: 1.275rem;
@@ -35,8 +35,8 @@
 
 .diamond-shape {
   position: relative;
-  height: 22px;
-  width: 22px;
+  height: 20px;
+  width: 20px;
   margin: 0 auto;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
@@ -45,20 +45,22 @@
   cursor: pointer;
   display: block;
 }
+
 .diamond-shape .border {
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(0);
   transform: translate(-50%, -50%) scale(0);
-  width: 35px;
-  height: 35px;
+  height: 20px;
+  width: 20px;
   background-color: $red-100;
   box-sizing: border-box;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   opacity: 0;
 }
+
 .diamond-shape .back {
   position: absolute;
   top: 50%;
