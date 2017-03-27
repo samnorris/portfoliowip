@@ -78,6 +78,7 @@ canvas {
     padding: 55px 0;
     background: url('../img/backgrounds/spacesuit-bg-hd.jpg') no-repeat 0 50px;
     background-attachment: scroll, scroll, fixed !important;
+    background-position: 0 0, 0 bottom, center -80px !important;
   }
 }
 
