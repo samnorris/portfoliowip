@@ -84,7 +84,7 @@
                     <span>...and hand-crafted with a whole lotta</span>
                 </div>
                 <div class="col-md-12">
-                    <a href=""><div class="heart"></div></a>
+                    <div class="heart"></div>
                 </div>
             </div>
             <div class="row copyright">

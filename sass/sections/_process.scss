@@ -91,11 +91,19 @@
 
 
 /* ==========================================================================
-  PROCESS BOX
+  PROCESS ANIMATION
 ========================================================================== */
 
 .process-box {
   @include safe-rem(margin, 15 auto 15 auto);
   display: block;
-  height: 350px;
+  width: 550px;
+  height: 450px;
 }
+
+#process-anim-one {
+  width: 550px;
+  height: 450px;
+  display: block;
+}
+

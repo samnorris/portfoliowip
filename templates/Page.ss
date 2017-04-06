@@ -90,6 +90,7 @@ Script Includes
 <script src="$ThemeDir/js/libs/isotope.pkgd.min.js" type="text/javascript"></script>
 <script src="$ThemeDir/js/libs/createjs-2015.11.26.min.js"></script>
 <script src="$ThemeDir/js/animated-avatar.js" type="text/javascript"></script>
+<script src="$ThemeDir/js/process-deploy-animation.js" type="text/javascript"></script>
 <script src="$ThemeDir/js/sc-player.js" type="text/javascript"></script>
 <script src="$ThemeDir/js/soundcloud.player.api.js" type="text/javascript"></script>
 
@@ -122,6 +123,18 @@ Script Includes
         createjs.Ticker.setFPS(lib.properties.fps);
         createjs.Ticker.addEventListener("tick", stage);
     }
+
+    // --- Initiate Process Deploy animation ---
+    
+        canvas = document.getElementById("process-anim-one");
+        exportRoot = new lib.processdeployanimation();
+
+        stage = new createjs.Stage(canvas);
+        stage.addChild(exportRoot);
+        stage.update();
+
+        createjs.Ticker.setFPS(lib.properties.fps);
+        createjs.Ticker.addEventListener("tick", stage);
 
 </script>
 

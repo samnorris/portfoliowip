@@ -46,7 +46,7 @@ canvas {
 .spacesuit-bg {
   position: relative;
   clear: both;
-  height: 800px;
+  height: 900px;
   color: $white;
   background: $black url('../img/backgrounds/spacesuit-bg.jpg') no-repeat 0 0;
   text-align: center;
@@ -78,7 +78,7 @@ canvas {
     padding: 55px 0;
     background: url('../img/backgrounds/spacesuit-bg-hd.jpg') no-repeat 0 50px;
     background-attachment: scroll, scroll, fixed !important;
-    background-position: 0 0, 0 bottom, center -80px !important;
+    background-position: 0 0, 0 bottom, center -120px !important;
   }
 }
 
