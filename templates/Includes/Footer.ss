@@ -71,8 +71,8 @@
 
             <div class="row powered-by">
                 <div class="col-md-12">
-                    <span>Proudly supporting NZ business,<br>
-                    this website is built on and powered by</span>
+                    <p class="aligncenter">Proudly supporting NZ business,<br>
+                    this website is built on and powered by</p>
                 </div>
                 <div class="col-md-12">
                     <a href="http://www.silverstripe.org" target="_blank"><div class="silverstripe-logo"></div></a>
@@ -80,7 +80,7 @@
                 </div>
             <div class="row crafted-with">
                 <div class="col-md-12">
-                    <span>...and hand-crafted with a whole lotta</span>
+                    <p class="aligncenter">...and hand-crafted with a whole lotta</p>
                 </div>
                 <div class="col-md-12">
                     <div class="heart"></div>
@@ -88,7 +88,7 @@
             </div>
             <div class="row copyright">
                 <div class="col-md-12">
-                    <span>Copyright &copy; 2017 At Night</span>
+                    <p class="aligncenter">Copyright &copy; 2017 At Night</p>
                 </div>
             </div>
         </div>

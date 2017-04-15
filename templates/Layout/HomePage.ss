@@ -12,8 +12,8 @@
             </canvas>
         </div>
         <!-- Section Text one -->
-        <p class="aligncenter appear light-text"><span class="bold">At Night We Dream of Chaos</span> is the online portfolio, personal blog and creative space of designer and web developer Sam Norris* (*that's me).</p>
-        <p class="aligncenter light-text">I am a crafter, artisan and manifester of compelling and engaging digital experiences, visual wonders and pixel-perfect solutions; specializing primarily in UI/UX design and front-end web development -
+        <p class="aligncenter appear"><span class="bold">At Night We Dream of Chaos</span> is the online portfolio, personal blog and creative space of designer and web developer Sam Norris* (*that's me).</p>
+        <p class="aligncenter">I am a crafter, artisan and manifester of compelling and engaging digital experiences, visual wonders and pixel-perfect solutions; specializing primarily in UI/UX design and front-end web development -
             but also with an interest in, and varying degree of interdisciplinary knowledge within a number of other fields across the broad spectrum of the digital and web design industry.
             I am also a hobbyist digital artist and illustrator.</p>
     </div>
@@ -29,7 +29,7 @@
         <!-- Section Title -->
         <h2 class="title appear" data-animation="translatefrombottom">The Plan</h2>
         <!-- Section Text one -->
-        <p class="aligncenter appear light-text">They say there is a method behind every madness - even mine (<span class="italic">most</span> of the time), believe it or not.</p>
+        <p class="aligncenter appear">They say there is a method behind every madness - even mine (<span class="italic">most</span> of the time), believe it or not.</p>
 
 
             <ul class="process-nav">
@@ -75,7 +75,7 @@
                 <img src="$ThemeDir/img/process-one-static.png" width="550" height="450" alt="Build and Deploy" />
             </canvas>
           </div>
-            <p class="aligncenter appear light-text">This is the final step of the process where all of the hard work culminates in a finished, shiny, polished product</p>
+            <p class="aligncenter appear">This is the final step of the process where all of the hard work culminates in a finished, shiny, polished product</p>
             <!--<h3>Some of the tools I work with</h3>-->
         </div>
     </div>
@@ -91,7 +91,7 @@
         <h2 class="title appear" data-animation="translatefrombottom">Selected Works</h2>
 
         <!-- Description -->
-        <p class="aligncenter appear light-text desc">Browse some of the bits and pieces I have recently worked on in the gallery below, as well as a brief synopsis/overview of the project.<br />
+        <p class="aligncenter appear desc">Browse some of the bits and pieces I have recently worked on in the gallery below, as well as a brief synopsis/overview of the project.<br />
             If that ain't enough for ya, feel free to check out my <a href="https://www.behance.net/theperfectpixels">Behance</a> page or my <a href="#">blog</a> to see what else I might be getting up to.</p>
 
         <!-- Isotope Filter -->
