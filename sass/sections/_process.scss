@@ -20,7 +20,7 @@
 
   .nav-title {
     @include transition(all 0.3s ease-in-out);
-    @include safe-rem(padding-top, 30);
+    @include safe-rem(padding, 30 0 30 0);
     font-family: 'Lato', sans-serif;
     color: $grey-700;
     font-size: 1.275rem;
@@ -99,6 +99,13 @@
   display: block;
   width: 550px;
   height: 450px;
+}
+
+#process-one, #process-two, #process-three {
+  p {
+    @include safe-rem(margin, 15 auto 15 auto);
+  }
+
 }
 
 #process-anim-one {

@@ -90,7 +90,7 @@ Script Includes
 <script src="$ThemeDir/js/libs/isotope.pkgd.min.js" type="text/javascript"></script>
 <script src="$ThemeDir/js/libs/createjs-2015.11.26.min.js"></script>
 <script src="$ThemeDir/js/animated-avatar.js" type="text/javascript"></script>
-<script src="$ThemeDir/js/process-deploy-animation.js" type="text/javascript"></script>
+<script src="$ThemeDir/js/process-anim-one.js" type="text/javascript"></script>
 <script src="$ThemeDir/js/sc-player.js" type="text/javascript"></script>
 <script src="$ThemeDir/js/soundcloud.player.api.js" type="text/javascript"></script>
 
@@ -110,8 +110,30 @@ Script Includes
 
     // --- Initiate SVG Avatar animation ---
 
-    var canvas, stage, exportRoot;
+/*    var canvas, stage, exportRoot;
+    var canvas2, stage2, exportRoot2;
     function init() {
+
+        canvas = document.getElementById("avatar-anim");
+        canvas2 = document.getElementById("process-anim-one");
+        exportRoot = new lib.AnimatedAvatar();
+        exportRoot2 = new lib.processanimone();
+
+        stage = new createjs.Stage(canvas);
+        stage.addChild(exportRoot);
+        stage2 = new createjs.Stage(canvas2);
+        stage2.addChild(exportRoot2);
+        stage.update();
+        stage2.update();
+
+        createjs.Ticker.setFPS(lib.properties.fps);
+        createjs.Ticker.addEventListener("tick", stage);
+        createjs.Ticker.addEventListener("tick", stage2);
+    }*/
+
+    function init() {
+
+        var canvas, stage, exportRoot;
 
         canvas = document.getElementById("avatar-anim");
         exportRoot = new lib.AnimatedAvatar();
@@ -122,19 +144,21 @@ Script Includes
 
         createjs.Ticker.setFPS(lib.properties.fps);
         createjs.Ticker.addEventListener("tick", stage);
-    }
 
-    // --- Initiate Process Deploy animation ---
-    
+
         canvas = document.getElementById("process-anim-one");
-        exportRoot = new lib.processdeployanimation();
+        exportRoot = new lib2.processanimone();
 
         stage = new createjs.Stage(canvas);
         stage.addChild(exportRoot);
         stage.update();
 
-        createjs.Ticker.setFPS(lib.properties.fps);
+        createjs.Ticker.setFPS(lib2.properties.fps);
         createjs.Ticker.addEventListener("tick", stage);
+    }
+
+    window.addEventListener('load', init, false);
+
 
 </script>
 

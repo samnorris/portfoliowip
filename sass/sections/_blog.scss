@@ -73,29 +73,34 @@
 
 .article-post {
   @include safe-rem(padding, 40 0 40 0);
-}
+  border-bottom: 2px solid #111111;
+
+  &:nth-of-type(1) {
+  @include safe-rem(padding, 10 0 40 0);
+  }
 
 
-#blog.article.article-post:hover {
-  > #blog h3 {
-    border-bottom: 2px solid $red-100;
-    color: $red-100;
+  .media {
+    @include safe-rem(margin, -15 auto -15 auto);
+    overflow: auto;
+  }
+
+  p {
+    @include safe-rem(margin, 15 0 15 0);
+    @include safe-rem(padding, 15 0 5 0);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.045rem;
+    color: $grey-600;
+
   }
 }
 
 
-p.articletext, .articletext-full {
-  @include safe-rem(margin, 15 0 15 0);
-  @include safe-rem(padding, 20 0 40 0);
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1rem;
-  font-weight: 300;
-  letter-spacing: 0.045rem;
-  color: $grey-600;
-  border-bottom: 2px solid #111111;
-}
 
 .article-bottom {
+    @include safe-rem(padding-bottom, 15);
   div {
     @include safe-rem(margin-top, 10);
     font-size: 1rem;
@@ -198,7 +203,7 @@ p.articletext, .articletext-full {
   font-size: .9rem;
 }
 
-#articledetail .info adress a {
+#articledetail .info address a {
   color: $black;
 }
 
@@ -345,5 +350,3 @@ p.articletext, .articletext-full {
   clear: both;
   content: '';
 }
-
-// scss-lint:enable

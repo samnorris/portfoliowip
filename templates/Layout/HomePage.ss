@@ -65,16 +65,19 @@
 
 
         <div id="process-one" class="process-box col-12">
-            <canvas id="process-anim-one" width="550" height="450" style="background-color:rgba(0,0,0,0);">
-                <img src="$ThemeDir/img/process-one-static.png" width="550" height="450" alt="Build and Deploy" />
-            </canvas>
         </div>
 
         <div id="process-two"  class="process-box col-12"></div>
 
-        <div id="process-three"  class="process-box col-12"></div>
-
-        <!--<h3>Some of the tools I work with</h3>-->
+        <div id="process-three">
+          <div class="process-box col-12">
+            <canvas id="process-anim-one" width="550" height="450" style="background-color:rgba(0,0,0,0);">
+                <img src="$ThemeDir/img/process-one-static.png" width="550" height="450" alt="Build and Deploy" />
+            </canvas>
+          </div>
+            <p class="aligncenter appear light-text">This is the final step of the process where all of the hard work culminates in a finished, shiny, polished product</p>
+            <!--<h3>Some of the tools I work with</h3>-->
+        </div>
     </div>
 </section>
 
