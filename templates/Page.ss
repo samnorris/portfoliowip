@@ -109,27 +109,6 @@ Script Includes
 
     // --- Initiate SVG Avatar animation ---
 
-/*    var canvas, stage, exportRoot;
-    var canvas2, stage2, exportRoot2;
-    function init() {
-
-        canvas = document.getElementById("avatar-anim");
-        canvas2 = document.getElementById("process-anim-one");
-        exportRoot = new lib.AnimatedAvatar();
-        exportRoot2 = new lib.processanimone();
-
-        stage = new createjs.Stage(canvas);
-        stage.addChild(exportRoot);
-        stage2 = new createjs.Stage(canvas2);
-        stage2.addChild(exportRoot2);
-        stage.update();
-        stage2.update();
-
-        createjs.Ticker.setFPS(lib.properties.fps);
-        createjs.Ticker.addEventListener("tick", stage);
-        createjs.Ticker.addEventListener("tick", stage2);
-    }*/
-
     function init() {
 
         var canvas, stage, exportRoot;
