@@ -10,6 +10,8 @@ Loader
 Header
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
+<div id="responsive-menu">
+
 <a href="#" class="open">
     <div class="line"></div>
     <div class="line"></div>
@@ -20,17 +22,19 @@ Header
 </a>
 <a href="#cl" class="close hidden"><div class="close-icon"></div></a>
 
-<div class="mobile-menu">
-    <a href="{$AbsoluteBaseURL}#about" data-scrollto="#about">The Man</a>
-    <a href="{$AbsoluteBaseURL}#services" data-scrollto="#services">The Plan</a>
-    <a href="{$AbsoluteBaseURL}#work" data-scrollto="#work">The Work</a>
-    <a href="{$AbsoluteBaseURL}#blog" data-scrollto="#blog">Log</a>
-    <a href="{$AbsoluteBaseURL}#contact" data-scrollto="#contact">Contact</a>
-    <hr class="music-top"/>
-    <div class="music textcenter">
-        <span><i class="fa fa-headphones"></i></span><span>Jamming to</span>
-        <a href="$Url" class="sc-player"></a>by <span class="artist">$Artist</span>
+    <div class="mobile-menu">
+        <a href="{$AbsoluteBaseURL}#about" data-scrollto="#about">The Man</a>
+        <a href="{$AbsoluteBaseURL}#services" data-scrollto="#services">The Plan</a>
+        <a href="{$AbsoluteBaseURL}#work" data-scrollto="#work">The Work</a>
+        <a href="{$AbsoluteBaseURL}#blog" data-scrollto="#blog">Log</a>
+        <a href="{$AbsoluteBaseURL}#contact" data-scrollto="#contact">Contact</a>
+        <hr class="music-top"/>
+        <div class="music textcenter">
+            <span><i class="fa fa-headphones"></i></span><span>Jamming to</span>
+            <a href="$Url" class="sc-player"></a>by <span class="artist">$Artist</span>
+        </div>
     </div>
+
 </div>
 
 <header id="mainheader" class="centerContainer aligncenter fullScreen tintBackground" style="z-index:1">

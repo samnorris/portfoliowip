@@ -95,7 +95,7 @@ canvas {
     font-weight: 100;
     letter-spacing: 4px;
     word-spacing: .06em;
-    line-height: 1.45em;
+    line-height: 1.25em;
   }
 
   .quote-two {
@@ -105,14 +105,14 @@ canvas {
     margin: 0 auto;
     font-weight: 900;
     letter-spacing: 2px;
-    line-height: 1.45em;
+    line-height: 1.25em;
     word-spacing: .06em;
   }
 
   .quote-three-wrapper {
     position: relative;
     z-index: 500;
-    max-width: 800px;
+    width: 90%;
     margin: 0 auto;
     padding: 25px 15px 0;
   }

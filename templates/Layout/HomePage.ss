@@ -13,6 +13,7 @@
         </div>
         <!-- Section Text one -->
         <p class="aligncenter appear"><span class="bold">At Night We Dream of Chaos</span> is the online portfolio, personal blog and creative space of designer and web developer Sam Norris* (*that's me).</p>
+        <br />
         <p class="aligncenter">I am a crafter, artisan and manifester of compelling and engaging digital experiences, visual wonders and pixel-perfect solutions; specializing primarily in UI/UX design and front-end web development -
             but also with an interest in, and varying degree of interdisciplinary knowledge within a number of other fields across the broad spectrum of the digital and web design industry.
             I am also a hobbyist digital artist and illustrator.</p>

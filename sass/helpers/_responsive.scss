@@ -15,58 +15,6 @@
   }
 }
 
-/* Portrait Small phones */
-
-@media (min-width: 320px) and (max-width:481px) {
-
-  #mainheader {
-    height: 900px;
-
-    .fa-angle-down {
-      top: 25px;
-      left: 48%;
-    }
-  }
-
-  h2.title {
-    font-size: 3rem !important;
-  }
-
-  .glitch {
-    display: none;
-  }
-
-  .light-text {
-    font-size: 1.1rem;
-  }
-
-  .process-nav {
-    @include safe-rem(margin, 30 auto 0 auto);
-  }
-
-
-  .spacesuit-bg {
-    height: 600px;
-
-    .quote-one {
-      font-size: 0.845rem;
-    }
-
-    .quote-two {
-      @include safe-rem(padding-top, 12);
-      font-size: 1.65rem;
-    }
-
-    .quote-three {
-      font-size: 0.725rem;
-    }
-
-    #spheres-block {
-      display: none;
-    }
-  }
-
-}
 
 
 /* Landscape phones and down */
@@ -80,10 +28,26 @@
     margin-bottom: 30px;
   }
 
+  h2.title {
+    font-size: 	3.125rem !important;
+  }
+
   header h1, #workdetail h1 {
     margin-bottom: 30px;
     font-size: 3rem;
     line-height: 3.1rem;
+  }
+
+  .avatar-portrait {
+    width: 90%;
+    background: url('../img/avatar-static.png') no-repeat center;
+    background-size: contain;
+    margin-bottom: 15px;
+
+
+    #avatar-anim {
+      display: none;
+    }
   }
 
 
@@ -94,9 +58,28 @@
     margin-top: 11px !important;
   }
 
-  #responsivemenu {
+  #responsive-menu {
     display: block !important;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    opacity: 0.90;
+    z-index: 9999;
+
+    .mobile-menu {
+      background-color: #000;
+      opacity: 0.90;
+      position: fixed;
+      top: 20px;
+
+    }
+
+      .open, .close {
+        position: fixed;
+      }
   }
+
 
   #menu-container {
     position: fixed;
@@ -225,6 +208,59 @@
   .commentinfo .buttons {
     float: none;
   }
+}
+
+/* Portrait Small phones */
+
+@media (min-width: 320px) and (max-width:481px) {
+
+  #mainheader {
+    height: 900px;
+
+    .fa-angle-down {
+      top: 25px;
+      left: 48%;
+    }
+  }
+
+  h2.title {
+    font-size: 3rem !important;
+  }
+
+  .glitch {
+    display: none;
+  }
+
+  .light-text {
+    font-size: 1.1rem;
+  }
+
+  .process-nav {
+    @include safe-rem(margin, 30 auto 0 auto);
+  }
+
+
+  .spacesuit-bg {
+    height: 600px;
+
+    .quote-one {
+      font-size: 0.845rem;
+    }
+
+    .quote-two {
+      @include safe-rem(padding-top, 12);
+      font-size: 1.65rem;
+    }
+
+    .quote-three {
+      font-size: 0.725rem;
+    }
+
+    #spheres-block {
+      display: none;
+    }
+  }
+
 }
 
 @media (max-width: 940px) {
