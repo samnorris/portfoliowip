@@ -72,11 +72,12 @@
 }
 
 .article-post {
-  @include safe-rem(padding, 40 0 40 0);
+  @include safe-rem(margin-top, 45);
   border-bottom: 2px solid #111111;
 
   &:nth-of-type(1) {
-  @include safe-rem(padding, 10 0 40 0);
+    @include safe-rem(margin-top, 0);
+    @include safe-rem(padding, 10 0 0 0);
   }
 
 
@@ -99,7 +100,7 @@
 
   p {
     @include safe-rem(margin, 15 0 15 0);
-    @include safe-rem(padding, 15 0 5 0);
+    @include safe-rem(padding, 15 0 15 0);
     font-size: 1rem;
     font-weight: 300;
     letter-spacing: 0.045rem;
@@ -109,11 +110,13 @@
 }
 
 
-
-
 .article-bottom {
-    @include safe-rem(padding-bottom, 15);
-  div {
+    @include safe-rem(padding, 15 0 10 0);
+    display: inline-block;
+    border-top: 2px solid #111111;
+    width: 100%;
+
+    div {
     @include safe-rem(margin-top, 10);
     font-size: 1rem;
     display: inline-block;
@@ -129,7 +132,7 @@
   }
 
   .social-likes {
-    @include safe-rem(margin, 0 0 0 25);
+    @include safe-rem(margin, 0 0 0 55);
   }
 
   span.date {

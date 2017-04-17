@@ -47,7 +47,6 @@
                                     <input type="text" id="amount" readonly>
                                 </div>
                                 <div class="col-md-4">
-                                    <input type="text" id="amount" readonly>
                                 </div>
                             </li>
 

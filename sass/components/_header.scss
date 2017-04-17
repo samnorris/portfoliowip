@@ -27,7 +27,7 @@ header h2 {
 header .fa-angle-down {
   @include safe-rem(padding-top, 75);
   position: relative;
-  left: 50%;
+  left: 49%;
   z-index: 9999;
   display: inline-block;
   color: transparent;

@@ -72,7 +72,7 @@
 
         <div id="process-three">
           <div class="process-box col-12">
-            <canvas id="process-anim-one" width="550" height="450" style="background-color:rgba(0,0,0,0);">
+            <canvas id="process-anim-one" width="550" height="400" style="background-color:rgba(0,0,0,0);">
                 <img src="$ThemeDir/img/process-one-static.png" width="550" height="450" alt="Build and Deploy" />
             </canvas>
           </div>
