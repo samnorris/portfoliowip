@@ -1,5 +1,5 @@
 <section id="blog">
-<div class="paddingstandard">
+<div class="paddingStandard">
     <div class="container">
 
         <article class="article-post">

@@ -54,6 +54,45 @@
     }
   }
 
+  .process-plan {
+    width: 90%;
+    background: url('../img/process-one-static.png') no-repeat center;
+    background-size: contain;
+    margin-bottom: 15px;
+    height: 170px;
+
+
+    #process-anim-one {
+      display: none;
+    }
+  }
+
+  .process-design {
+    width: 90%;
+    background: url('../img/process-two-static.png') no-repeat center;
+    background-size: contain;
+    margin-bottom: 15px;
+    height: 250px;
+
+
+    #process-anim-two {
+      display: none;
+    }
+  }
+
+  .process-deploy {
+    width: 90%;
+    background: url('../img/process-three-static.png') no-repeat center;
+    background-size: contain;
+    margin-bottom: 15px;
+    height: 200px;
+
+
+    #process-anim-three {
+      display: none;
+    }
+  }
+
   .footer {
     background-position: center;
     background-size: cover !important;
@@ -147,15 +186,15 @@
   }
 
 
-  .paddingstandard {
+  .paddingStandard {
     padding: 75px 0;
   }
 
-  .paddingstandardTop {
+  .paddingStandardTop {
     padding-top: 75px;
   }
 
-  .paddingstandardBottom {
+  .paddingStandardBottom {
     padding-bottom: 75px;
   }
 
@@ -273,6 +312,7 @@
 
   .process-nav {
     @include safe-rem(margin, 30 auto 0 auto);
+    display: inline-block;
   }
 
 

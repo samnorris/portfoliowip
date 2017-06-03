@@ -11,7 +11,7 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
 <section id="contact">
-    <footer id="footer-section" class="footer paddingstandard">
+    <footer id="footer-section" class="footer paddingStandard">
         <h2 class="title appear" data-animation="translatefrombottom">Send me a direct transmission</h2>
         <div class="container">
             <div class="row">

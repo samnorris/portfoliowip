@@ -1,4 +1,4 @@
-<section id="blog"  class="paddingstandard">
+<section id="blog"  class="paddingStandard">
 <div class="container">
     <h2 class="title appear" data-animation="translatefrombottom">Captain's Log</h2>
 <%--    <article class="article-post">

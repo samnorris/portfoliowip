@@ -5,9 +5,8 @@
 ========================================================================== */
 
 .process-nav {
-  @include safe-rem(margin, 80 auto 80 auto);
+  @include safe-rem(margin, 80 auto 15 auto);
   display: block;
-  height: 60px;
 
   a {
     cursor: pointer;
@@ -95,22 +94,28 @@
 ========================================================================== */
 
 .process-box {
-  @include safe-rem(margin, 15 auto 15 auto);
-  display: block;
   width: 550px;
-  height: 400px;
+  @include safe-rem(margin, 25 auto 25 auto);
+  display: block;
 }
 
 #process-one, #process-two, #process-three {
+  @include safe-rem(margin, 55 auto 55 auto);
+  display: block;
   p {
     @include safe-rem(margin, 30 auto 15 auto);
   }
 
 }
-
 #process-anim-one {
+  width: 550px;
+  height: 350px;
+  display: block;
+}
+#process-anim-three, #process-anim-two {
   width: 550px;
   height: 400px;
   display: block;
 }
+
 

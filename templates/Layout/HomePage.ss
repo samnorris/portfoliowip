@@ -15,7 +15,7 @@
         <p class="aligncenter appear"><span class="bold">At Night We Dream of Chaos</span> is the online portfolio, personal blog and creative space of designer and web developer Sam Norris* (*that's me).</p>
         <br />
         <p class="aligncenter">I am a crafter, artisan and manifester of compelling and engaging digital experiences, visual wonders and pixel-perfect solutions; specializing primarily in UI/UX design and front-end web development -
-            but also with an interest in, and varying degree of interdisciplinary knowledge within a number of other fields across the broad spectrum of the digital and web design industry.
+            but also with an interest in, and varying degree of interdisciplinary knowledge within a number of other fields across the broad spectrum of the digital, graphic and web design industry.
             I am also a hobbyist digital artist and illustrator.</p>
     </div>
 </section>
@@ -25,7 +25,7 @@
     The Plan section
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-<section id="services" class="paddingSection">
+<section id="services" class="paddingPlanSection">
     <div class="container">
         <!-- Section Title -->
         <h2 class="title appear" data-animation="translatefrombottom">The Plan</h2>
@@ -65,20 +65,38 @@
 
 
 
-        <div id="process-one" class="process-box col-12">
+        <div id="process-one">
+            <div class="process-box process-plan col-12">
+                <canvas id="process-anim-one" width="550" height="350" style="background-color:rgba(0,0,0,0);">
+                    <img src="$ThemeDir/img/process-one-static.png" width="550" height="350" alt="Plan" />
+                </canvas>
+            </div>
+            <p class="aligncenter appear">The foundation of any good project is solid planning - a thorough analysis and assessment of your goals and needs as a client or business, along with
+                user research, requirements gathering, discovery of solutions to problems and general project scoping help to outline a clear vision for the direction of the project; and rough sketches of initial ideas and concepts,
+                lo-fi prototyping and wireframes provide an important opportunity for feedback and further refinement.</p>
+
         </div>
 
-        <div id="process-two"  class="process-box col-12"></div>
+
+        <div id="process-two">
+            <div class="process-box process-design col-12">
+                <canvas id="process-anim-two" width="550" height="400" style="background-color:rgba(0,0,0,0);">
+                    <img src="$ThemeDir/img/process-two-static.png" width="550" height="450" alt="Design and Develop" />
+                </canvas>
+            </div>
+            <p class="aligncenter appear">From coffee-fuelled brainstorming sessions emerge </p>
+        </div>
+
 
         <div id="process-three">
-          <div class="process-box col-12">
-            <canvas id="process-anim-one" width="550" height="400" style="background-color:rgba(0,0,0,0);">
-                <img src="$ThemeDir/img/process-one-static.png" width="550" height="450" alt="Build and Deploy" />
+          <div class="process-box process-deploy col-12">
+            <canvas id="process-anim-three" width="550" height="400" style="background-color:rgba(0,0,0,0);">
+                <img src="$ThemeDir/img/process-three-static.png" width="550" height="450" alt="Build and Deploy" />
             </canvas>
           </div>
             <p class="aligncenter appear">This is the final step of the process where all of the hard work culminates in a finished, shiny, polished product</p>
-            <!--<h3>Some of the tools I work with</h3>-->
         </div>
+
     </div>
 </section>
 
@@ -87,7 +105,7 @@
     Work section
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-<section id="work" class="paddingstandardTop">
+<section id="work" class="paddingStandardTop">
     <div class="container">
         <h2 class="title appear" data-animation="translatefrombottom">Selected Works</h2>
 
@@ -287,7 +305,7 @@
     CAPTAIN'S LOG
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-<section id="blog" class="paddingstandard">
+<section id="blog" class="paddingStandard">
     <div class="container">
         <!-- Section Title -->
         <h2 class="title appear" data-animation="translatefrombottom">From the <span>(B)</span>log</h2>

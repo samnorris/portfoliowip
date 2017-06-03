@@ -90,6 +90,8 @@ Script Includes
 <script src="$ThemeDir/js/libs/createjs-2015.11.26.min.js"></script>
 <script src="$ThemeDir/js/animated-avatar.js" type="text/javascript"></script>
 <script src="$ThemeDir/js/process-anim-one.js" type="text/javascript"></script>
+<script src="$ThemeDir/js/process-anim-two.js" type="text/javascript"></script>
+<script src="$ThemeDir/js/process-anim-three.js" type="text/javascript"></script>
 <script src="$ThemeDir/js/sc-player.js" type="text/javascript"></script>
 <script src="$ThemeDir/js/soundcloud.player.api.js" type="text/javascript"></script>
 
@@ -123,15 +125,40 @@ Script Includes
         createjs.Ticker.setFPS(lib.properties.fps);
         createjs.Ticker.addEventListener("tick", stage);
 
+        // --- Initiate Process Animation One ---
 
         canvas = document.getElementById("process-anim-one");
-        exportRoot = new lib2.processanimone();
+        exportRoot = new libs_animone.processanimone();
 
         stage = new createjs.Stage(canvas);
         stage.addChild(exportRoot);
         stage.update();
 
-        createjs.Ticker.setFPS(lib2.properties.fps);
+        createjs.Ticker.setFPS(libs_animone.properties.fps);
+        createjs.Ticker.addEventListener("tick", stage);
+
+        // --- Initiate Process Animation Two ---
+
+        canvas = document.getElementById("process-anim-two");
+        exportRoot = new libs_animtwo.processanimtwo();
+
+        stage = new createjs.Stage(canvas);
+        stage.addChild(exportRoot);
+        stage.update();
+
+        createjs.Ticker.setFPS(libs_animtwo.properties.fps);
+        createjs.Ticker.addEventListener("tick", stage);
+
+        // --- Initiate Process Animation Three ---
+
+        canvas = document.getElementById("process-anim-three");
+        exportRoot = new libs_animthree.processanimthree();
+
+        stage = new createjs.Stage(canvas);
+        stage.addChild(exportRoot);
+        stage.update();
+
+        createjs.Ticker.setFPS(libs_animthree.properties.fps);
         createjs.Ticker.addEventListener("tick", stage);
     }
 
