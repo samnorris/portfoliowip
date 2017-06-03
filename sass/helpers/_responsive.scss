@@ -44,9 +44,9 @@
 
   .avatar-portrait {
     width: 90%;
+    height: 350px;
     background: url('../img/avatar-static.png') no-repeat center;
     background-size: contain;
-    margin-bottom: 15px;
 
 
     #avatar-anim {
@@ -54,13 +54,16 @@
     }
   }
 
+  .process-nav .nav-title {
+    font-size: 1rem;
+  }
+
   .process-plan {
     width: 90%;
+    height: 170px;
     background: url('../img/process-one-static.png') no-repeat center;
     background-size: contain;
     margin-bottom: 15px;
-    height: 170px;
-
 
     #process-anim-one {
       display: none;
@@ -69,10 +72,10 @@
 
   .process-design {
     width: 90%;
+    height: 250px;
     background: url('../img/process-two-static.png') no-repeat center;
     background-size: contain;
     margin-bottom: 15px;
-    height: 250px;
 
 
     #process-anim-two {
@@ -82,10 +85,10 @@
 
   .process-deploy {
     width: 90%;
+    height: 200px;
     background: url('../img/process-three-static.png') no-repeat center;
     background-size: contain;
     margin-bottom: 15px;
-    height: 200px;
 
 
     #process-anim-three {
