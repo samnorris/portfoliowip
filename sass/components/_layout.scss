@@ -120,6 +120,10 @@ li {
   &:first-child {
     padding-top: 200px;
     padding-bottom: 0px;
+
+    @media (min-width: 320px) and (max-width:481px) {
+      padding-top: 90px;
+    }
   }
   padding: 155px 0;
 }

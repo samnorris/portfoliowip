@@ -48,7 +48,6 @@
     background: url('../img/avatar-static.png') no-repeat center;
     background-size: contain;
 
-
     #avatar-anim {
       display: none;
     }
@@ -122,14 +121,18 @@
       background-color: #000;
       opacity: 0.90;
       position: fixed;
-      top: 20px;
       width: 100%;
-
     }
 
       .open, .close {
         position: fixed;
       }
+
+    .mobile-menu-logo {
+      @include safe-rem(margin, 18 15 0 0);
+      display: block;
+      float: right;
+    }
   }
 
 
@@ -296,13 +299,17 @@
     height: 900px;
 
     .fa-angle-down {
-      top: 25px;
+      top: 5%;
       left: 48%;
     }
   }
 
+  .logo-main {
+    @include safe-rem(margin, -25 auto 0 auto);
+  }
+
   h2.title {
-    font-size: 3rem !important;
+    font-size: 2rem !important;
   }
 
   .glitch {
@@ -317,7 +324,6 @@
     @include safe-rem(margin, 30 auto 0 auto);
     display: inline-block;
   }
-
 
   .spacesuit-bg {
     height: 600px;
@@ -354,6 +360,10 @@
     }
   }
 
+  .article-bottom .social-likes {
+    margin: 0 0 0 25px;
+  }
+
 }
 
 @media (max-width: 940px) {
@@ -366,7 +376,6 @@
     margin-top: 0;
   }
 }
-
 
 
 /* PORTFOLIO */
@@ -417,3 +426,4 @@
     line-height: 1.8rem;
   }
 }
+

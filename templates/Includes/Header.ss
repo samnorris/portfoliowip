@@ -35,6 +35,9 @@ Header
         </div>
     </div>
 
+    <a class="mobile-menu-logo logo" href="{$AbsoluteBaseURL}#mainheader" data-scrollto="#mainheader">
+        <img alt="Sam Norris - Online Portfolio" src="$ThemeDir/img/logo.png" srcset="$ThemeDir/img/logo@2x.png 2x"></a>
+
 </div>
 
 <header id="mainheader" class="centerContainer aligncenter fullScreen tintBackground" style="z-index:1">

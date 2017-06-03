@@ -1,6 +1,5 @@
 @import 'base';
 
-
 /* ==========================================================================
   PRINCIPAL NAV
 ========================================================================== */
@@ -58,6 +57,10 @@
   float: left;
 }
 
+.mobile-menu-logo {
+  display: none;
+}
+
 .sticky {
   position: fixed !important;
   top: 0;
@@ -92,9 +95,13 @@
 
   a {
     display: block;
-    padding: 11px 0;
+    padding: 15px 0;
     color: $white;
     font-size: 15px;
+
+    &:nth-of-type(1) {
+      margin-top: 15px;
+    }
 
     &:hover {
       color: $red-100;
@@ -235,6 +242,7 @@
 /* Music section */
 
 .music {
+  color: $grey-500;
   padding-top: 10px;
   font-size: 16px;
 

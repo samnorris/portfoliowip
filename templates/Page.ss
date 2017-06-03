@@ -68,6 +68,7 @@ $Form
 <% include Header %>
 <% include Navigation %>
 	<div>
+        $Form
 		$Layout
 	</div>
 <% include Footer %>

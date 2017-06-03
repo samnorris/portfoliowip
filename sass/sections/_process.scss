@@ -100,7 +100,7 @@
 }
 
 #process-one, #process-two, #process-three {
-  @include safe-rem(margin, 55 auto 55 auto);
+  @include safe-rem(margin, 0 auto 70 auto);
   display: block;
   p {
     @include safe-rem(margin, 30 auto 15 auto);

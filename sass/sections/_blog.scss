@@ -101,7 +101,7 @@
   p {
     @include safe-rem(margin, 15 0 15 0);
     @include safe-rem(padding, 15 0 15 0);
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: 300;
     letter-spacing: 0.045rem;
     color: $grey-600;

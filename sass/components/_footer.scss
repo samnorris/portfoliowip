@@ -5,7 +5,6 @@
 ========================================================================== */
 
 footer {
-
   p {
     padding-top: 33px;
   }
@@ -14,10 +13,6 @@ footer {
 .footer {
   color: $white;
   background: $black url('../img/backgrounds/footer-bg.jpg') no-repeat 0 0;
-}
-
-.footer {
-  background: url('../img/backgrounds/footer-bg.jpg') no-repeat center;
   background-size: cover !important;
 }
 

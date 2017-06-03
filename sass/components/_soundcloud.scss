@@ -1,8 +1,10 @@
+@import 'base';
+
 .sc-player{
+  @include safe-rem(margin, 0 0 30 0);
   width: 100%;
   height: 60px;
   position: relative;
-  margin: 8px 0;
 }
 
 .sc-player ol, .sc-player li{
